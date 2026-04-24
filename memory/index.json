@@ -1,0 +1,60 @@
+{
+  "lastUpdated": "2026-04-24T13:43:22Z",
+  "version": "1.0",
+  "entries": [
+    {
+      "id": "obs-001",
+      "type": "identity",
+      "title": "Lệ - Trợ lý AI",
+      "date": "2026-04-24",
+      "tags": ["identity", "self", "bootstrap"],
+      "file": "IDENTITY.md",
+      "keywords": ["Lệ", "trợ lý", "AI", "giọt nước"]
+    },
+    {
+      "id": "obs-002",
+      "type": "person",
+      "title": "Nguyễn Thành Doanh - Anh Doanh",
+      "date": "2026-04-24",
+      "tags": ["person", "user", "huecit", "internship"],
+      "file": "memory/observations/preferences.md",
+      "keywords": ["Doanh", "sinh viên", "kỹ nghệ phần mềm", "HUECIT"]
+    },
+    {
+      "id": "obs-003",
+      "type": "project",
+      "title": "HUECIT Internship",
+      "date": "2026-04-24",
+      "tags": ["work", "internship", "project", "current"],
+      "file": "memory/observations/projects.md",
+      "keywords": ["HUECIT", "thực tập", "internship", "Huế"]
+    },
+    {
+      "id": "obs-004",
+      "type": "environment",
+      "title": "Môi trường làm việc - WSL + Docker",
+      "date": "2026-04-24",
+      "tags": ["environment", "tools", "docker", "wsl"],
+      "file": "memory/observations/tools.md",
+      "keywords": ["Lenovo", "WSL", "Ubuntu", "Docker", "openclawgateway"]
+    },
+    {
+      "id": "obs-005",
+      "type": "lesson",
+      "title": "Cấu trúc bộ nhớ từ claude-mem",
+      "date": "2026-04-24",
+      "tags": ["lesson", "memory", "architecture", "bootstrap"],
+      "file": "memory/observations/lessons.md",
+      "keywords": ["claude-mem", "memory", "progressive disclosure", "structure"]
+    },
+    {
+      "id": "obs-006",
+      "type": "daily",
+      "title": "Ghi chép 2026-04-24 - Khởi tạo Lệ",
+      "date": "2026-04-24",
+      "tags": ["daily", "bootstrap", "log"],
+      "file": "memory/daily/2026-04-24.md",
+      "keywords": ["bootstrap", "khởi tạo", "claude-mem", "memory schema"]
+    }
+  ]
+}
