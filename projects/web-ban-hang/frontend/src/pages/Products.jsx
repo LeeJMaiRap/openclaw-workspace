@@ -7,10 +7,11 @@ const CATEGORY_OPTIONS = [
   { value: 'all', label: 'Tất cả' },
   { value: 'electronics', label: 'Điện tử' },
   { value: 'fashion', label: 'Thời trang' },
+  { value: 'food', label: 'Thực phẩm' },
   { value: 'books', label: 'Sách' },
   { value: 'home', label: 'Gia dụng' },
-  { value: 'beauty', label: 'Làm đẹp' },
   { value: 'sports', label: 'Thể thao' },
+  { value: 'other', label: 'Khác' },
 ];
 
 const CATEGORY_META = {
@@ -26,6 +27,12 @@ const CATEGORY_META = {
     color: 'from-pink-500 to-rose-400',
     names: ['Áo thun', 'Áo khoác', 'Quần jean', 'Váy', 'Giày sneaker', 'Túi xách'],
   },
+  food: {
+    label: 'Thực phẩm',
+    emoji: '🍎',
+    color: 'from-orange-500 to-red-400',
+    names: ['Trái cây', 'Bánh ngọt', 'Cà phê', 'Trà', 'Snack', 'Sữa hạt'],
+  },
   books: {
     label: 'Sách',
     emoji: '📚',
@@ -38,17 +45,17 @@ const CATEGORY_META = {
     color: 'from-emerald-500 to-green-400',
     names: ['Nồi chiên', 'Máy xay', 'Đèn bàn', 'Kệ mini', 'Bình giữ nhiệt', 'Chăn ga'],
   },
-  beauty: {
-    label: 'Làm đẹp',
-    emoji: '💄',
-    color: 'from-fuchsia-500 to-purple-400',
-    names: ['Serum', 'Kem chống nắng', 'Sữa rửa mặt', 'Son môi', 'Mặt nạ', 'Nước hoa'],
-  },
   sports: {
     label: 'Thể thao',
     emoji: '🏃',
     color: 'from-lime-500 to-green-500',
     names: ['Thảm yoga', 'Áo thể thao', 'Bóng đá', 'Bình nước', 'Dây kháng lực', 'Giày chạy bộ'],
+  },
+  other: {
+    label: 'Khác',
+    emoji: '🎁',
+    color: 'from-slate-500 to-gray-400',
+    names: ['Phụ kiện', 'Quà tặng', 'Đồ tiện ích', 'Combo', 'Sản phẩm mới', 'Bộ sưu tập'],
   },
 };
 
@@ -113,7 +120,7 @@ function ProductCard({ product }) {
       <div className="p-5">
         <div className="mb-3 flex items-center justify-between gap-3">
           <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
-            {CATEGORY_META[product.category].label}
+            {CATEGORY_META[product.category]?.label || 'Khác'}
           </span>
           <span className="text-sm text-amber-500">★ {product.rating.toFixed(1)}</span>
         </div>

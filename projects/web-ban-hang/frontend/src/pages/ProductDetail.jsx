@@ -17,6 +17,12 @@ const CATEGORY_META = {
     color: 'from-pink-500 to-rose-400',
     names: ['Áo thun', 'Áo khoác', 'Quần jean', 'Váy', 'Giày sneaker', 'Túi xách'],
   },
+  food: {
+    label: 'Thực phẩm',
+    emoji: '🍎',
+    color: 'from-orange-500 to-red-400',
+    names: ['Trái cây', 'Bánh ngọt', 'Cà phê', 'Trà', 'Snack', 'Sữa hạt'],
+  },
   books: {
     label: 'Sách',
     emoji: '📚',
@@ -29,17 +35,17 @@ const CATEGORY_META = {
     color: 'from-emerald-500 to-green-400',
     names: ['Nồi chiên', 'Máy xay', 'Đèn bàn', 'Kệ mini', 'Bình giữ nhiệt', 'Chăn ga'],
   },
-  beauty: {
-    label: 'Làm đẹp',
-    emoji: '💄',
-    color: 'from-fuchsia-500 to-purple-400',
-    names: ['Serum', 'Kem chống nắng', 'Sữa rửa mặt', 'Son môi', 'Mặt nạ', 'Nước hoa'],
-  },
   sports: {
     label: 'Thể thao',
     emoji: '🏃',
     color: 'from-lime-500 to-green-500',
     names: ['Thảm yoga', 'Áo thể thao', 'Bóng đá', 'Bình nước', 'Dây kháng lực', 'Giày chạy bộ'],
+  },
+  other: {
+    label: 'Khác',
+    emoji: '🎁',
+    color: 'from-slate-500 to-gray-400',
+    names: ['Phụ kiện', 'Quà tặng', 'Đồ tiện ích', 'Combo', 'Sản phẩm mới', 'Bộ sưu tập'],
   },
 };
 
@@ -54,7 +60,7 @@ const generateProductById = (id) => {
   const categoryKeys = Object.keys(CATEGORY_META);
   const index = parseInt(id) - 1;
   const category = categoryKeys[index % categoryKeys.length];
-  const meta = CATEGORY_META[category];
+  const meta = CATEGORY_META[category] || CATEGORY_META.other;
   const baseName = meta.names[index % meta.names.length];
   const variant = ((index * 7) % 48) + 1;
   const price = 89000 + ((index * 137531) % 5500000);

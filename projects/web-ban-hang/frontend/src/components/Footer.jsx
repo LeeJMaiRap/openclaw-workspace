@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Send, Camera, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -48,13 +48,13 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4">Theo dõi</h4>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition">
-                <Facebook size={20} />
+                <Globe size={20} />
               </a>
               <a href="#" className="hover:text-white transition">
-                <Twitter size={20} />
+                <Send size={20} />
               </a>
               <a href="#" className="hover:text-white transition">
-                <Instagram size={20} />
+                <Camera size={20} />
               </a>
             </div>
           </div>
