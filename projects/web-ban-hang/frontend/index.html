@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bán Hàng - Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .status {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .status h2 {
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+
+        .status p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .backend-status {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #28a745;
+            color: white;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        .backend-status.error {
+            background: #dc3545;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-card li {
+            padding: 5px 0;
+            color: #666;
+        }
+
+        .feature-card li::before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 Web Bán Hàng - Demo</h1>
+        </header>
+
+        <div class="status">
+            <h2>✅ Frontend đang chạy!</h2>
+            <p>Trang demo này được tạo bởi PM Agent để kiểm tra frontend.</p>
+            <p>Frontend đang chạy tại: <strong>http://localhost:3000/</strong></p>
+            <p>Backend API đang chạy tại: <strong>http://localhost:5000/</strong></p>
+            <div class="backend-status">Backend: Đang chạy</div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>✅ Backend đã hoàn thành</h3>
+                <ul>
+                    <li>Database connection (MongoDB)</li>
+                    <li>Authentication (JWT)</li>
+                    <li>API Products</li>
+                    <li>API Cart</li>
+                    <li>API Orders</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🚀 Frontend đang phát triển</h3>
+                <ul>
+                    <li>React + Vite</li>
+                    <li>Tailwind CSS</li>
+                    <li>Axios cho API</li>
+                    <li>Responsive design</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>📋 Các task đang làm</h3>
+                <ul>
+                    <li>Tạo layout chính</li>
+                    <li>Trang chủ</li>
+                    <li>Danh sách sản phẩm</li>
+                    <li>Giỏ hàng</li>
+                    <li>Thanh toán</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>PM Agent: Lệ 💧 | Dự án: Web Bán Hàng MVP</p>
+            <p>Được tạo bởi OpenClaw Gateway</p>
+        </div>
+    </div>
+</body>
+</html>
