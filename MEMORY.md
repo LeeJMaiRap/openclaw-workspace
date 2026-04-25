@@ -33,3 +33,23 @@
   - `memory/observations/` cho insights có cấu trúc
   - `MEMORY.md` cho bộ nhớ dài hạn đã được chắt lọc
   - `memory/index.json` cho metadata tìm kiếm
+- Khi có lỗi lặp lại, phải ghi rõ:
+  - lỗi gì đã xảy ra
+  - nguyên nhân thật sự
+  - cách xử lý đúng
+  - điều cần tránh để không lặp lại
+
+## Lưu ý làm việc quan trọng
+- Khi anh báo có lỗi hoặc nói kết quả không đúng, phải **dừng suy đoán** và **rà lại source / log / file thực tế** trước khi hướng dẫn tiếp.
+- Không được lặp lại cùng một hướng dẫn cũ khi chưa xác minh nguyên nhân thật.
+- Với các lỗi chạy dự án web/app, ưu tiên kiểm tra theo thứ tự:
+  1. source code thật đang chạy là gì
+  2. file entry point có đúng không
+  3. runtime error trong browser console là gì
+  4. backend/service phụ thuộc có đang chạy không
+- Khi anh yêu cầu giảm thao tác tay chân, phải ưu tiên **tự sửa trực tiếp trong workspace** trước, rồi mới hướng dẫn anh copy/cài lại.
+- Trước khi kết luận “đã chạy được” hoặc “đã hoàn thành”, phải xác định rõ đó là:
+  - demo tĩnh
+  - frontend dev mode
+  - frontend + backend thật
+  - hay full end-to-end có database.
