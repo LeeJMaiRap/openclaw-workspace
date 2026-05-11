@@ -163,14 +163,23 @@ skills/pm-agent/
 *Nhóm D - Hạ tầng (1):*
 17. markdown-to-pdf
 
-**Đang làm:**
-- Viết spec đầy đủ cho skill đầu tiên: `requirement-clarifier`
+**Đã hoàn thành tiếp:**
+- Đã viết đầy đủ spec + template + ví dụ cho toàn bộ 17/17 skill
+- Đã hoàn thành trọn 4 nhóm skill:
+  - `input-normalization` (3/3)
+  - `document-generation` (8/8)
+  - `project-operations` (5/5)
+  - `infrastructure` (1/1)
+- Đã bổ sung script thật cho skill `markdown-to-pdf` tại:
+  - `skills/pm-agent/infrastructure/markdown-to-pdf/scripts/md_to_pdf.py`
+
+**Trạng thái chốt:**
+- **Bước 3 đã hoàn thành về mặt thiết kế hệ skill lõi.**
 
 **Tiếp theo:**
-- Viết template input/output cho `requirement-clarifier`
-- Tạo ví dụ thực tế
-- Test skill với dữ liệu thật
-- Chuyển sang skill tiếp theo
+- Test thử 1 workflow PM Agent thật từ input → tài liệu → task board → dashboard → PDF
+- Rà lại những skill nào cần tinh chỉnh sau test thực tế
+- Chuyển sang giai đoạn áp dụng/tích hợp thực chiến
 
 #### Nguyên tắc thiết kế skill mới
 - Xuất phát từ artefact PM thật, không phải từ tên skill "hay hay"
