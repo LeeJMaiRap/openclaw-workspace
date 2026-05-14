@@ -1,14 +1,14 @@
 project_id: web-ban-hang
 name: Trang Web Bán Hàng
 code: WH-2026-04-24
-status: active
+status: on-hold
 mode: demo
 priority: medium
 
 owner: Nguyễn Thành Doanh
 pm_agent: Lệ
 created_at: 2026-04-24T20:21:00Z
-updated_at: 2026-05-14T06:53:00Z
+updated_at: 2026-05-14T09:31:00Z
 
 source_of_truth: projects/active/web-ban-hang
 

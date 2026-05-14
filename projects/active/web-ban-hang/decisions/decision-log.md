@@ -4,6 +4,9 @@
 - **Date:** 2026-04-24
 - **Level:** 1
 - **Made by:** PM Agent
+- **Made actor:** agent:main
+- **Approved by:** Nguyễn Thành Doanh
+- **Approved actor:** human:Doanh
 - **Context:** Cần chọn database phù hợp với timeline 1 ngày
 - **Options considered:**
   1. MongoDB - nhanh cho MVP, flexible schema

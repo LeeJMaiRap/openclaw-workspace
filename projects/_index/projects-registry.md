@@ -6,7 +6,7 @@ Danh sách toàn bộ project được PM Agent quản lý.
 
 | ID | Name | Owner | PM | Status | Priority | Created | Updated |
 |----|------|-------|----|----|----------|---------|---------|
-| web-ban-hang | Trang Web Bán Hàng | Doanh | Lệ | active | medium | 2026-04-24 | 2026-05-14 |
+| web-ban-hang | Trang Web Bán Hàng | Doanh | Lệ | on-hold | medium | 2026-04-24 | 2026-05-14 |
 
 ## Archived Projects
 
@@ -16,7 +16,7 @@ Danh sách toàn bộ project được PM Agent quản lý.
 
 ## Project Status Legend
 - **active** - Đang vận hành
-- **on-hold** - Tạm dừng
+- **on-hold** - Tạm dừng / giữ làm reference
 - **archived** - Đã hoàn tất hoặc hủy
 
 ## Priority Legend

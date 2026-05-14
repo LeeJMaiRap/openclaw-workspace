@@ -10,7 +10,7 @@ Tổng quan các dự án đang hoạt động.
 
 - **Owner:** Nguyễn Thành Doanh
 - **PM Agent:** Lệ
-- **Status:** 🟢 Active (demo-ready)
+- **Status:** 🟡 On Hold (demo-ready, work paused)
 - **Priority:** Medium
 - **Progress:** 58% (19/33 tasks)
 - **Health:** 🟢 On Track
@@ -23,16 +23,16 @@ Tổng quan các dự án đang hoạt động.
 - [Status Dashboard](../active/web-ban-hang/04-monitoring/status-dashboard.md)
 
 ### Current Phase
-Phase 5: Admin & Final touches (80%)
+On Hold — demo-ready snapshot retained, active work paused
 
 ### Top Risks
 1. Timeline quá ngắn (Score: 9)
 2. Scope quá lớn (Score: 9)
 
 ### Next Actions
-- Hoàn thiện admin features
-- Final verification
-- Prepare demo guide
+- Giữ project làm validation reference
+- Không chạy daily report mặc định
+- Chỉ mở lại nếu có yêu cầu tiếp tục
 
 ---
 

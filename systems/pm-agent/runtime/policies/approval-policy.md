@@ -16,7 +16,10 @@ Quy định về quy trình phê duyệt trong PM Agent workflow.
 ```markdown
 ## Scope Approval
 - **Date:** YYYY-MM-DD
+- **Requested by:** [Name/Role]
+- **Requested actor:** [human:... / agent:main / subagent:... / unknown]
 - **Approver:** [Name]
+- **Approver actor:** [human:... / agent:main / subagent:... / unknown]
 - **Status:** ✅ Approved / ❌ Rejected / ⏸️ On Hold
 - **Comments:** [Optional feedback]
 - **Conditions:** [Any conditions for approval]
@@ -35,7 +38,10 @@ Quy định về quy trình phê duyệt trong PM Agent workflow.
 ```markdown
 ## Plan Approval
 - **Date:** YYYY-MM-DD
+- **Requested by:** [Name/Role]
+- **Requested actor:** [human:... / agent:main / subagent:... / unknown]
 - **Approver:** [Name]
+- **Approver actor:** [human:... / agent:main / subagent:... / unknown]
 - **Documents reviewed:**
   - [ ] Spec
   - [ ] Plan
@@ -62,6 +68,7 @@ Quy định về quy trình phê duyệt trong PM Agent workflow.
 ## Change Request CR-XXX
 - **Date:** YYYY-MM-DD
 - **Requested by:** [Name]
+- **Requested actor:** [human:... / agent:main / subagent:... / unknown]
 - **Type:** Scope / Timeline / Budget / Other
 - **Description:** [What changes]
 - **Rationale:** [Why]
@@ -71,6 +78,7 @@ Quy định về quy trình phê duyệt trong PM Agent workflow.
   - Budget: [Impact]
   - Quality: [Impact]
 - **Approver:** [Name]
+- **Approver actor:** [human:... / agent:main / subagent:... / unknown]
 - **Status:** ✅ Approved / ❌ Rejected / ⏸️ Pending
 - **Decision date:** YYYY-MM-DD
 ```
@@ -87,7 +95,10 @@ Quy định về quy trình phê duyệt trong PM Agent workflow.
 ```markdown
 ## Closure Approval
 - **Date:** YYYY-MM-DD
+- **Requested by:** [Name/Role]
+- **Requested actor:** [human:... / agent:main / subagent:... / unknown]
 - **Approver:** [Name]
+- **Approver actor:** [human:... / agent:main / subagent:... / unknown]
 - **Deliverables verified:**
   - [ ] All tasks completed
   - [ ] All acceptance criteria met
