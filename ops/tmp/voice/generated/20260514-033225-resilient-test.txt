@@ -1,0 +1,67 @@
+status=ok
+voice=vi-VN-HoaiMyNeural
+text=Anh Doanh là người chăm chỉ, học công nghệ nghiêm túc và rõ ràng.
+mp3=/root/.openclaw/workspace/tmp/voice/generated/20260514-033225-resilient-test.mp3
+ogg=/root/.openclaw/workspace/tmp/voice/generated/20260514-033225-resilient-test.ogg
+
+voice=vi-VN-HoaiMyNeural attempt=1 returncode=1 stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/.venvs/voice-stack/bin/edge-tts", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 141, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 136, in amain
+    await _run_tts(args)
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 73, in _run_tts
+    async for chunk in communicate.stream():
+    ...<3 lines>...
+            submaker.feed(chunk)
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+        yield message
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+        "No audio was received. Please verify that your parameters are correct."
+    )
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct. stdout=
+voice=vi-VN-HoaiMyNeural attempt=2 returncode=1 stderr=Traceback (most recent call last):
+  File "/root/.openclaw/workspace/.venvs/voice-stack/bin/edge-tts", line 6, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 141, in main
+    asyncio.run(amain())
+    ~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 204, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/runners.py", line 127, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 719, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 136, in amain
+    await _run_tts(args)
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/util.py", line 73, in _run_tts
+    async for chunk in communicate.stream():
+    ...<3 lines>...
+            submaker.feed(chunk)
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/communicate.py", line 588, in stream
+    async for message in self.__stream():
+        yield message
+  File "/root/.openclaw/workspace/.venvs/voice-stack/lib/python3.14/site-packages/edge_tts/communicate.py", line 562, in __stream
+    raise NoAudioReceived(
+        "No audio was received. Please verify that your parameters are correct."
+    )
+edge_tts.exceptions.NoAudioReceived: No audio was received. Please verify that your parameters are correct. stdout=
+voice=vi-VN-HoaiMyNeural attempt=3 returncode=0 stderr= stdout=
