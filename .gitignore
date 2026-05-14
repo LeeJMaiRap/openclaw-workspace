@@ -1,31 +1,13 @@
-# Dependencies
-node_modules/
+# Runtime voice artifacts
+/tmp/voice/about-doanh.mp3
+/tmp/voice/about-doanh.ogg
+/tmp/voice/about-doanh.txt
+/tmp/voice/transcribe_about_doanh.py
+/tmp/voice/generated/*
+/tmp/voice/transcripts/*-runner.py
 
-# Build/export artifacts
-exports/
-
-# Environment files
-.env
-.env.*
-!.env.example
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS/editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Python
-__pycache__/
-*.pyc
-
-# Coverage/build caches
-coverage/
-dist/
-build/
-.next/
+# Keep directory structure
+!/tmp/voice/.gitkeep
+!/tmp/voice/incoming/.gitkeep
+!/tmp/voice/generated/.gitkeep
+!/tmp/voice/transcripts/.gitkeep
