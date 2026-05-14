@@ -23,10 +23,10 @@
 
 ## Quality & Governance
 - [~] Có eval scenarios thực tế ở mức nền (hiện có `scope-change`, `worker-failure`)
-- [ ] Có regression test pack
-- [ ] Có acceptance verification checklist
-- [ ] Có stale-project detection rule
-- [ ] Có rollback playbook cho project issue
+- [x] Có regression test pack
+- [x] Có acceptance verification checklist
+- [x] Có stale-project detection rule
+- [x] Có rollback playbook cho project issue
 
 ## Multi-project Scalability
 - [x] Có projects registry

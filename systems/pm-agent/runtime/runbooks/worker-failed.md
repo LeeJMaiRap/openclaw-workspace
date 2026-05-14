@@ -34,6 +34,10 @@
    - status-dashboard.md
    - handoff note nếu retry
 
+5. **Nếu thay đổi lỗi đã làm bẩn trạng thái project**
+   - dùng thêm `project-rollback-recovery.md`
+   - quyết định rollback hay recovery có kiểm soát
+
 ## Retry policy
 - Retry tối đa 2 lần nếu lỗi do prompt/context
 - Không retry mù khi lỗi do strategy sai

@@ -5,6 +5,7 @@ Checklist bắt buộc trước khi đóng project.
 ## Deliverables
 - [ ] Tất cả deliverable chính đã hoàn tất
 - [ ] Acceptance criteria đã được kiểm tra
+- [ ] Acceptance verification checklist đã được chạy
 - [ ] Không còn blocker critical
 - [ ] Open issue còn lại đã được chấp nhận hoặc có note rõ
 
@@ -28,4 +29,4 @@ Checklist bắt buộc trước khi đóng project.
 - [ ] Memory/knowledge cập nhật nếu có lesson quan trọng
 
 ## Rule cứng
-Không đóng project nếu chưa có final report và closure approval.
+Không đóng project nếu chưa có final report, closure approval, và acceptance verification tối thiểu theo `systems/pm-agent/runtime/policies/acceptance-verification-policy.md`.

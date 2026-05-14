@@ -148,6 +148,7 @@ Nếu project stopped/on-hold:
 - không được viết như thể project đang active progress
 - phải nêu rõ trạng thái hiện tại
 - không dùng language gây hiểu nhầm như `ongoing momentum` nếu thực tế đã dừng
+- nếu project active nhưng không có meaningful update quá lâu, phải xem xét stale detection theo `systems/pm-agent/runtime/policies/stale-project-detection-policy.md`
 
 ## 9. Audit rule
 
