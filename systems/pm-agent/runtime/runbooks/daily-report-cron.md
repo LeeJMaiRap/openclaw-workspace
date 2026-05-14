@@ -24,7 +24,7 @@ Primary spec:
 
 ## Current Default
 - Schedule target: 19:00
-- Timezone currently configured in cron job: UTC
+- Timezone currently configured in cron job: Asia/Ho_Chi_Minh
 - Delivery: none
 - Recommended enablement: only after confirming active-project set and owner preference for framework daily snapshots
 
