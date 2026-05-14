@@ -20,7 +20,10 @@ PM Agent đã đi qua các giai đoạn:
 - ✅ Thiết kế workflow, prompts, templates, memory structure
 - ✅ Triển khai framework PM Agent trong workspace
 - ✅ Kiểm chứng bằng dự án thực tế đầu tiên: Web Bán Hàng MVP
-- 🟡 Đang ở giai đoạn đánh giá, hoàn thiện, rút kinh nghiệm sau lần kiểm chứng đầu tiên
+- ✅ Tái cấu trúc workspace và chuẩn hóa runtime nền
+- ✅ Bổ sung governance layers: actor tracking / acceptance verification / stale detection / rollback-recovery
+- ✅ Bổ sung reporting layers: framework vs project reporting, source conflict detection, multi-project dashboards
+- 🟡 Đang ở giai đoạn đánh giá, hoàn thiện và hardening sau lần kiểm chứng thực tế đầu tiên
 
 ### Tiến độ PM Agent
 | Hạng mục | Trạng thái |
@@ -32,17 +35,22 @@ PM Agent đã đi qua các giai đoạn:
 | Template framework | ✅ Hoàn thành |
 | Analysis / research docs | ✅ Hoàn thành |
 | Real-project validation | ✅ Hoàn thành lần 1 |
+| Runtime foundation | ✅ Hoàn thành |
+| Governance layers | ✅ Hoàn thành mức nền |
+| Reporting foundation | ✅ Hoàn thành mức nền |
+| Multi-project visibility foundation | ✅ Hoàn thành mức nền |
 | Lessons learned integration | ✅ Hoàn thành |
-| Refinement after validation | 🟡 Đang diễn ra |
+| Refinement / hardening after validation | 🟡 Đang diễn ra |
 | Production-grade PM Agent | ⏳ Chưa hoàn thành |
 
 ### Đánh giá tiến độ tổng thể PM Agent
-- **Mức hoàn thành framework và validation:** ~85%
+- **Mức hoàn thành framework và validation:** ~85-88%
+- **Mức sẵn sàng production-readiness thực tế:** ~78-82%
 - **Mức hoàn thiện production-grade:** chưa hoàn tất
 
 ### Kết luận ngắn
 PM Agent **không còn ở giai đoạn build ban đầu**.
-PM Agent hiện ở **giai đoạn hoàn thiện và đánh giá sau lần kiểm chứng thực tế đầu tiên**.
+PM Agent hiện ở **giai đoạn hardening và hoàn thiện sau lần kiểm chứng thực tế đầu tiên**, đủ tốt cho pilot/internal use có kiểm soát nhưng chưa nên coi là production-grade hoàn chỉnh.
 
 ---
 
@@ -55,7 +63,7 @@ PM Agent hiện ở **giai đoạn hoàn thiện và đánh giá sau lần kiể
 Đây là **project test / project validation** dùng để chứng minh PM Agent có thể quản lý một dự án thực tế.
 
 ### Giai đoạn hiện tại của Web Bán Hàng
-**Late execution / demo-ready stabilization**
+**On hold / demo-ready reference**
 
 ### Tiến độ task của Web Bán Hàng
 - **Tổng task theo WBS:** 33
@@ -74,7 +82,7 @@ Dù task board mới đạt khoảng 58%, nhưng các phần cốt lõi phục v
 
 ### Kết luận ngắn
 Web Bán Hàng hiện ở trạng thái:
-> **demo-ready, nhưng chưa production-ready**
+> **on-hold, demo-ready reference; không còn là active delivery project**
 
 ---
 
@@ -97,4 +105,4 @@ Web Bán Hàng hiện ở trạng thái:
 > PM Agent đang ở giai đoạn đánh giá và hoàn thiện sau khi đã được kiểm chứng bằng dự án thực tế đầu tiên.
 
 ### Nếu hỏi: Web Bán Hàng đang ở đâu?
-> Web Bán Hàng đang ở trạng thái demo-ready, với task board khoảng 58% nhưng các chức năng cốt lõi đã đủ để trình bày.
+> Web Bán Hàng đang ở trạng thái on-hold, được giữ làm project validation/demo-ready reference thay vì active delivery project.

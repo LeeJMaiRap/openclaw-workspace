@@ -22,7 +22,7 @@
 - [~] Có daily reporting foundation (skill + sample output đã có, cron thật chưa bật)
 
 ## Quality & Governance
-- [~] Có eval scenarios thực tế ở mức nền (hiện có `scope-change`, `worker-failure`)
+- [~] Có eval scenarios thực tế ở mức nền (hiện có `scope-change`, `worker-failure`, `vague-requirement`, `missing-approval`, `false-done`, `stale-project`)
 - [x] Có regression test pack
 - [x] Có acceptance verification checklist
 - [x] Có stale-project detection rule
@@ -31,9 +31,9 @@
 ## Multi-project Scalability
 - [x] Có projects registry
 - [x] Có active projects dashboard
-- [ ] Có archived projects dashboard
-- [ ] Có portfolio dashboard
-- [ ] Có cross-project risk view
+- [x] Có archived projects dashboard
+- [x] Có portfolio dashboard
+- [x] Có cross-project risk view
 
 ## Readiness Notes
 - `[x]` = đã có và dùng được
@@ -42,10 +42,10 @@
 
 ## Current Gaps To Close
 1. Actor attribution mới có policy + artifact fields, chưa đủ mạnh ở mức auto-audit hoàn chỉnh.
-2. Daily reporting mới ở mức foundation; chưa có cron 19:00 thật và chưa có stopped/on-hold handling hoàn chỉnh.
-3. Regression/eval pack còn mỏng, chưa đủ bảo vệ chất lượng sau các đợt update lớn.
-4. Chưa có acceptance verification / stale-project detection / rollback playbook.
-5. Chưa có lớp nhìn xuyên nhiều project như archived dashboard / portfolio dashboard / cross-project risk view.
+2. Daily reporting mới ở mức foundation; chưa có cron 19:00 thật và chưa có notify/logging runtime hoàn chỉnh.
+3. Regression/eval pack đã có nền nhưng vẫn còn mỏng, chưa thành automated regression harness.
+4. Một số source-of-truth vẫn có conflict thật (ví dụ project metadata vs task-board) và mới dừng ở mức detect, chưa có reconciliation strategy.
+5. Portfolio layer đã có nền, nhưng vẫn còn ít project để kiểm chứng hành vi multi-project ở quy mô lớn.
 
 ## Overall Assessment
-**Current state:** Production-readiness foundation established and project governance baseline is now in place. PM Agent đủ tốt cho pilot/internal use có kiểm soát, nhưng vẫn cần thêm hardening trước khi coi là production-grade hoàn chỉnh.
+**Current state:** Production-readiness foundation, governance baseline, và multi-project visibility foundation đã được thiết lập. PM Agent đủ tốt cho pilot/internal use có kiểm soát, nhưng vẫn cần thêm hardening ở cron/runtime automation, actor audit depth, và regression automation trước khi coi là production-grade hoàn chỉnh.
