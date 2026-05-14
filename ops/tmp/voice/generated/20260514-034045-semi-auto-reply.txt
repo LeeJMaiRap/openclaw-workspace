@@ -1,7 +1,0 @@
-status=ok
-voice=vi-VN-HoaiMyNeural
-text=Anh ơi, em đã tạo xong voice reply test cho giai đoạn semi automatic.
-mp3=/root/.openclaw/workspace/tmp/voice/generated/20260514-034045-semi-auto-reply.mp3
-ogg=/root/.openclaw/workspace/tmp/voice/generated/20260514-034045-semi-auto-reply.ogg
-
-voice=vi-VN-HoaiMyNeural attempt=1 returncode=0 stderr= stdout=
