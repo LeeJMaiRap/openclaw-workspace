@@ -22,6 +22,8 @@ Low    |         |         |       |
 - **Trigger:** [When to activate]
 - **Action:** [Specific actions]
 - **Owner:** [Owner]
+- **Contingency plan:** [What to do if mitigation fails]
+- **Cost estimate:** [Effort/time if risk occurs]
 - **Status:** Open/Closed
 
 ### R-002: [Risk name]

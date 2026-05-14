@@ -93,13 +93,14 @@ Critical path là chuỗi task:
 - nếu trễ sẽ làm trễ toàn dự án
 - thường là chuỗi dài nhất
 
-### 5. Summary phải có thông tin hữu ích
+### 5. Summary phải có thông tin hữu ích và giải thích variance
 Summary cần:
 - total duration
 - start date
 - planned end date
 - buffer time (nếu có)
 - current forecast (nếu đang execution)
+- **variance explanation:** nếu forecast lệch planned, phải giải thích tại sao (+2 days do..., -1 day because...)
 
 ### 6. Dates phải realistic
 Không được đặt deadline phi thực tế. Nếu input có constraint về deadline nhưng không khả thi, phải ghi chú rõ.

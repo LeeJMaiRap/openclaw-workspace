@@ -28,3 +28,4 @@
 - **Planned end date:** [DATE/TIME]
 - **Buffer time:** [X days/hours]
 - **Current forecast:** [DATE/TIME]
+- **Variance:** [+/- X days] - [Explanation if variance exists]

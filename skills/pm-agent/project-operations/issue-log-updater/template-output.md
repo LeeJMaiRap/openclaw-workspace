@@ -9,7 +9,7 @@
 - **Reported date:** [DATE]
 - **Description:** [Detailed description]
 - **Impact:** [What's affected]
-- **Root cause:** [Analysis]
+- **Root cause:** [Analysis - use 5 Whys or Fishbone if possible]
 - **Resolution:** [How to fix / current plan]
 - **Assigned to:** [Owner]
 - **Target resolution:** [DATE]
@@ -36,6 +36,7 @@
 - **Resolved by:** [Who fixed]
 - **Resolved date:** [DATE]
 - **Resolution:** [How it was fixed]
+- **Prevention action:** [What to do to avoid repeating this issue]
 
 ## Issue Statistics
 - **Total issues:** [X]

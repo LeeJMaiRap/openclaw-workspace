@@ -45,5 +45,14 @@
 
 ## Next Actions
 1. [Action 1]
+   - **Owner:** [Person/Role]
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Deadline:** [DATE or ASAP]
 2. [Action 2]
+   - **Owner:** [Person/Role]
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Deadline:** [DATE or ASAP]
 3. [Action 3]
+   - **Owner:** [Person/Role]
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Deadline:** [DATE or ASAP]

@@ -35,5 +35,11 @@
 
 ## Action Items
 - [ ] [Action item 1]
+  - **Owner:** [Person/Role]
+  - **Deadline:** [DATE]
 - [ ] [Action item 2]
+  - **Owner:** [Person/Role]
+  - **Deadline:** [DATE]
 - [ ] [Action item 3]
+  - **Owner:** [Person/Role]
+  - **Deadline:** [DATE]

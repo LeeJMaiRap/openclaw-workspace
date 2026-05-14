@@ -83,16 +83,18 @@ Chỉ dùng 3 mức:
 - 🟡 At Risk
 - 🔴 Off Track
 
-Đánh giá phải dựa trên timeline, blockers, risk score, scope completion và issue severity — không được tô hồng tình hình.
+Đánh giá phải dựa trên timeline, blockers, risk score, scope completion và issue severity - không được tô hồng tình hình.
 
-### 3. Key metrics phải có căn cứ
+### 3. Key metrics phải có căn cứ và giải thích
 Nếu có dữ liệu thì dùng metrics như:
-- SPI
-- CPI
+- SPI (Schedule Performance Index)
+- CPI (Cost Performance Index)
 - Scope Completion
 - Defect rate
 
-Nếu chưa đủ dữ liệu tính chính xác, có thể dùng metric gần đúng nhưng phải nhất quán và không giả vờ “chính xác tuyệt đối”.
+**Quan trọng:** Nếu dùng SPI/CPI, phải giải thích công thức hoặc nghĩa của chúng ở cuối dashboard (hoặc trong reference file).
+
+Nếu chưa đủ dữ liệu tính chính xác, có thể dùng metric gần đúng nhưng phải nhất quán và không giả vờ "chính xác tuyệt đối".
 
 ### 4. Timeline / Budget / Scope phải tách riêng
 Ba phần này phải được trình bày độc lập để tránh đánh giá mơ hồ:
@@ -103,13 +105,33 @@ Ba phần này phải được trình bày độc lập để tránh đánh giá
 ### 5. Top risks và top issues phải được chọn lọc
 Chỉ đưa ra những risk/issue quan trọng nhất, thường là top 2-3 mục có ảnh hưởng lớn nhất.
 
-### 6. Recommended actions phải cụ thể
-Recommended actions phải là việc có thể hành động ngay, ví dụ:
-- gỡ blocker nào trước
-- chốt thay đổi nào trước
-- ưu tiên milestone nào
+### 6. Recommended actions phải cụ thể và có owner/deadline
+Recommended actions phải là việc có thể hành động ngay.
 
-Không viết kiểu chung chung như “tiếp tục cố gắng”.
+**Mỗi action phải có:**
+- **Owner:** ai chịu trách nhiệm thực hiện
+- **Deadline:** khi nào cần hoàn thành
+- **Priority:** (nếu có nhiều actions)
+
+Ví dụ action tốt:
+```
+1. Chốt API contract cho task list trong 24 giờ để gỡ blocker TASK-003
+   - Owner: Backend dev
+   - Deadline: 2026-05-17
+   - Priority: Critical
+
+2. Không mở rộng thêm dashboard ngoài mức cơ bản của MVP
+   - Owner: PM Agent
+   - Deadline: Ongoing
+   - Priority: High
+```
+
+Ví dụ action không tốt (quá chung chung, thiếu owner/deadline):
+```
+❌ Tiếp tục cố gắng
+❌ Theo dõi tiến độ
+❌ Cải thiện chất lượng
+```
 
 ### 7. Dashboard phải có dấu mốc thời gian
 Nên có phần `Last Updated` hoặc reporting date để biết dashboard này còn mới hay đã cũ.
@@ -154,17 +176,18 @@ File này là bản snapshot sức khỏe dự án ở thời điểm báo cáo.
 Một status dashboard tốt khi:
 - nhìn nhanh là hiểu sức khỏe dự án
 - số liệu không mâu thuẫn nhau
+- **metrics có giải thích (SPI/CPI là gì, tính thế nào)**
 - top risks/issues thật sự đáng quan tâm
-- recommended actions hữu ích, không chung chung
+- **recommended actions hữu ích, có owner và deadline**
 - có thể dùng để báo cáo nhanh cho owner
 
 ## Lỗi thường gặp cần tránh
 
 - dashboard quá dài và lặp lại log chi tiết
 - overall status không khớp dữ liệu thực tế
-- metrics thiếu căn cứ
+- **metrics thiếu căn cứ hoặc không giải thích (SPI/CPI xuất hiện mà không nói là gì)**
 - risks/issues chọn không đúng trọng tâm
-- actions quá mơ hồ
+- **actions quá mơ hồ, thiếu owner và deadline**
 - không có timestamp cập nhật
 
 ## Cách dùng ngắn gọn
@@ -181,6 +204,15 @@ Một status dashboard tốt khi:
 ## Tài nguyên đi kèm
 
 - `template-output.md` - mẫu đầu ra chuẩn
+- `references/recommended-actions-guide.md` - hướng dẫn viết recommended actions hiệu quả
+- `references/metrics-notes-guide.md` - hướng dẫn giải thích metrics (SPI/CPI/etc.)
 - `examples/` - ví dụ status dashboard thực tế
 - Tham khảo: `docs/pm-agent/TEMPLATES/status-dashboard-template.md`
 - Tham khảo: `projects/web-ban-hang/04-monitoring/status-dashboard.md`
+
+## Khi nào nên đọc thêm tài liệu tham chiếu
+
+- Nếu cần viết recommended actions: đọc `references/recommended-actions-guide.md`
+- Nếu dùng SPI/CPI hoặc metrics khác: đọc `references/metrics-notes-guide.md`
+- Nếu đang phân vân action nào nên đề xuất: đọc `references/recommended-actions-guide.md`
+- Nếu không chắc có nên dùng SPI/CPI hay không: đọc `references/metrics-notes-guide.md`

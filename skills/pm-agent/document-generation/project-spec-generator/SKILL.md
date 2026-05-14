@@ -49,15 +49,17 @@ Không dùng skill này khi:
 
 ## Output
 
-Output là file `spec.md` theo cấu trúc chuẩn với 5-7 phần:
+Output là file `spec.md` theo cấu trúc chuẩn với 6-9 phần:
 
 1. **Overview**
 2. **Architecture**
-3. **Features**
-4. **Technical Stack**
-5. **Quality Standards**
-6. **Data Requirements** (tùy chọn)
-7. **MVP Scope Confirmation** (tùy chọn)
+3. **API Specification** (bắt buộc cho backend/API projects)
+4. **Data Model** (bắt buộc nếu có database)
+5. **Features**
+6. **Technical Stack**
+7. **Quality Standards**
+8. **Data Requirements** (tùy chọn)
+9. **MVP Scope Confirmation** (tùy chọn)
 
 ## Format output chuẩn
 
@@ -73,6 +75,77 @@ Architecture cần bao gồm:
 - **Data Architecture:** entities, relationships, storage
 
 Nếu có thể, nên có diagram đơn giản (ASCII art hoặc mô tả text).
+
+### 1a. API Specification phải chi tiết (bắt buộc cho backend/API projects)
+API Specification cần bao gồm:
+- **Endpoint list:** method + path cho mỗi API
+- **Request schema:** parameters, body, headers
+- **Response schema:** success response + error response
+- **Status codes:** 200, 201, 400, 401, 404, 500...
+- **Authentication requirements:** endpoints nào cần auth
+
+Ví dụ format:
+```
+### POST /api/tasks
+- **Description:** Tạo task mới
+- **Auth required:** Yes (JWT)
+- **Request body:**
+  ```json
+  {
+    "title": "string (required)",
+    "description": "string (optional)",
+    "ownerId": "string (required)",
+    "deadline": "ISO date (optional)"
+  }
+  ```
+- **Success response (201):**
+  ```json
+  {
+    "id": "task-123",
+    "title": "...",
+    "status": "todo",
+    "createdAt": "2026-05-14T00:00:00Z"
+  }
+  ```
+- **Error responses:**
+  - 400: Invalid input
+  - 401: Unauthorized
+```
+
+**Tại sao quan trọng:** API contract rõ ràng giúp frontend và backend làm việc song song mà không bị block.
+
+### 1b. Data Model phải có schema chi tiết (bắt buộc nếu có database)
+Data Model cần bao gồm:
+- **Entity name**
+- **Fields với type và constraints:**
+  - field name
+  - data type (string, number, boolean, date...)
+  - constraints (required, unique, min/max length...)
+  - default value (nếu có)
+- **Relationships:** one-to-one, one-to-many, many-to-many
+- **Indexes:** fields nào cần index để tối ưu query
+
+Ví dụ format:
+```
+#### User
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | ObjectId/UUID | Primary key, auto-generated | Unique identifier |
+| email | String | Required, unique, email format | User email |
+| password | String | Required, min 8 chars, hashed | Hashed password |
+| name | String | Required | User full name |
+| role | Enum | Required, default: 'customer' | customer/admin |
+| createdAt | Date | Auto-generated | Account creation time |
+
+**Relationships:**
+- User has many Orders (one-to-many)
+
+**Indexes:**
+- email (unique)
+- role
+```
+
+**Tại sao quan trọng:** Schema rõ ràng giúp tránh rework khi phát hiện thiếu field hoặc constraint.
 
 ### 2. Mỗi feature phải có 4 phần
 Mỗi feature cần mô tả:
@@ -98,11 +171,15 @@ Nếu dự án có phạm vi MVP, phải liệt kê rõ:
 - ✅ Included in MVP
 - ❌ Not included in MVP
 
-### 6. Data model phải đầy đủ entities
-Nếu có phần data requirements, phải liệt kê:
-- các entities chính
-- fields quan trọng
-- relationships giữa các entities
+### 6. Data model phải đầy đủ entities và chi tiết
+Data Model (section riêng, không phải Data Requirements) phải có:
+- **Tất cả entities** trong hệ thống
+- **Mỗi entity phải có bảng fields** với type, constraints, description
+- **Relationships** giữa các entities (one-to-one, one-to-many, many-to-many)
+- **Indexes** cần thiết cho performance
+- **Sample data structure** nếu cần minh họa
+
+Data Requirements (section khác) chỉ dùng cho yêu cầu về dữ liệu mẫu, migration, hoặc data source.
 
 ### 7. Spec phải technical nhưng vẫn dễ hiểu
 Spec không phải code, nhưng phải đủ chi tiết để developer hiểu và triển khai.
@@ -112,11 +189,14 @@ Spec không phải code, nhưng phải đủ chi tiết để developer hiểu v
 Khi đọc đầu vào, rà theo các câu hỏi ngầm sau:
 - Kiến trúc hệ thống như thế nào? (client-server, microservices, monolith?)
 - Các components chính là gì?
-- Data model có những entities nào?
+- **API endpoints nào cần có?** (method, path, request/response schema)
+- **Data model có những entities nào?** (fields, types, constraints, relationships, indexes)
 - Mỗi feature triển khai như thế nào về mặt kỹ thuật?
 - Technical stack nào phù hợp với yêu cầu?
 - Quality standards nào cần đặt ra?
 - Phạm vi MVP bao gồm những gì?
+- **API contract giữa frontend và backend rõ chưa?**
+- **Database schema đã đủ chi tiết để implement chưa?**
 
 ## Liên hệ với workflow PM
 
@@ -144,15 +224,21 @@ File này là cơ sở kỹ thuật cho toàn bộ implementation.
 
 Một spec tốt khi:
 - kiến trúc hệ thống rõ ràng, dễ hình dung
+- **API specification đầy đủ:** mỗi endpoint có method, path, request/response schema, status codes
+- **Data model chi tiết:** mỗi entity có bảng fields với type, constraints, relationships, indexes
 - mỗi feature có đủ 4 phần (description, user flow, technical approach, dependencies)
 - technical stack cụ thể, không mơ hồ
 - quality standards đo lường được
+- **frontend và backend có thể làm song song mà không bị block do thiếu contract**
 - developer đọc xong có thể bắt đầu code
 - phạm vi MVP được xác định rõ ràng
 
 ## Lỗi thường gặp cần tránh
 
 - kiến trúc quá chung chung, không cụ thể
+- **thiếu API specification hoặc API spec không đủ chi tiết** (chỉ liệt kê endpoint mà không có request/response schema)
+- **thiếu data model hoặc data model không có type/constraints** (chỉ liệt kê field name mà không có type, required, unique...)
+- **API contract không rõ ràng khiến frontend bị block** (response schema thay đổi, thiếu field, status code không nhất quán)
 - feature thiếu user flow hoặc technical approach
 - technical stack không rõ ràng
 - quality standards quá mơ hồ
@@ -173,6 +259,16 @@ Một spec tốt khi:
 ## Tài nguyên đi kèm
 
 - `template-output.md` - mẫu đầu ra chuẩn
+- `references/api-spec-guide.md` - hướng dẫn viết API specification chi tiết
+- `references/data-model-guide.md` - hướng dẫn viết data model chi tiết
 - `examples/` - ví dụ spec thực tế
 - Tham khảo: `docs/pm-agent/TEMPLATES/spec-template.md`
 - Tham khảo: `projects/web-ban-hang/02-planning/spec.md`
+
+## Khi nào nên đọc thêm tài liệu tham chiếu
+
+- Nếu dự án có backend/API: đọc `references/api-spec-guide.md`
+- Nếu dự án có database: đọc `references/data-model-guide.md`
+- Nếu đang phân vân mức độ chi tiết của API contract: đọc `references/api-spec-guide.md`
+- Nếu đang phân vân cách mô tả field/type/constraint/index: đọc `references/data-model-guide.md`
+- Nếu cần ví dụ spec thực tế: xem `examples/` hoặc `projects/web-ban-hang/02-planning/spec.md`

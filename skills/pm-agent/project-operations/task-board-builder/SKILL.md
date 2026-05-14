@@ -110,6 +110,15 @@ Summary nên có:
 - completion % hoặc on-time % nếu đủ dữ liệu
 - current phase nếu xác định được
 
+### 8. Next Actions phải có owner và ưu tiên
+Nếu có phần Next Actions, mỗi action nên có:
+- action cụ thể
+- owner
+- priority
+- deadline (nếu biết)
+
+Không viết kiểu quá chung chung như “tiếp tục làm tiếp”.
+
 ## Heuristic gợi ý khi phân tích
 
 Khi đọc đầu vào, rà theo các câu hỏi ngầm sau:
@@ -153,6 +162,7 @@ Một task board tốt khi:
 - blocked tasks có thông tin để xử lý
 - summary giúp PM ra quyết định nhanh
 - next actions ngắn gọn, hữu ích
+- next actions có owner/priority rõ ràng
 
 ## Lỗi thường gặp cần tránh
 
@@ -161,6 +171,7 @@ Một task board tốt khi:
 - blocked nhưng không ghi blocker
 - done nhưng không có completed date
 - summary sai số lượng
+- next actions quá chung chung, thiếu owner/priority
 - task board chỉ là bản sao của WBS mà không phản ánh execution thật
 
 ## Cách dùng ngắn gọn

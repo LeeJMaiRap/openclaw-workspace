@@ -45,9 +45,28 @@
 - [Vấn đề mơ hồ 3]
 
 ## 6. Câu hỏi cần xác nhận
+
 1. [Câu hỏi quan trọng 1]?
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Context:** [Tại sao câu hỏi này quan trọng]
+   - **Options:**
+     - A. [Lựa chọn 1]
+     - B. [Lựa chọn 2]
+     - C. [Lựa chọn 3]
+
 2. [Câu hỏi quan trọng 2]?
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Context:** [Tại sao câu hỏi này quan trọng]
+   - **Options:**
+     - A. [Lựa chọn 1]
+     - B. [Lựa chọn 2]
+
 3. [Câu hỏi quan trọng 3]?
+   - **Priority:** [Critical/High/Medium/Low]
+   - **Context:** [Tại sao câu hỏi này quan trọng]
+   - **Options:**
+     - A. [Lựa chọn 1]
+     - B. [Lựa chọn 2]
 
 ## 7. Đề xuất bước tiếp theo
 - [Bước tiếp theo 1]

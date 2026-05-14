@@ -95,11 +95,14 @@ Issue đang mở nên có tối thiểu:
 - assigned to
 - target resolution
 
-### 5. Root cause và resolution phải thực tế
+### 5. Root cause và resolution phải thực tế và sâu hơn
 - **Root cause:** nguyên nhân thật hoặc phân tích sơ bộ hợp lý
+  - Nên dùng 5 Whys hoặc Fishbone nếu có thể
+  - Không chỉ ghi 1 câu chung chung
 - **Resolution:** hướng sửa hoặc cách khắc phục cụ thể
+- **Prevention action:** làm gì để không lặp lại (cho resolved issues)
 
-Không ghi kiểu quá mơ hồ như “sẽ kiểm tra sau” nếu có thể mô tả rõ hơn.
+Không ghi kiểu quá mơ hồ như "sẽ kiểm tra sau" nếu có thể mô tả rõ hơn.
 
 ### 6. Issue đã giải quyết phải giữ lịch sử ngắn gọn
 Resolved issue nên ghi:

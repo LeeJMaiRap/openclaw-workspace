@@ -55,8 +55,23 @@
 
 ## Recommended Actions
 1. [ACTION_1]
+   - **Owner:** [Person/Role responsible]
+   - **Deadline:** [DATE / Ongoing]
+   - **Priority:** [Critical/High/Medium/Low]
+
 2. [ACTION_2]
+   - **Owner:** [Person/Role responsible]
+   - **Deadline:** [DATE / Ongoing]
+   - **Priority:** [Critical/High/Medium/Low]
+
 3. [ACTION_3]
+   - **Owner:** [Person/Role responsible]
+   - **Deadline:** [DATE / Ongoing]
+   - **Priority:** [Critical/High/Medium/Low]
+
+## Metrics Notes (nếu cần)
+- **SPI:** [Giải thích ngắn hoặc công thức]
+- **CPI:** [Giải thích ngắn hoặc công thức]
 
 ## Last Updated
 [DATE/TIME]

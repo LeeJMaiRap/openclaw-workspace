@@ -16,18 +16,60 @@
 - **Integrations:** [Mô tả nếu có]
 
 ### Data Architecture
-#### Entities
-1. **[Entity 1]**
-   - [field_1]
-   - [field_2]
-   - [field_3]
+- [Tóm tắt entities, relationships, storage]
 
-2. **[Entity 2]**
-   - [field_1]
-   - [field_2]
-   - [field_3]
+## 3. API Specification
 
-## 3. Features
+### [METHOD] /api/[resource]
+- **Description:** [Mô tả endpoint]
+- **Auth required:** [Yes/No + loại auth]
+- **Request parameters:** [Query/path params nếu có]
+- **Request body:**
+  ```json
+  {
+    "field": "type/constraint"
+  }
+  ```
+- **Success response ([200/201]):**
+  ```json
+  {
+    "field": "value/example"
+  }
+  ```
+- **Error responses:**
+  - 400: [Invalid input]
+  - 401: [Unauthorized]
+  - 404: [Not found]
+
+## 4. Data Model
+
+### Entity: [Entity 1]
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | [UUID/ObjectId] | Primary key | Unique identifier |
+| [field_1] | [String/Number/Date] | [Required/Unique/etc.] | [Mô tả] |
+| [field_2] | [String/Number/Date] | [Optional/etc.] | [Mô tả] |
+
+**Relationships:**
+- [Entity 1] has many [Entity 2]
+
+**Indexes:**
+- [field_1]
+- [field_2] (unique)
+
+### Entity: [Entity 2]
+| Field | Type | Constraints | Description |
+|-------|------|-------------|-------------|
+| id | [UUID/ObjectId] | Primary key | Unique identifier |
+| [field_1] | [String/Number/Date] | [Required/Unique/etc.] | [Mô tả] |
+
+**Relationships:**
+- [Entity 2] belongs to [Entity 1]
+
+**Indexes:**
+- [field_1]
+
+## 5. Features
 
 ### Feature 1: [Tên feature]
 - **Description:** [Mô tả]
@@ -47,7 +89,7 @@
 - **Technical Approach:** [Cách triển khai kỹ thuật]
 - **Dependencies:** [Phụ thuộc]
 
-## 4. Technical Stack
+## 6. Technical Stack
 
 ### Frontend
 - **Framework:** [React/Vue/...] 
@@ -70,7 +112,7 @@
 - **Build Tool:** [Vite/Webpack/...]
 - **Version Control:** Git
 
-## 5. Quality Standards
+## 7. Quality Standards
 
 ### Code Quality
 - [Tiêu chuẩn 1]
@@ -85,11 +127,11 @@
 - [Yêu cầu doc 1]
 - [Yêu cầu doc 2]
 
-## 6. Data Requirements (nếu cần)
+## 8. Data Requirements (nếu cần)
 - [Yêu cầu dữ liệu 1]
 - [Yêu cầu dữ liệu 2]
 
-## 7. MVP Scope Confirmation (nếu cần)
+## 9. MVP Scope Confirmation (nếu cần)
 
 ### Included in MVP
 ✅ [Nội dung 1]

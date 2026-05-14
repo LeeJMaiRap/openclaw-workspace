@@ -80,12 +80,14 @@ Score = Probability × Impact (theo thang điểm)
 - Low/High = 3
 - Low/Low = 1
 
-### 4. Mitigation plan phải actionable
+### 4. Mitigation plan phải actionable và có contingency
 Mỗi mitigation plan phải có:
 - **Plan:** chiến lược giảm thiểu
 - **Trigger:** khi nào kích hoạt
 - **Action:** hành động cụ thể
 - **Owner:** người chịu trách nhiệm
+- **Contingency plan:** nếu mitigation fail thì làm gì
+- **Cost estimate:** nếu risk xảy ra thì mất bao nhiêu effort/time
 
 ### 5. Risk matrix phải trực quan
 Risk matrix dạng ASCII art phải:

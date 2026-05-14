@@ -106,12 +106,20 @@ Nên chỉ rõ:
 - dự án liên quan
 - repo / thư mục bài học nếu có
 
-### 7. Action items phải chuyển bài học thành việc cụ thể
+### 7. Action items phải chuyển bài học thành việc cụ thể với owner và deadline
 Ví dụ:
-- cập nhật template
-- thêm checklist test
-- sửa skill instruction
-- tài liệu hóa pattern tái sử dụng
+- Cập nhật template X
+  - Owner: PM Agent
+  - Deadline: 2026-05-20
+- Thêm checklist test Y
+  - Owner: QA lead
+  - Deadline: 2026-05-18
+- Sửa skill instruction Z
+  - Owner: PM Agent
+  - Deadline: 2026-05-25
+- Tài liệu hóa pattern tái sử dụng
+  - Owner: Tech lead
+  - Deadline: End of phase
 
 ## Heuristic gợi ý khi phân tích
 

@@ -101,11 +101,15 @@ Ví dụ xấu:
 - "Backend"
 - "Làm giao diện"
 
-### 4. Effort estimation phải tương đối hợp lý
+### 4. Effort estimation phải tương đối hợp lý và breakdown task lớn
 Effort không cần chính xác tuyệt đối, nhưng phải:
 - phản ánh độ phức tạp tương đối
 - có đơn vị rõ ràng (giờ, ngày)
 - không quá lệch so với thực tế
+- **Nếu task > 16h, nên gợi ý breakdown thành subtask**
+
+Ví dụ:
+- TASK-002: 20h → nên chia thành TASK-002a (8h), TASK-002b (12h)
 
 ### 5. Dependencies phải chính xác
 Dependencies phải:
