@@ -59,7 +59,7 @@ Output là file `change-log.md` với 2 phần chính:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/change-log-template.md`.
+Output phải bám theo `systems/pm-agent/templates/change-log-template.md`.
 
 ## Quy tắc xử lý
 
@@ -179,5 +179,5 @@ Một change log tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ change log thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/change-log-template.md`
-- Tham khảo: `projects/web-ban-hang/03-execution/change-log.md`
+- Tham khảo: `systems/pm-agent/templates/change-log-template.md`
+- Tham khảo: `projects/active/web-ban-hang/03-execution/change-log.md`

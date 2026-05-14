@@ -8,8 +8,8 @@ import subprocess
 import sys
 from typing import Tuple
 
-DEFAULT_STT_SCRIPT = pathlib.Path('/root/.openclaw/workspace/scripts/voice/voice_to_text.py')
-DEFAULT_TRANSCRIPT_DIR = pathlib.Path('/root/.openclaw/workspace/tmp/voice/transcripts')
+DEFAULT_STT_SCRIPT = pathlib.Path('/root/.openclaw/workspace/ops/scripts/voice/voice_to_text.py')
+DEFAULT_TRANSCRIPT_DIR = pathlib.Path('/root/.openclaw/workspace/ops/tmp/voice/transcripts')
 
 
 def build_parser() -> argparse.ArgumentParser:

@@ -69,7 +69,7 @@ Output là file `charter.md` theo cấu trúc chuẩn với 9 phần:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải tuân thủ template có sẵn trong `docs/pm-agent/TEMPLATES/charter-template.md`.
+Output phải tuân thủ template có sẵn trong `systems/pm-agent/templates/charter-template.md`.
 
 ## Quy tắc xử lý
 
@@ -192,5 +192,5 @@ Một charter tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ charter thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/charter-template.md`
-- Tham khảo: `projects/web-ban-hang/01-initiation/charter.md`
+- Tham khảo: `systems/pm-agent/templates/charter-template.md`
+- Tham khảo: `projects/active/web-ban-hang/01-initiation/charter.md`

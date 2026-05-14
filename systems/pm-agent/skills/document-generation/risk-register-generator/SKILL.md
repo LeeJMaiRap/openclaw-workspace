@@ -58,7 +58,7 @@ Output là file `risk-register.md` với 4 phần chính:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/risk-register-template.md`.
+Output phải bám theo `systems/pm-agent/templates/risk-register-template.md`.
 
 ## Quy tắc xử lý
 
@@ -177,5 +177,5 @@ Một risk register tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ risk register thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/risk-register-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/risk-register.md`
+- Tham khảo: `systems/pm-agent/templates/risk-register-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/risk-register.md`

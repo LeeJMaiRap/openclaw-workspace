@@ -34,7 +34,7 @@ Workflow này phải hỗ trợ cả 2 chiều:
 ## 2. Cấu trúc thư mục runtime
 
 ```text
-/root/.openclaw/workspace/tmp/voice/
+/root/.openclaw/workspace/ops/tmp/voice/
 ├── incoming/      # audio anh gửi vào
 ├── generated/     # audio em tạo ra để gửi lại
 └── transcripts/   # transcript STT và file trung gian liên quan

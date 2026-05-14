@@ -68,7 +68,7 @@ Có thể bổ sung:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/task-board-template.md`.
+Output phải bám theo `systems/pm-agent/templates/task-board-template.md`.
 
 ## Quy tắc xử lý
 
@@ -187,5 +187,5 @@ Một task board tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ task board thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/task-board-template.md`
-- Tham khảo: `projects/web-ban-hang/03-execution/task-board.md`
+- Tham khảo: `systems/pm-agent/templates/task-board-template.md`
+- Tham khảo: `projects/active/web-ban-hang/03-execution/task-board.md`

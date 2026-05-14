@@ -63,7 +63,7 @@ User Request → Analyze → Charter → Planning → Task Board → Execute →
 
 ### Bước 1: Load System Prompt
 ```
-Đọc file docs/pm-agent/SYSTEM-PROMPT.md
+Đọc file systems/pm-agent/architecture/SYSTEM-PROMPT.md
 ```
 
 ### Bước 2: Gửi yêu cầu dự án

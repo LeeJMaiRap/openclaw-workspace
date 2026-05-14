@@ -8,7 +8,7 @@ import subprocess
 import time
 
 DEFAULT_VENV = pathlib.Path('/root/.openclaw/workspace/.venvs/voice-stack')
-DEFAULT_OUTPUT_DIR = pathlib.Path('/root/.openclaw/workspace/tmp/voice/generated')
+DEFAULT_OUTPUT_DIR = pathlib.Path('/root/.openclaw/workspace/ops/tmp/voice/generated')
 DEFAULT_VOICE = 'vi-VN-HoaiMyNeural'
 FALLBACK_VOICES = ['vi-VN-HoaiMyNeural', 'vi-VN-NamMinhNeural']
 

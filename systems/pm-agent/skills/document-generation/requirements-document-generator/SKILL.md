@@ -61,7 +61,7 @@ Output là file `requirements.md` theo cấu trúc chuẩn với 5 phần:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải tuân thủ template có sẵn trong `docs/pm-agent/TEMPLATES/requirements-template.md`.
+Output phải tuân thủ template có sẵn trong `systems/pm-agent/templates/requirements-template.md`.
 
 ## Quy tắc xử lý
 
@@ -189,5 +189,5 @@ Một requirements document tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ requirements document thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/requirements-template.md`
-- Tham khảo: `projects/web-ban-hang/01-initiation/requirements.md`
+- Tham khảo: `systems/pm-agent/templates/requirements-template.md`
+- Tham khảo: `projects/active/web-ban-hang/01-initiation/requirements.md`

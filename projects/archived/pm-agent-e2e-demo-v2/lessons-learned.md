@@ -28,9 +28,9 @@
 - **Team satisfaction:** Chưa có dữ liệu đáng tin cậy
 
 ## Knowledge Transfer
-- **Documentation location:** `projects/pm-agent-e2e-demo-v2/`
+- **Documentation location:** `projects/archived/pm-agent-e2e-demo-v2/`
 - **Key contacts:** Owner, PM Agent, Backend dev, Frontend dev, Tester part-time
-- **Related projects:** `projects/web-ban-hang/`
+- **Related projects:** `projects/active/web-ban-hang/`
 - **Lessons learned repository:** `projects/pm-agent-e2e-demo-v2/lessons-learned.md`
 
 ## Action Items

@@ -70,7 +70,7 @@ Mỗi task phải có:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/wbs-template.md`.
+Output phải bám theo `systems/pm-agent/templates/wbs-template.md`.
 
 ## Quy tắc xử lý
 
@@ -196,5 +196,5 @@ Một WBS tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ WBS thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/wbs-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/wbs.md`
+- Tham khảo: `systems/pm-agent/templates/wbs-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/wbs.md`

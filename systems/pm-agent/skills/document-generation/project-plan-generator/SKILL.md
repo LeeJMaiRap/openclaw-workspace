@@ -64,7 +64,7 @@ Output là file `plan.md` theo cấu trúc chuẩn với 7 phần:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám sát template trong `docs/pm-agent/TEMPLATES/plan-template.md`, và có thể bổ sung phần `Risk Mitigation` / `Success Criteria` khi đầu vào đủ dữ liệu.
+Output phải bám sát template trong `systems/pm-agent/templates/plan-template.md`, và có thể bổ sung phần `Risk Mitigation` / `Success Criteria` khi đầu vào đủ dữ liệu.
 
 ## Quy tắc xử lý
 
@@ -185,5 +185,5 @@ Một project plan tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ project plan thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/plan-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/plan.md`
+- Tham khảo: `systems/pm-agent/templates/plan-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/plan.md`

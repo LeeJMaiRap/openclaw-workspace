@@ -69,7 +69,7 @@ Tùy dự án có thể bổ sung:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/rules-template.md`, và được phép mở rộng khi dự án cần rule cụ thể hơn.
+Output phải bám theo `systems/pm-agent/templates/rules-template.md`, và được phép mở rộng khi dự án cần rule cụ thể hơn.
 
 ## Quy tắc xử lý
 
@@ -182,5 +182,5 @@ Một rules document tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ rules thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/rules-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/rules.md`
+- Tham khảo: `systems/pm-agent/templates/rules-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/rules.md`

@@ -65,7 +65,7 @@ Output là file `spec.md` theo cấu trúc chuẩn với 6-9 phần:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải tuân thủ template có sẵn trong `docs/pm-agent/TEMPLATES/spec-template.md`.
+Output phải tuân thủ template có sẵn trong `systems/pm-agent/templates/spec-template.md`.
 
 ## Quy tắc xử lý
 
@@ -262,8 +262,8 @@ Một spec tốt khi:
 - `references/api-spec-guide.md` - hướng dẫn viết API specification chi tiết
 - `references/data-model-guide.md` - hướng dẫn viết data model chi tiết
 - `examples/` - ví dụ spec thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/spec-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/spec.md`
+- Tham khảo: `systems/pm-agent/templates/spec-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/spec.md`
 
 ## Khi nào nên đọc thêm tài liệu tham chiếu
 
@@ -271,4 +271,4 @@ Một spec tốt khi:
 - Nếu dự án có database: đọc `references/data-model-guide.md`
 - Nếu đang phân vân mức độ chi tiết của API contract: đọc `references/api-spec-guide.md`
 - Nếu đang phân vân cách mô tả field/type/constraint/index: đọc `references/data-model-guide.md`
-- Nếu cần ví dụ spec thực tế: xem `examples/` hoặc `projects/web-ban-hang/02-planning/spec.md`
+- Nếu cần ví dụ spec thực tế: xem `examples/` hoặc `projects/active/web-ban-hang/02-planning/spec.md`

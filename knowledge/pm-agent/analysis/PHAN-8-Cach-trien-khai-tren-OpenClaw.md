@@ -55,13 +55,13 @@ workspace/
 ## Bước 1: Tạo System Prompt cho PM Agent
 
 Cần tạo file:
-`docs/pm-agent/SYSTEM-PROMPT.md`
+`systems/pm-agent/architecture/SYSTEM-PROMPT.md`
 
 Nội dung là system prompt định nghĩa vai trò, trách nhiệm, nguyên tắc, workflow.
 
 ## Bước 2: Tạo các template
 
-Cần tạo các file template trong `docs/pm-agent/TEMPLATES/`:
+Cần tạo các file template trong `systems/pm-agent/templates/`:
 - charter-template.md
 - requirements-template.md
 - spec-template.md
@@ -79,7 +79,7 @@ Cần tạo các file template trong `docs/pm-agent/TEMPLATES/`:
 
 ## Bước 3: Tạo README hướng dẫn
 
-Tạo file `docs/pm-agent/README.md` mô tả:
+Tạo file `systems/pm-agent/README.md` mô tả:
 - PM Agent là gì
 - Cách khởi động
 - Cách sử dụng
@@ -88,7 +88,7 @@ Tạo file `docs/pm-agent/README.md` mô tả:
 
 ## Bước 4: Tạo Workflow tổng thể
 
-Tạo file `docs/pm-agent/WORKFLOW.md` mô tả:
+Tạo file `systems/pm-agent/architecture/WORKFLOW.md` mô tả:
 - Initiation
 - Planning
 - Execution

@@ -132,4 +132,4 @@ Done / Rework / Escalate / Continue
 2. **issue-log.md** - Add new issues, update issue status
 3. **change-log.md** - Add new changes, update change status
 4. **status-dashboard.md** - Update metrics, timeline, risk status
-5. **memory/observations/pm-projects.md** - Log project progress, key decisions
+5. **agent-core/memory/observations/pm-projects.md** - Log project progress, key decisions

@@ -52,7 +52,7 @@ Tạo file `projects/[project-name]/05-closure/lessons-learned.md` với:
 - Tất cả báo cáo
 
 ### Bước 6: Cập nhật memory
-Cập nhật `memory/observations/pm-projects.md`:
+Cập nhật `agent-core/memory/observations/pm-projects.md`:
 - Tên dự án
 - Kết quả
 - Bài học

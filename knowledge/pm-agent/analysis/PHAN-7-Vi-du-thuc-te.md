@@ -233,13 +233,13 @@ Build an example project workflow for the OpenClaw PM Agent.
 
 ## Input
 Read:
-- docs/pm-agent/.../charter.md
-- docs/pm-agent/.../plan.md
-- docs/pm-agent/.../rules.md
+- systems/pm-agent/charter.md
+- systems/pm-agent/plan.md
+- systems/pm-agent/rules.md
 
 ## Output
 Create:
-- docs/pm-agent/.../example-workflow.md
+- systems/pm-agent/example-workflow.md
 
 ## Requirements
 - Show end-to-end flow

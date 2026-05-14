@@ -65,7 +65,7 @@ Output là file `lessons-learned.md` với các phần chính:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/lessons-learned-template.md`.
+Output phải bám theo `systems/pm-agent/templates/lessons-learned-template.md`.
 
 ## Quy tắc xử lý
 
@@ -187,5 +187,5 @@ Một lessons learned document tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ lessons learned thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/lessons-learned-template.md`
-- Tham khảo: `projects/web-ban-hang/lessons-learned.md`
+- Tham khảo: `systems/pm-agent/templates/lessons-learned-template.md`
+- Tham khảo: `projects/active/web-ban-hang/lessons-learned.md`

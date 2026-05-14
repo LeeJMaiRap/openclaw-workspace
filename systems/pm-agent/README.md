@@ -16,15 +16,20 @@ PM Agent có khả năng:
 ## Cấu trúc thư mục
 
 ```text
-docs/pm-agent/
-├── SYSTEM-PROMPT.md
-├── WORKFLOW.md
-├── PROMPTS/
-├── TEMPLATES/
-├── EXAMPLES/
-└── README.md
+systems/pm-agent/
+├── architecture/
+│   ├── SYSTEM-PROMPT.md
+│   ├── WORKFLOW.md
+│   └── STORAGE-RULES.md
+├── prompts/
+├── templates/
+├── skills/
+├── runtime/
+├── eval/
+├── README.md
+└── STATUS.md
 
-projects/[project-name]/
+projects/active/[project-name]/
 ├── 01-initiation/
 ├── 02-planning/
 ├── 03-execution/
@@ -62,13 +67,13 @@ Hãy quản lý dự án: Xây dựng một PM Agent bằng OpenClaw.
 5. Closure
 
 ## Các file quan trọng
-- `SYSTEM-PROMPT.md` - vai trò và quy tắc của PM Agent
-- `WORKFLOW.md` - workflow tổng thể
-- `PROMPTS/` - prompt theo từng giai đoạn
-- `TEMPLATES/` - template tài liệu dự án
+- `architecture/SYSTEM-PROMPT.md` - vai trò và quy tắc của PM Agent
+- `architecture/WORKFLOW.md` - workflow tổng thể
+- `prompts/` - prompt theo từng giai đoạn
+- `templates/` - template tài liệu dự án
 
 ## Dự án mẫu
-Xem `EXAMPLES/example-project-workflow.md`
+Xem `knowledge/pm-agent/examples/example-project-workflow.md`
 
 ## Gợi ý MVP
 Phiên bản đầu tiên nên tập trung vào:

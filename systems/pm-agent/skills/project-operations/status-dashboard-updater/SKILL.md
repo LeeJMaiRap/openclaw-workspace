@@ -70,7 +70,7 @@ Có thể bổ sung:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/status-dashboard-template.md`.
+Output phải bám theo `systems/pm-agent/templates/status-dashboard-template.md`.
 
 ## Quy tắc xử lý
 
@@ -207,8 +207,8 @@ Một status dashboard tốt khi:
 - `references/recommended-actions-guide.md` - hướng dẫn viết recommended actions hiệu quả
 - `references/metrics-notes-guide.md` - hướng dẫn giải thích metrics (SPI/CPI/etc.)
 - `examples/` - ví dụ status dashboard thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/status-dashboard-template.md`
-- Tham khảo: `projects/web-ban-hang/04-monitoring/status-dashboard.md`
+- Tham khảo: `systems/pm-agent/templates/status-dashboard-template.md`
+- Tham khảo: `projects/active/web-ban-hang/04-monitoring/status-dashboard.md`
 
 ## Khi nào nên đọc thêm tài liệu tham chiếu
 

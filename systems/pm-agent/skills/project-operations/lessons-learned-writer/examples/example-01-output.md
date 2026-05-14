@@ -28,7 +28,7 @@
 - **Team satisfaction:** Chưa có dữ liệu
 
 ## Knowledge Transfer
-- **Documentation location:** `projects/[project-name]/` và `skills/pm-agent/`
+- **Documentation location:** `projects/[project-name]/` và `systems/pm-agent/skills/`
 - **Key contacts:** Owner, PM Agent, Developer A, Developer B
 - **Related projects:** Các dự án nội bộ dùng workflow PM Agent tương tự
 - **Lessons learned repository:** `projects/[project-name]/lessons-learned.md`

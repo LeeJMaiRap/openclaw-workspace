@@ -48,7 +48,7 @@ Nói về dự án PM Agent
 - Có thể dùng markdown-to-pdf
 - Anh Doanh muốn test với dự án thật
 - Deadline chưa chốt
-- Cần rà lại docs/pm-agent trước
+- Cần rà lại systems/pm-agent trước
 - Skill nào làm trước?
 - Có nên làm demo không?
 ```

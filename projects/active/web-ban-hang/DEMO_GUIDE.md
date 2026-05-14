@@ -4,7 +4,7 @@
 
 ### 1. Backend Setup
 ```bash
-cd projects/web-ban-hang/backend
+cd projects/active/web-ban-hang/backend
 
 # Copy .env từ .env.example
 cp .env.example .env
@@ -21,7 +21,7 @@ Server sẽ chạy tại `http://localhost:5000`
 
 ### 2. Frontend Setup
 ```bash
-cd projects/web-ban-hang/frontend
+cd projects/active/web-ban-hang/frontend
 
 # Copy .env từ .env.example
 cp .env.example .env
@@ -38,14 +38,14 @@ Frontend sẽ chạy tại `http://localhost:3000`
 
 ### Build Frontend
 ```bash
-cd projects/web-ban-hang/frontend
+cd projects/active/web-ban-hang/frontend
 npm run build
 ```
 Output: `dist/` folder (4.4 KB HTML + assets)
 
 ### Verify Backend
 ```bash
-cd projects/web-ban-hang/backend
+cd projects/active/web-ban-hang/backend
 node --check server.js
 ```
 
@@ -93,12 +93,12 @@ web-ban-hang/
 
 **Terminal 1 - Backend:**
 ```bash
-cd projects/web-ban-hang/backend && npm run dev
+cd projects/active/web-ban-hang/backend && npm run dev
 ```
 
 **Terminal 2 - Frontend:**
 ```bash
-cd projects/web-ban-hang/frontend && npm run dev
+cd projects/active/web-ban-hang/frontend && npm run dev
 ```
 
 Mở browser: `http://localhost:3000`

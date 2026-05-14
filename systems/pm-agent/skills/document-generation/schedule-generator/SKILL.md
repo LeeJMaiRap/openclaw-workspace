@@ -60,7 +60,7 @@ Output là file `schedule.md` với 4 phần chính:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/schedule-template.md`.
+Output phải bám theo `systems/pm-agent/templates/schedule-template.md`.
 
 ## Quy tắc xử lý
 
@@ -180,5 +180,5 @@ Một schedule tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ schedule thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/schedule-template.md`
-- Tham khảo: `projects/web-ban-hang/02-planning/schedule.md`
+- Tham khảo: `systems/pm-agent/templates/schedule-template.md`
+- Tham khảo: `projects/active/web-ban-hang/02-planning/schedule.md`

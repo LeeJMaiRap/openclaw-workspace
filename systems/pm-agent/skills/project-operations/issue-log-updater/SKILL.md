@@ -60,7 +60,7 @@ Output là file `issue-log.md` với 3 phần chính:
 
 Xem `template-output.md` để biết format đầy đủ.
 
-Output phải bám theo `docs/pm-agent/TEMPLATES/issue-log-template.md`.
+Output phải bám theo `systems/pm-agent/templates/issue-log-template.md`.
 
 ## Quy tắc xử lý
 
@@ -184,5 +184,5 @@ Một issue log tốt khi:
 
 - `template-output.md` - mẫu đầu ra chuẩn
 - `examples/` - ví dụ issue log thực tế
-- Tham khảo: `docs/pm-agent/TEMPLATES/issue-log-template.md`
-- Tham khảo: `projects/web-ban-hang/03-execution/issue-log.md`
+- Tham khảo: `systems/pm-agent/templates/issue-log-template.md`
+- Tham khảo: `projects/active/web-ban-hang/03-execution/issue-log.md`
