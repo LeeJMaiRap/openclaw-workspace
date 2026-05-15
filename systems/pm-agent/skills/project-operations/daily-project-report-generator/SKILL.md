@@ -39,10 +39,12 @@ Dùng cho project cụ thể.
 - `03-execution/change-log.md`
 - `03-execution/issue-log.md`
 - `04-monitoring/status-dashboard.md`
+- `05-closure/final-report.md`
 - `decisions/decision-log.md`
 - `approvals/`
 - `handoffs/`
-- git log trong thư mục project
+- git log trong thư mục project (bao gồm commits trong ngày report)
+- file evidence có tên hoặc mtime khớp ngày report
 
 Output mặc định:
 `projects/active/[project-name]/reports/daily/YYYY-MM-DD.md`
@@ -111,6 +113,8 @@ Vẫn có thể tạo report, nhưng ghi rõ:
 - không có thay đổi lớn
 - đang chờ gì / bị chặn gì
 - framework/project đang active hay on-hold
+- phải detect no-change tự động từ: git commits today, change log, decisions, approvals, handoffs
+- nếu no-change và project active → cần xem xét stale risk
 
 ### 6. Nếu project stopped / on-hold
 Không được viết report như thể dự án vẫn đang active progress.
@@ -125,15 +129,24 @@ Khi tổng hợp, rà theo câu hỏi:
 - Có blocker nào mới?
 - Có quyết định/approval nào phát sinh?
 - Ngày mai phải làm gì ngay?
+- Có git commits trong ngày report không?
+- Có file evidence mới trong ngày không?
+- Có source conflict giữa các artifact không?
+- Project có đang stale không (active nhưng no meaningful change)?
 
 ## Nguồn xác định actor
 
 Ưu tiên theo thứ tự:
-1. explicit actor trong project docs
+1. explicit actor trong project docs (approvals, decisions, handoffs, change log, issue log)
 2. decision/change log
 3. handoff notes
-4. git commit author
+4. git commit author (chỉ dùng như tín hiệu hỗ trợ)
 5. session knowledge nếu có
+
+**Actor attribution được tổng hợp tự động:**
+- Đếm frequency của từng actor từ các artifact
+- Tách rõ human / agent:main / subagent / unknown
+- Không bịa actor nếu không có evidence
 
 ## Liên hệ với workflow PM
 
