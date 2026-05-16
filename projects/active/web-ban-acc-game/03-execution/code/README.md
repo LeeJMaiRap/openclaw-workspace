@@ -1,5 +1,8 @@
 # Web Bán Acc Game
 
+Vị trí code trong workspace PM Agent:
+`projects/active/web-ban-acc-game/03-execution/code/`
+
 Ứng dụng web bán tài khoản game sử dụng Next.js 16 (App Router) và SQLite.
 
 ## Tính năng
