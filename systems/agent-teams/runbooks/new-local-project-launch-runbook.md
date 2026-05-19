@@ -142,6 +142,21 @@ claim boundaries explicit
 CLI/local-file test needs identified if applicable
 ```
 
+### Step 5.5 — Security / Performance Gate Check
+
+If the project asks for security or performance claims, attach Track 3 gates before Wave 2 delegation:
+
+```text
+security claim -> systems/agent-teams/v2/security-performance-gates/security-minimum-evidence-matrix.md
+performance claim -> systems/agent-teams/v2/security-performance-gates/performance-benchmark-evidence-matrix.md
+findings severity -> systems/agent-teams/v2/security-performance-gates/risk-severity-rubric.md
+residual risk acceptance -> systems/agent-teams/v2/security-performance-gates/risk-acceptance-form.md
+security/performance task packet -> systems/agent-teams/v2/security-performance-gates/templates/
+PM/runbook wiring -> systems/agent-teams/v2/security-performance-gates/pm-runbook-wiring.md
+```
+
+If evidence is missing, write claim boundary as unsupported instead of claiming secure/performant.
+
 ### Step 6 — Ask User Approval For Wave 2
 
 Stop after Wave 1 and ask:

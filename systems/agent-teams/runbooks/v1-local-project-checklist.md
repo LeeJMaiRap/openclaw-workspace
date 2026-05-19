@@ -165,3 +165,29 @@ reports/final-verification-report.md
 - [ ] PM daily reports not staged unless requested.
 - [ ] Commit message names phase/wave.
 - [ ] Push completed.
+
+## Security / Performance Gate Checklist
+
+Use when any security/performance claim is requested:
+
+```text
+[ ] Security claim requested?
+[ ] Security matrix rows attached or claim rejected?
+[ ] Performance claim requested?
+[ ] Benchmark matrix rows attached or claim rejected?
+[ ] Risk severity rubric used for findings?
+[ ] Risk acceptance form used for accepted Medium/High residual risk?
+[ ] Critical risk absent?
+[ ] High risk sign-off complete if accepted?
+[ ] Claim boundary written in user-facing terms?
+[ ] Production/browser/deploy/dependency blockers preserved?
+```
+
+References:
+
+```text
+systems/agent-teams/v2/security-performance-gates/pm-runbook-wiring.md
+systems/agent-teams/v2/security-performance-gates/security-minimum-evidence-matrix.md
+systems/agent-teams/v2/security-performance-gates/performance-benchmark-evidence-matrix.md
+```
+
