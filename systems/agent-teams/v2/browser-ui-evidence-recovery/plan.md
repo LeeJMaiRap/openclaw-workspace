@@ -134,7 +134,7 @@ Phase 76: browser install approval packet refresh — complete
 Phase 77: executable discovery dry-run, no install — complete
 Phase 78: fallback browser-like evidence boundary hardening — complete
 Phase 79: real browser proof protocol, pending executable availability — complete
-Phase 80: dry-run claim rejection for browser/a11y/visual overclaims
+Phase 80: dry-run claim rejection for browser/a11y/visual overclaims — complete
 ```
 
 ## Track 4 Exit Criteria
