@@ -51,6 +51,7 @@ systems/agent-teams/v2/dependency-governance/templates/dependency-risk-review-te
 systems/agent-teams/v2/dependency-governance/templates/install-provenance-log-template.md
 systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
 systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
+systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
 ```
 
 Scope remains docs-only until explicit approval for any install/download.

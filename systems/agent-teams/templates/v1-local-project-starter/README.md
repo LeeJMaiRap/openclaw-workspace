@@ -23,6 +23,9 @@ contract-first before FE/BE parallel work
 Wave 1 filled docs must not contain generic starter placeholders
 preflight required for Local/Integration/Production
 no silent dependency install
+use `systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md` before any install/download need
+use `systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md` before toolchain evidence claims
+use `systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md` before accepting metadata/lockfile changes
 no deploy/cloud/DNS/billing/secrets without explicit approval
 no real browser/screenshot/a11y/visual claim without browser executable launch evidence
 ```

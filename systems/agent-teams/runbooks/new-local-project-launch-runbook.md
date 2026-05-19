@@ -35,6 +35,7 @@ out of scope
 preferred local stack if any
 Verification Level target
 known approval gates
+dependency/toolchain needs if any
 rollback point or baseline plan
 CLI/local-file workflow indicators if applicable
 ```
@@ -134,6 +135,7 @@ feature/API contract exists
 ownership map protects paths
 preflight needs identified
 approval gates listed
+dependency/toolchain needs classified as available, fallback, or needs approval
 claim boundaries explicit
 CLI/local-file test needs identified if applicable
 ```
@@ -158,6 +160,16 @@ install/download/deploy approval needs
 known blockers
 CLI/local-file test pattern needs if applicable
 ```
+
+Before Wave 2, if any dependency/toolchain install or download is needed, create an approval packet from:
+
+```text
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md
+systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
+systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
+```
+
+Do not run install/download until approved.
 
 If the project is a CLI or local-file workflow, include this starter reference before Wave 2:
 
@@ -210,7 +222,10 @@ project not local-only
 contract missing
 ownership conflict
 placeholder cleanup failed
-preflight dependency needs install/download
+preflight dependency needs install/download and approval packet is missing
+package manager switch requested without approval
+unexpected lockfile/package metadata change
+install provenance log missing after approved install
 browser executable not ready but browser proof requested
 deploy/cloud/DNS/billing/secrets requested
 destructive file/database operation requested

@@ -197,6 +197,12 @@ systems/agent-teams/runbooks/v1-local-project-checklist.md
 systems/agent-teams/templates/v1-local-project-starter/
 ```
 
+## Phase 55 Starter / Runbook Wiring
+
+```text
+systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
+```
+
 ## Dry-Run Plan
 
 Future Phase 56 should simulate a dependency request without installing anything.
@@ -233,7 +239,7 @@ dependency risk review template — complete in Phase 52
 install provenance log template — complete in Phase 52
 toolchain preflight matrix — complete in Phase 53
 lockfile policy — complete in Phase 54
-starter/runbook wiring
+starter/runbook wiring — complete in Phase 55
 dry-run simulation report
 ```
 

@@ -17,6 +17,9 @@
 - [ ] Treat starter packet content as scaffolding, not completed evidence.
 - [ ] Read `systems/agent-teams/runbooks/v1-local-project-operating-guide.md` before Wave 1.
 - [ ] If project is CLI/local-file workflow, read `reports/cli-local-file-test-patterns.md`.
+- [ ] If dependency/toolchain install may be needed, read `systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md`.
+- [ ] Read `systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md` before claiming Local/Integration tool evidence.
+- [ ] Read `systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md` before accepting package metadata or lockfile changes.
 
 ## Intake
 
@@ -52,6 +55,8 @@ reports/starter-dry-run-checklist.md
 - [ ] API/feature contract written.
 - [ ] Ownership map written.
 - [ ] Preflight needs listed.
+- [ ] Dependency/toolchain needs classified as already available, no-install fallback, or needs approval.
+- [ ] Dependency approval requests drafted for any install/download need; no commands executed in Wave 1.
 - [ ] CLI/local-file store path and test isolation planned if applicable.
 - [ ] Filled Wave 1 docs have no generic starter placeholders.
 - [ ] No app code created unless explicitly scoped.
@@ -72,6 +77,10 @@ app/.gitkeep placeholder
 - [ ] Implementation stays in owned paths.
 - [ ] Contract unchanged or approved change recorded.
 - [ ] Dependency policy followed.
+- [ ] Dependency approval packet exists before any install/download.
+- [ ] Exact install command matches approval.
+- [ ] Lockfile/package metadata changes match approved scope.
+- [ ] Install provenance log updated after approved install/download.
 - [ ] Build/syntax check run and logged.
 - [ ] Implementation report written.
 - [ ] CLI entrypoint, local data path, and store override documented if applicable.
@@ -102,6 +111,8 @@ reports/cli-local-file-test-patterns.md if applicable
 - [ ] Stable error codes asserted if applicable.
 - [ ] UI/HTML path covered if UI exists.
 - [ ] Escaping/security-relevant local checks covered if user input exists.
+- [ ] Toolchain evidence checked against v2 toolchain preflight matrix.
+- [ ] Dependency-installed claims have approval packet and provenance evidence.
 - [ ] Test command run and logged.
 - [ ] Build/syntax command run and logged.
 - [ ] QA report written.
@@ -126,6 +137,7 @@ reports/final-verification-report.md
 - [ ] Requirements traceability matrix written.
 - [ ] Cutover decision written.
 - [ ] Retrospective written.
+- [ ] Dependency approvals, risk reviews, provenance logs, and lockfile diffs reviewed if dependency changes occurred.
 - [ ] Supported claims listed.
 - [ ] Unsupported claims listed.
 - [ ] Known blockers listed.

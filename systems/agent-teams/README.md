@@ -115,6 +115,7 @@ systems/agent-teams/
 25. Phase 52: v2 dependency approval packet templates
 26. Phase 53: v2 toolchain preflight matrix
 27. Phase 54: v2 lockfile + provenance policy
+28. Phase 55: v2 starter/runbook dependency governance wiring
 
 ## v2 Planning
 
@@ -127,6 +128,7 @@ systems/agent-teams/v2/dependency-governance/plan.md
 systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md
 systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
 systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
+systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
 ```
 
 ## Current Rule
