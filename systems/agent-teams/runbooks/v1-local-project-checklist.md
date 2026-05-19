@@ -6,6 +6,7 @@
 - [ ] Confirm project fits v1 local-only launch scope.
 - [ ] Confirm Wave 2 implementation will wait for user approval.
 - [ ] Record stop gates and approval needs.
+- [ ] Select Agent-Teams v2 project type pack when pack guidance applies.
 
 ## Starter Packet Setup
 
@@ -30,6 +31,7 @@
 - [ ] Out of scope.
 - [ ] Verification Level target.
 - [ ] Approval gates.
+- [ ] Selected project type pack and rejected alternatives.
 - [ ] Rollback point.
 - [ ] CLI/local-file workflow indicators if applicable.
 
@@ -49,6 +51,7 @@ reports/starter-dry-run-checklist.md
 ```
 
 - [ ] Requirements written.
+- [ ] Primary project type pack selected and justified.
 - [ ] Acceptance criteria written.
 - [ ] UX flow/copy written if UI exists.
 - [ ] Architecture written.

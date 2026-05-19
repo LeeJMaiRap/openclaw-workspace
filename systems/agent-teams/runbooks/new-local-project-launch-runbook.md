@@ -35,6 +35,7 @@ out of scope
 preferred local stack if any
 Verification Level target
 known approval gates
+selected Agent-Teams v2 project type pack if applicable
 dependency/toolchain needs if any
 rollback point or baseline plan
 CLI/local-file workflow indicators if applicable
@@ -129,6 +130,7 @@ Review:
 
 ```text
 requirements are clear
+selected project type pack fits primary deliverable
 acceptance criteria are testable
 architecture matches local scope
 feature/API contract exists
@@ -155,6 +157,7 @@ scope summary
 owned paths
 forbidden paths
 Verification Level
+project type pack and pack-specific evidence expectations
 preflight requirements
 install/download/deploy approval needs
 known blockers

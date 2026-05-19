@@ -68,6 +68,16 @@ unknown command / usage error
 store path override works with isolated temp data
 ```
 
+## Project Type Pack Add-on
+
+For v2 work, select one primary pack during Wave 1 using:
+
+```text
+systems/agent-teams/v2/project-type-packs/pack-selection-runbook.md
+```
+
+Pack guidance is additive. It does not weaken v1/v2 guardrails.
+
 ## Wave Order
 
 ```text
