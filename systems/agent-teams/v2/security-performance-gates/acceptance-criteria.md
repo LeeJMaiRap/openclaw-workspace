@@ -30,7 +30,7 @@ security evidence matrix exists (`security-minimum-evidence-matrix.md`)
 performance benchmark evidence matrix exists (`performance-benchmark-evidence-matrix.md`)
 risk severity rubric exists (`risk-severity-rubric.md`)
 risk acceptance form exists (`risk-acceptance-form.md`)
-security/performance task packet templates v2 exist
+security/performance task packet templates v2 exist under `templates/`
 runbook/PM acceptance wiring exists
 dry-run overclaim rejection simulation passes
 security/performance claim boundaries are explicit
