@@ -5,7 +5,7 @@
 Track 4 is accepted when:
 
 ```text
-browser readiness matrix exists
+browser readiness matrix exists (`browser-readiness-matrix.md`)
 browser install approval packet refresh exists
 executable discovery dry-run exists
 fallback browser-like boundary is documented

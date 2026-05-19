@@ -129,7 +129,7 @@ production/browser cloud proof without deploy/cloud approval
 
 ```text
 Phase 74: Browser / UI Evidence Recovery plan
-Phase 75: browser readiness matrix
+Phase 75: browser readiness matrix — complete
 Phase 76: browser install approval packet refresh
 Phase 77: executable discovery dry-run, no install
 Phase 78: fallback browser-like evidence boundary hardening
