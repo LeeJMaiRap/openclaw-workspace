@@ -217,11 +217,11 @@ implementation complete claim
 ```text
 Phase 57: Project Type Packs plan
 Phase 58: Project Type Pack base template — complete
-Phase 59: CLI/local-file pack
-Phase 60: HTTP API pack
-Phase 61: Static UI pack
-Phase 62: Fullstack local pack
-Phase 63: Docs-only/project-management pack
+Phase 59: CLI/local-file pack — complete
+Phase 60: HTTP API pack — complete
+Phase 61: Static UI pack — complete
+Phase 62: Fullstack local pack — complete
+Phase 63: Docs-only/project-management pack — complete
 Phase 64: Pack selection runbook wiring
 Phase 65: Pack dry-run simulation
 ```
