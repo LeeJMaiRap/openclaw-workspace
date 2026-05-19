@@ -34,6 +34,25 @@ no deploy/cloud/DNS/billing/secrets without explicit approval
 no real browser/screenshot/a11y/visual claim without executable launch evidence
 ```
 
+## v1 Status
+
+Agent-Teams v1 local-project flow is **validated for controlled local pilots**.
+
+Validated evidence:
+
+```text
+Phase 31-35: mini-issue-tracker-v1 clean-slate local pilot accepted
+Phase 36-42: v1 guide, starter packet, checklist, and launch runbook hardened
+Phase 43-46: local-bookmarks-cli-v1 launch -> implementation -> Integration -> PM acceptance completed
+Phase 47: v1 pilot closure summary
+```
+
+Primary closure artifact:
+
+```text
+systems/agent-teams/examples/phase-47-v1-pilot-closure/v1-pilot-closure-summary.md
+```
+
 ## Primary v1 Runbooks
 
 - `runbooks/new-local-project-launch-runbook.md` — entrypoint for starting a new Agent-Teams v1 local project.
@@ -77,6 +96,8 @@ systems/agent-teams/
 17. Phase 40: starter packet dry-run on fake project
 18. Phase 41: starter packet placeholder cleanup hardening
 19. Phase 42: new local project launch runbook
+20. Phase 43-46: `local-bookmarks-cli-v1` launch-runbook validation pilot
+21. Phase 47: v1 pilot closure — validated for controlled local pilots
 
 ## Current Rule
 

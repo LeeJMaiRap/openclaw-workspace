@@ -4,7 +4,26 @@
 
 Run small real local projects with Agent-Teams using strict phase gates, explicit ownership, preflight checks, and evidence-based acceptance.
 
-This guide distills the accepted `mini-issue-tracker-v1` pilot from Phases 31-35 into a reusable operating flow.
+This guide distills the accepted `mini-issue-tracker-v1` pilot from Phases 31-35 and the `local-bookmarks-cli-v1` launch-runbook validation pilot from Phases 43-46 into a reusable operating flow.
+
+## v1 Validation Status
+
+Agent-Teams v1 local-project flow is validated for controlled local pilots.
+
+Evidence chain:
+
+```text
+Phase 31-35: first clean-slate local pilot accepted
+Phase 36-42: operating guide, starter packet, checklist, and launch runbook created/hardened
+Phase 43-46: second local CLI pilot completed through launch, implementation, Integration, and PM acceptance
+Phase 47: v1 closure summary
+```
+
+Closure summary:
+
+```text
+systems/agent-teams/examples/phase-47-v1-pilot-closure/v1-pilot-closure-summary.md
+```
 
 ## Launch Entrypoint
 
