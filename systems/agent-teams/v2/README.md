@@ -85,3 +85,15 @@ systems/agent-teams/v2/security-performance-gates/acceptance-criteria.md
 ```
 
 Track 3 blocks security/performance claims unless matching specialist evidence, benchmark output, risk severity, and PM acceptance boundaries exist.
+
+## Track 4 — Browser / UI Evidence Recovery
+
+Phase 74 starts Track 4 with a Browser / UI Evidence Recovery plan.
+
+```text
+systems/agent-teams/v2/browser-ui-evidence-recovery/plan.md
+systems/agent-teams/v2/browser-ui-evidence-recovery/acceptance-criteria.md
+```
+
+Track 4 preserves current browser blocker rules: no real browser, screenshot, a11y, or visual claim without executable launch evidence and required artifacts. Browser installs/downloads still require explicit approval through Track 1 governance.
+

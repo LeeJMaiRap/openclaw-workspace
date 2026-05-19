@@ -134,6 +134,18 @@ systems/agent-teams/v2/security-performance-gates/acceptance-criteria.md
 
 ## Track 4 — Browser / UI Evidence Recovery
 
+Status:
+
+```text
+Phase 74: Browser / UI Evidence Recovery plan — complete
+Phase 75: browser readiness matrix
+Phase 76: browser install approval packet refresh
+Phase 77: executable discovery dry-run, no install
+Phase 78: fallback browser-like evidence boundary hardening
+Phase 79: real browser proof protocol, pending executable availability
+Phase 80: dry-run claim rejection for browser/a11y/visual overclaims
+```
+
 Goal:
 
 ```text
@@ -145,6 +157,13 @@ Current blocker:
 ```text
 Playwright Chromium install failed on ubuntu26.04-x64.
 No browser executable launch evidence exists.
+```
+
+Track 4 plan:
+
+```text
+systems/agent-teams/v2/browser-ui-evidence-recovery/plan.md
+systems/agent-teams/v2/browser-ui-evidence-recovery/acceptance-criteria.md
 ```
 
 ## Track 5 — Multi-Agent Execution Quality
