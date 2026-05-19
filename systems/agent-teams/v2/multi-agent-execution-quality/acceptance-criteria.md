@@ -10,7 +10,7 @@ parallel wave readiness v2 checklist exists (`templates/parallel-wave-readiness-
 ownership conflict escalation protocol exists (`ownership-conflict-escalation-protocol.md`)
 handoff quality rubric exists (`handoff-quality-rubric.md`)
 PM acceptance dashboard template exists (`templates/pm-acceptance-dashboard-template.md`)
-multi-agent execution quality dry-run exists
+multi-agent execution quality dry-run exists (`examples/phase-88-execution-quality-dry-run/README.md`)
 dry-run rejects missing evidence, ownership conflicts, and bad handoffs
 runbooks preserve PM Agent Orchestrator-only role
 ```
