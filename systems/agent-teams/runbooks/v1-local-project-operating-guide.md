@@ -65,6 +65,35 @@ Use the starter as scaffolding only. Replace placeholders, keep ownership bounda
 
 Before Wave 1 passes, complete `reports/starter-dry-run-checklist.md` and confirm filled Wave 1 docs have no generic placeholders such as `<project-name>`, `<feature-name>`, `<goal>`, or `<requirement>`.
 
+## CLI / Local-File Project Addendum
+
+For CLI, script, importer/exporter, or local-file persistence projects, use the Phase 48 starter hardening notes.
+
+Starter references:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/reports/cli-local-file-test-patterns.md
+systems/agent-teams/templates/v1-local-project-starter/task-packets/wave-3-integration-task.md
+systems/agent-teams/templates/v1-local-project-starter/reports/qa-report.md
+systems/agent-teams/templates/v1-local-project-starter/reports/code-review.md
+systems/agent-teams/templates/v1-local-project-starter/reports/challenge-review.md
+systems/agent-teams/templates/v1-local-project-starter/reports/handoff.md
+```
+
+Minimum Wave 3 expectations when applicable:
+
+```text
+real CLI/local command executed
+test data isolated from real/user data
+store path override or temp data path documented
+stdout/stderr and exit status asserted
+JSON/output shape asserted
+stable error codes asserted
+happy path plus negative/error paths covered
+```
+
+Do not claim packaged CLI, installed binary, production-ready storage, concurrency-safe writes, corruption recovery, security hardening, or performance benchmark without dedicated evidence.
+
 ## Accepted Use
 
 Agent-Teams v1 is accepted for:

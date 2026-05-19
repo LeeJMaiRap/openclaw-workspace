@@ -36,6 +36,7 @@ preferred local stack if any
 Verification Level target
 known approval gates
 rollback point or baseline plan
+CLI/local-file workflow indicators if applicable
 ```
 
 Default Verification Level for v1 local projects:
@@ -134,6 +135,7 @@ ownership map protects paths
 preflight needs identified
 approval gates listed
 claim boundaries explicit
+CLI/local-file test needs identified if applicable
 ```
 
 ### Step 6 — Ask User Approval For Wave 2
@@ -154,9 +156,49 @@ Verification Level
 preflight requirements
 install/download/deploy approval needs
 known blockers
+CLI/local-file test pattern needs if applicable
+```
+
+If the project is a CLI or local-file workflow, include this starter reference before Wave 2:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/reports/cli-local-file-test-patterns.md
 ```
 
 Do not begin implementation until user approves Wave 2.
+
+## CLI / Local-File Launch Notes
+
+If the raw idea is a CLI, script, importer/exporter, or local-file persistence tool, capture these during launch:
+
+```text
+command entrypoint
+local data file/path
+test-only store path override
+expected JSON/text output shape
+stable success/error codes
+happy path commands
+negative/error commands
+real/user data isolation plan
+```
+
+Recommended starter report:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/reports/cli-local-file-test-patterns.md
+```
+
+Unsupported without dedicated evidence:
+
+```text
+packaged CLI
+installed binary
+production-ready storage
+concurrency-safe writes
+corruption recovery
+security hardening
+performance benchmark
+```
 
 ## Stop Gates
 

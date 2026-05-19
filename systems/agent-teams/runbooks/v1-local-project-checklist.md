@@ -16,6 +16,7 @@
 - [ ] Keep `app/.gitkeep` as placeholder until implementation is approved.
 - [ ] Treat starter packet content as scaffolding, not completed evidence.
 - [ ] Read `systems/agent-teams/runbooks/v1-local-project-operating-guide.md` before Wave 1.
+- [ ] If project is CLI/local-file workflow, read `reports/cli-local-file-test-patterns.md`.
 
 ## Intake
 
@@ -27,6 +28,7 @@
 - [ ] Verification Level target.
 - [ ] Approval gates.
 - [ ] Rollback point.
+- [ ] CLI/local-file workflow indicators if applicable.
 
 ## Wave 1 — Planning
 
@@ -50,6 +52,7 @@ reports/starter-dry-run-checklist.md
 - [ ] API/feature contract written.
 - [ ] Ownership map written.
 - [ ] Preflight needs listed.
+- [ ] CLI/local-file store path and test isolation planned if applicable.
 - [ ] Filled Wave 1 docs have no generic starter placeholders.
 - [ ] No app code created unless explicitly scoped.
 
@@ -71,6 +74,7 @@ app/.gitkeep placeholder
 - [ ] Dependency policy followed.
 - [ ] Build/syntax check run and logged.
 - [ ] Implementation report written.
+- [ ] CLI entrypoint, local data path, and store override documented if applicable.
 - [ ] No install/download/deploy unless approved.
 
 ## Wave 3 — Integration / QA
@@ -80,11 +84,22 @@ Starter files:
 ```text
 task-packets/wave-3-integration-task.md
 reports/integration-report.md
+reports/qa-report.md
+reports/code-review.md
+reports/challenge-review.md
+reports/handoff.md
+reports/cli-local-file-test-patterns.md if applicable
 ```
 
 - [ ] Local integration tests written.
 - [ ] Happy path covered.
 - [ ] Negative/error cases covered.
+- [ ] Real CLI/local command exercised if applicable.
+- [ ] Test data isolated from real/user data if applicable.
+- [ ] Store path override documented if applicable.
+- [ ] stdout/stderr and exit status asserted if applicable.
+- [ ] JSON/output shape asserted if applicable.
+- [ ] Stable error codes asserted if applicable.
 - [ ] UI/HTML path covered if UI exists.
 - [ ] Escaping/security-relevant local checks covered if user input exists.
 - [ ] Test command run and logged.
@@ -124,6 +139,8 @@ reports/final-verification-report.md
 - [ ] No performant claim without performance evidence.
 - [ ] No accessible claim without accessibility evidence.
 - [ ] No real browser/screenshot/visual claim without browser launch and output evidence.
+- [ ] No packaged CLI / installed binary claim without packaging/install evidence.
+- [ ] No concurrency-safe/corruption-recovery claim without dedicated tests.
 
 ## Git Checklist
 
