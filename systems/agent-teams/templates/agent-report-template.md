@@ -8,6 +8,10 @@
 
 `Done | Blocked | Needs Review`
 
+## Verification Level
+
+`Paper | Simulated | Local | Integration | Production`
+
 ## Summary
 
 `<what was completed or why it is blocked>`
@@ -28,6 +32,12 @@ None
 <command/check>
 <result>
 ```
+
+## Evidence Standard
+
+- `<log path, screenshot path, API output, test output, report path, or blocker>`
+- If Verification Level is `Paper` or `Simulated`, state: `No runtime proof.`
+- If claiming `tested`, `working`, `secure`, `performant`, `accessible`, `integrated`, `deployed`, or `production-ready`, include matching real evidence.
 
 ## Acceptance Criteria Check
 

@@ -42,9 +42,24 @@ Agent must not edit these paths:
 - [ ] `<observable criterion>`
 - [ ] `<observable criterion>`
 
+## Verification Level
+
+`Paper | Simulated | Local | Integration | Production`
+
+Definitions:
+
+```text
+Paper — artifact-only review; no app/runtime proof.
+Simulated — planned behavior or dry-run reasoning; no runtime proof.
+Local — real local commands/checks run.
+Integration — multiple implemented parts verified together.
+Production — deployed environment verified after approval.
+```
+
 ## Verification Required
 
 - `<command/check/report required>`
+- `<evidence required: log path, screenshot path, API output, test result, or blocker>`
 
 ## Constraints
 
@@ -52,6 +67,7 @@ Agent must not edit these paths:
 - Do not change scope.
 - Report blocker instead of guessing.
 - Do not claim done without evidence.
+- Do not use `tested`, `working`, `secure`, `performant`, `accessible`, `integrated`, `deployed`, or `production-ready` unless evidence matches Verification Level.
 
 ## Return Format
 
