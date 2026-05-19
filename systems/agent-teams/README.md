@@ -116,6 +116,7 @@ systems/agent-teams/
 26. Phase 53: v2 toolchain preflight matrix
 27. Phase 54: v2 lockfile + provenance policy
 28. Phase 55: v2 starter/runbook dependency governance wiring
+29. Phase 56: v2 dry-run dependency approval simulation
 
 ## v2 Planning
 
@@ -129,6 +130,7 @@ systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packe
 systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
 systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
 systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
+systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependency-approval/README.md
 ```
 
 ## Current Rule

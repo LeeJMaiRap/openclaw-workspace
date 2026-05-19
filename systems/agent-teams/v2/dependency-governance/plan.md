@@ -217,6 +217,14 @@ Approval/reject/fallback is documented.
 Evidence claim is adjusted.
 ```
 
+## Phase 56 Dry-Run Simulation
+
+```text
+systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependency-approval/README.md
+```
+
+Track 1 is complete at docs/simulated level after Phase 56.
+
 ## Stop Conditions
 
 Stop and ask user before:
@@ -240,7 +248,7 @@ install provenance log template — complete in Phase 52
 toolchain preflight matrix — complete in Phase 53
 lockfile policy — complete in Phase 54
 starter/runbook wiring — complete in Phase 55
-dry-run simulation report
+dry-run simulation report — complete in Phase 56
 ```
 
 ## Phase 52 Packet Templates

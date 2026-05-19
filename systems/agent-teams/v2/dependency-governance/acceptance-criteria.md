@@ -75,6 +75,21 @@ no PM Agent changes occur
 no deploy/cloud/DNS/billing/secrets changes occur
 ```
 
+## Phase 56 Acceptance
+
+Phase 56 is accepted if:
+
+```text
+dry-run dependency approval simulation exists
+simulation includes request, risk review, PM decision, dry-run provenance log, claim adjustment, and verification report
+simulation records exact command but does not execute it
+simulation documents fallback approval and claim boundary
+no install/download occurs
+no runtime/app/test changes occur
+no PM Agent changes occur
+no deploy/cloud/DNS/billing/secrets changes occur
+```
+
 ## Track 1 Acceptance
 
 Track 1 is complete when Agent-Teams can safely process dependency/toolchain needs using explicit approval and evidence.

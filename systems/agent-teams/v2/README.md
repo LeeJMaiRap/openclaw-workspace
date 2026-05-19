@@ -52,6 +52,7 @@ systems/agent-teams/v2/dependency-governance/templates/install-provenance-log-te
 systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
 systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
 systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
+systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependency-approval/README.md
 ```
 
-Scope remains docs-only until explicit approval for any install/download.
+Phase 56 completes Track 1 at docs/simulated level with a dry-run dependency approval simulation. Scope remains docs-only until explicit approval for any install/download.
