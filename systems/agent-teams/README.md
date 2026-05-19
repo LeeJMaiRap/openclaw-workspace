@@ -119,6 +119,7 @@ systems/agent-teams/
 29. Phase 56: v2 dry-run dependency approval simulation
 30. Phase 57: v2 project type packs plan
 31. Phase 58-65: v2 project type packs templates, packs, wiring, dry-run
+32. Phase 66: v2 security/performance evidence gates plan
 
 ## v2 Planning
 
@@ -136,6 +137,7 @@ systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependenc
 systems/agent-teams/v2/project-type-packs/plan.md
 systems/agent-teams/v2/project-type-packs/pack-selection-runbook.md
 systems/agent-teams/v2/project-type-packs/examples/phase-65-pack-selection-dry-run/README.md
+systems/agent-teams/v2/security-performance-gates/plan.md
 ```
 
 ## Current Rule

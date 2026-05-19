@@ -74,3 +74,14 @@ Phase 65 completes Track 2 at docs/simulated level with a CLI/local-file pack se
 ```text
 systems/agent-teams/v2/project-type-packs/examples/phase-65-pack-selection-dry-run/README.md
 ```
+
+## Track 3 — Security / Performance Evidence Gates
+
+Phase 66 starts Track 3 with a security/performance evidence gates plan.
+
+```text
+systems/agent-teams/v2/security-performance-gates/plan.md
+systems/agent-teams/v2/security-performance-gates/acceptance-criteria.md
+```
+
+Track 3 blocks security/performance claims unless matching specialist evidence, benchmark output, risk severity, and PM acceptance boundaries exist.

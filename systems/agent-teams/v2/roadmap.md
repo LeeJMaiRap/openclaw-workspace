@@ -96,6 +96,19 @@ systems/agent-teams/v2/project-type-packs/acceptance-criteria.md
 
 ## Track 3 — Security / Performance Evidence Gates
 
+Status:
+
+```text
+Phase 66: Security / Performance Evidence Gates plan — complete
+Phase 67: security minimum evidence matrix
+Phase 68: performance benchmark evidence matrix
+Phase 69: risk severity rubric
+Phase 70: risk acceptance form
+Phase 71: security/performance task packet templates v2
+Phase 72: PM/runbook wiring for security/performance gates
+Phase 73: dry-run security/performance claim rejection simulation
+```
+
 Goal:
 
 ```text
@@ -110,6 +123,13 @@ performance benchmark evidence matrix
 risk severity rubric
 risk acceptance form
 security/performance task packets v2
+```
+
+Track 3 plan:
+
+```text
+systems/agent-teams/v2/security-performance-gates/plan.md
+systems/agent-teams/v2/security-performance-gates/acceptance-criteria.md
 ```
 
 ## Track 4 — Browser / UI Evidence Recovery
