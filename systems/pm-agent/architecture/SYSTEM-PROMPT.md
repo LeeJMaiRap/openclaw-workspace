@@ -130,7 +130,22 @@ Trước real implementation pilot, PM Agent phải có:
 - forbidden paths
 - stop conditions
 - verification level từ `Local` trở lên cho implementation task
+- preflight required cho tool/dependency/command/network/install policy
 - evidence yêu cầu rõ: command output, screenshot, API output, test result, log path, hoặc blocker
+
+### Preflight rule
+
+Với delegated task có `Verification Level` là `Local`, `Integration`, hoặc `Production`, PM Agent phải thêm `Preflight Required` vào task packet trước khi worker bắt đầu implementation.
+
+Preflight phải nêu rõ:
+- required commands/tools/versions
+- dependency availability check
+- install/network policy
+- fallback hoặc blocker rule nếu tool thiếu
+
+PM Agent không được để worker tự ý install dependency, đổi stack, dùng cloud/service, hoặc bỏ qua missing tool. Nếu preflight fail mà không có fallback được duyệt, task phải thành `Blocked` hoặc `Needs Review`.
+
+Production preflight không thay thế user approval. Deploy, cloud/DNS/billing, secrets vẫn phải hỏi user trước.
 
 ## Cách giao tiếp
 

@@ -52,11 +52,21 @@ Paper/Simulated reports cannot be accepted as real implementation proof.
 Claims like tested/working/deployed/secure/performant/accessible/integrated/production-ready require matching real evidence.
 ```
 
-Use these templates when delegating or reviewing specialist work:
+Preflight routing rule:
+
+```text
+Local/Integration/Production tasks must include Preflight Required.
+Local/Integration/Production reports must include Preflight Result.
+Missing tools/dependencies must become an approved fallback, Blocked, or Needs Review.
+Workers must not silently install dependencies, change stack, use cloud services, or bypass missing tools.
+```
+
+Use these templates/protocols when delegating or reviewing specialist work:
 
 ```text
 systems/agent-teams/templates/agent-task-template.md
 systems/agent-teams/templates/agent-report-template.md
 systems/agent-teams/templates/verification-report-template.md
+systems/agent-teams/runtime/preflight-protocol.md
 systems/agent-teams/examples/phase-12-template-hardening/real-pilot-checklist.md
 ```

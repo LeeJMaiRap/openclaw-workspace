@@ -79,12 +79,20 @@ PM final acceptance report
 - shared contract frozen for wave
 - conflict protocol clear
 
+#### Preflight Ready
+- task has `Verification Level`
+- `Local` / `Integration` / `Production` tasks include preflight checks
+- required tools/commands/dependencies are checked or blocker listed
+- install/network policy is explicit
+- fallback path is approved when a tool is missing
+
 #### Release/Handoff Ready
 - QA/integration evidence exists or blocker listed
 - security/performance/code review blockers resolved or accepted
 - deployment readiness checked
 - docs/handoff prepared
 - every agent report includes `Verification Level`
+- every Local/Integration/Production report includes `Preflight Result`
 - no `tested/working/deployed/secure/performant/accessible/integrated/production-ready` claim lacks matching evidence
 
 ### Stop conditions
@@ -108,11 +116,13 @@ For every delegated Agent-Teams task, PM Agent must:
 
 1. Put `Verification Level` in task packet.
 2. Define evidence required for that level.
-3. Require returned report to include same or stronger `Verification Level`.
-4. Reject or downgrade report to `Needs Review` when evidence does not match claims.
-5. Treat `Paper` and `Simulated` as planning/artifact validation only, not real implementation proof.
-6. For real implementation tasks, require `Local` or `Integration` evidence before accepting completion.
-7. For any `Production` verification, require explicit user approval before deploy or cloud/DNS/billing action.
+3. Add `Preflight Required` for `Local`, `Integration`, and `Production` tasks.
+4. Require returned report to include same or stronger `Verification Level`.
+5. Require `Preflight Result` for Local/Integration/Production reports.
+6. Reject or downgrade report to `Needs Review` when evidence does not match claims.
+7. Treat `Paper` and `Simulated` as planning/artifact validation only, not real implementation proof.
+8. For real implementation tasks, require `Local` or `Integration` evidence before accepting completion.
+9. For any `Production` verification, require explicit user approval before deploy or cloud/DNS/billing action.
 
 ## Chi tiết từng giai đoạn
 
