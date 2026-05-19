@@ -61,7 +61,7 @@ Status:
 
 ```text
 Phase 57: Project Type Packs plan — complete
-Phase 58: Project Type Pack base template
+Phase 58: Project Type Pack base template — complete
 Phase 59: CLI/local-file pack
 Phase 60: HTTP API pack
 Phase 61: Static UI pack
