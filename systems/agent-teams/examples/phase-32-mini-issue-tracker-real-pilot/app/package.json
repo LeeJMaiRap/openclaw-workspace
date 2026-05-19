@@ -5,6 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "node --check src/issue-api.js && node --check src/issue-ui.js && node --check src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "test": "node --test tests/server.test.js"
   }
 }
