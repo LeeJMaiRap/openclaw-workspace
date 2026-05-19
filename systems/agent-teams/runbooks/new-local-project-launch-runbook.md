@@ -299,6 +299,37 @@ Blockers:
 Decision needed: approve Wave 2 implementation? yes/no
 ```
 
+
+## Browser-Like Fallback Boundary
+
+If browser executable evidence is missing, any UI check must be labelled:
+
+```text
+Evidence type: Browser-like fallback. No real browser executable was launched.
+```
+
+Allowed claim:
+
+```text
+browser-like fallback check completed
+```
+
+Forbidden claims without Track 4 evidence:
+
+```text
+real browser tested
+screenshot verified
+a11y verified
+visual regression passed
+cross-browser compatible
+```
+
+Reference:
+
+```text
+systems/agent-teams/v2/browser-ui-evidence-recovery/fallback-browser-like-boundary.md
+```
+
 ## Evidence Boundary
 
 Allowed after this runbook completes:

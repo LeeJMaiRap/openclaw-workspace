@@ -191,3 +191,22 @@ systems/agent-teams/v2/security-performance-gates/security-minimum-evidence-matr
 systems/agent-teams/v2/security-performance-gates/performance-benchmark-evidence-matrix.md
 ```
 
+## Browser-Like Fallback Checklist
+
+Use when UI/browser claim is requested but real executable evidence is missing:
+
+```text
+[ ] Fallback label present?
+[ ] Browser executable launch evidence absent or blocked?
+[ ] Allowed fallback claim written exactly?
+[ ] Real browser/screenshot/a11y/visual claims rejected?
+[ ] Raw fallback output path recorded?
+[ ] Track 4 reference linked?
+```
+
+Reference:
+
+```text
+systems/agent-teams/v2/browser-ui-evidence-recovery/fallback-browser-like-boundary.md
+```
+

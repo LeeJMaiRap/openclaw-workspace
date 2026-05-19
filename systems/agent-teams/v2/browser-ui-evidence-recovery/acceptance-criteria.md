@@ -8,7 +8,7 @@ Track 4 is accepted when:
 browser readiness matrix exists (`browser-readiness-matrix.md`)
 browser install approval packet refresh exists (`browser-install-approval-packet-refresh.md`)
 executable discovery dry-run exists (`examples/phase-77-executable-discovery-dry-run/`)
-fallback browser-like boundary is documented
+fallback browser-like boundary is documented (`fallback-browser-like-boundary.md`)
 real browser proof protocol exists
 dry-run rejects browser/a11y/visual overclaims
 runbooks preserve explicit install approval requirements
