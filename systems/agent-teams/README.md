@@ -53,9 +53,10 @@ Primary closure artifact:
 systems/agent-teams/examples/phase-47-v1-pilot-closure/v1-pilot-closure-summary.md
 ```
 
-Final v1 status and v2 roadmap:
+Final v1 report, status, and v2 roadmap:
 
 ```text
+systems/agent-teams/reports/agent-teams-v1-report.md
 systems/agent-teams/examples/phase-50-v1-final-status-v2-roadmap/v1-final-status.md
 systems/agent-teams/examples/phase-50-v1-final-status-v2-roadmap/v2-roadmap.md
 ```
@@ -79,7 +80,8 @@ systems/agent-teams/
 ├── skills/         # adapted OpenClaw-native skills
 ├── runbooks/       # reusable operating guides and checklists
 ├── examples/       # demos, pilots, validation reports
-└── references/     # source summaries from external repos/skills
+├── references/     # source summaries from external repos/skills
+└── reports/        # final summaries and status reports
 ```
 
 ## Build Order
