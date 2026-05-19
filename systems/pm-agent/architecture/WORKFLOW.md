@@ -26,6 +26,80 @@ Close project
 Create final report + lessons learned
 ```
 
+
+## Agent-Teams Execution Branch
+
+Khi dự án là technical project có nhiều vai trò, PM Agent dùng Agent-Teams branch thay cho tự xử lý specialist work.
+
+```
+User request
+    ↓
+PM Orchestrator intake + scope
+    ↓
+Requirements gate
+    ↓
+UX / Architecture / API Contract gate
+    ↓
+Ownership map
+    ↓
+Parallel execution wave if safe:
+    - Frontend Agent
+    - Backend Agent
+    ↓
+QA / Integration wave
+    ↓
+Review / Production wave:
+    - Security Review
+    - Performance Review
+    - Code Review
+    - DevOps / Deployment
+    - Documentation
+    - Challenge when needed
+    ↓
+PM final acceptance report
+```
+
+### Gate rules
+
+#### Requirements Ready
+- MVP scope clear
+- out-of-scope listed
+- acceptance criteria testable
+- open questions marked blocking/non-blocking
+
+#### Architecture/API Ready
+- architecture direction exists
+- API contract exists
+- data model assumptions stated
+- Challenge findings resolved or accepted
+
+#### Parallel Execution Ready
+- ownership map exists
+- frontend/backend owned paths clear
+- shared contract frozen for wave
+- conflict protocol clear
+
+#### Release/Handoff Ready
+- QA/integration evidence exists or blocker listed
+- security/performance/code review blockers resolved or accepted
+- deployment readiness checked
+- docs/handoff prepared
+
+### Stop conditions
+
+PM Agent must stop and ask user or escalate when:
+- production deploy requested
+- cloud/DNS/billing action needed
+- secret value exposed or requested
+- destructive migration/action needed
+- high-risk scope change appears
+- unresolved ownership conflict exists
+- Critical/High security/QA blocker exists
+
+### PM boundary
+
+PM Agent remains orchestrator-only in Agent-Teams mode. It delegates specialist implementation/review and then verifies reports/evidence before moving gates.
+
 ## Chi tiết từng giai đoạn
 
 ### Giai đoạn 1: Initiation
