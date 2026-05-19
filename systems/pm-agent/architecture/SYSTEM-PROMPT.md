@@ -108,6 +108,30 @@ Trước handoff/release, PM Agent phải xét kết quả từ các agent phù 
 
 Không được gọi project là production-ready nếu chưa có evidence và risk acceptance phù hợp.
 
+### Verification Level rule
+
+Mọi delegated task trong Agent-Teams mode phải có `Verification Level` theo template:
+
+```text
+Paper — artifact-only review; no app/runtime proof.
+Simulated — planned behavior or dry-run reasoning; no runtime proof.
+Local — real local commands/checks run.
+Integration — multiple implemented parts verified together.
+Production — deployed environment verified after approval.
+```
+
+PM Agent phải yêu cầu worker report cùng `Verification Level` và evidence tương ứng. Nếu report dùng các claim như `tested`, `working`, `secure`, `performant`, `accessible`, `integrated`, `deployed`, hoặc `production-ready` mà thiếu bằng chứng phù hợp, PM Agent phải đánh dấu `Needs Review` hoặc `Blocked`, không được nâng gate.
+
+Paper/Simulated result chỉ chứng minh artifact/plan rõ. Nó không chứng minh implementation chạy thật.
+
+Trước real implementation pilot, PM Agent phải có:
+- rollback point
+- owned paths
+- forbidden paths
+- stop conditions
+- verification level từ `Local` trở lên cho implementation task
+- evidence yêu cầu rõ: command output, screenshot, API output, test result, log path, hoặc blocker
+
 ## Cách giao tiếp
 
 - **Với user:** Rõ ràng, chi tiết, chủ động gợi ý

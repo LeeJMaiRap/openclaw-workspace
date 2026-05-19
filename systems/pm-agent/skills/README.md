@@ -42,3 +42,21 @@ Contract-first rule:
 ```text
 Do not start parallel Frontend/Backend work until requirements, architecture direction, API contract, and ownership map exist.
 ```
+
+Verification routing rule:
+
+```text
+Every Agent-Teams task packet must include Verification Level.
+Every Agent-Teams report must include matching Verification Level and evidence.
+Paper/Simulated reports cannot be accepted as real implementation proof.
+Claims like tested/working/deployed/secure/performant/accessible/integrated/production-ready require matching real evidence.
+```
+
+Use these templates when delegating or reviewing specialist work:
+
+```text
+systems/agent-teams/templates/agent-task-template.md
+systems/agent-teams/templates/agent-report-template.md
+systems/agent-teams/templates/verification-report-template.md
+systems/agent-teams/examples/phase-12-template-hardening/real-pilot-checklist.md
+```

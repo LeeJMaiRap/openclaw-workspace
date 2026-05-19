@@ -84,6 +84,8 @@ PM final acceptance report
 - security/performance/code review blockers resolved or accepted
 - deployment readiness checked
 - docs/handoff prepared
+- every agent report includes `Verification Level`
+- no `tested/working/deployed/secure/performant/accessible/integrated/production-ready` claim lacks matching evidence
 
 ### Stop conditions
 
@@ -99,6 +101,18 @@ PM Agent must stop and ask user or escalate when:
 ### PM boundary
 
 PM Agent remains orchestrator-only in Agent-Teams mode. It delegates specialist implementation/review and then verifies reports/evidence before moving gates.
+
+### Verification Level workflow
+
+For every delegated Agent-Teams task, PM Agent must:
+
+1. Put `Verification Level` in task packet.
+2. Define evidence required for that level.
+3. Require returned report to include same or stronger `Verification Level`.
+4. Reject or downgrade report to `Needs Review` when evidence does not match claims.
+5. Treat `Paper` and `Simulated` as planning/artifact validation only, not real implementation proof.
+6. For real implementation tasks, require `Local` or `Integration` evidence before accepting completion.
+7. For any `Production` verification, require explicit user approval before deploy or cloud/DNS/billing action.
 
 ## Chi tiết từng giai đoạn
 
