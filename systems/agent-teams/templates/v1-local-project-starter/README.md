@@ -33,8 +33,36 @@ no real browser/screenshot/a11y/visual claim without browser executable launch e
 planning/
 contracts/
 task-packets/
-reports/            # includes dry-run, verification, acceptance skeletons
+reports/            # includes dry-run, verification, QA/review, acceptance skeletons
 app/                # placeholder for implementation when approved
+```
+
+
+## CLI / Local-File Project Notes
+
+Use these notes when the new project is a command-line tool or local-file workflow.
+
+Recommended patterns:
+
+```text
+Use a project-specific local data path override for tests, e.g. <PROJECT_STORE_PATH>.
+Keep tests isolated in temporary directories.
+Use dependency-free test harnesses when possible.
+Assert JSON output shape and stable error codes.
+Cover happy path and negative/error paths.
+Record exact local commands in reports/test.log and reports/build.log.
+Do not claim concurrency safety, corruption recovery, packaging, or production readiness unless separately tested.
+```
+
+Example Wave 3 CLI/local-file scenarios:
+
+```text
+add/list/search/delete happy path
+missing required flag
+invalid URL or malformed input
+unknown id / not found
+unknown command / usage error
+store path override works with isolated temp data
 ```
 
 ## Wave Order

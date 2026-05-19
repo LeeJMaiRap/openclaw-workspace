@@ -61,6 +61,8 @@ systems/agent-teams/templates/**
 - test command availability
 - build/syntax command availability
 - local server/route/command assumptions if relevant
+- CLI command assumptions if relevant
+- local data/store path override if relevant
 - browser executable launch check if real browser proof is required
 
 ## Acceptance Criteria
@@ -68,11 +70,40 @@ systems/agent-teams/templates/**
 - [ ] Happy path tested.
 - [ ] Negative/error cases tested.
 - [ ] Build/syntax check passes.
+- [ ] Test data is isolated from real/user data.
+- [ ] JSON/API/CLI output shape asserted when applicable.
+- [ ] Stable error codes asserted when applicable.
 - [ ] Integration report written.
 - [ ] QA report written.
 - [ ] Code review written.
 - [ ] Challenge review rejects overclaims.
 - [ ] Handoff written.
+
+## CLI / Local-File Guidance
+
+For CLI or local-file projects, prefer patterns validated by `local-bookmarks-cli-v1`:
+
+```text
+Use a test-only temp directory for local data.
+Use an environment variable or config override for store path, e.g. <PROJECT_STORE_PATH>.
+Run the real CLI command through child process / shell command, not only direct function calls.
+Assert stdout/stderr and exit status.
+Parse JSON output and assert key fields.
+Cover missing flags, malformed values, unknown ids, and unknown commands.
+Keep test harness dependency-free unless dependency install has explicit approval.
+```
+
+Do not claim these without dedicated evidence:
+
+```text
+packaged CLI
+installed binary
+production-ready storage
+concurrency-safe writes
+corruption recovery
+security hardening
+performance benchmark
+```
 
 ## Return Format
 
