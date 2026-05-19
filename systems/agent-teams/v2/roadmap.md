@@ -57,6 +57,20 @@ Next real project needing a dependency must still request explicit approval befo
 
 ## Track 2 — Project Type Packs
 
+Status:
+
+```text
+Phase 57: Project Type Packs plan — complete
+Phase 58: Project Type Pack base template
+Phase 59: CLI/local-file pack
+Phase 60: HTTP API pack
+Phase 61: Static UI pack
+Phase 62: Fullstack local pack
+Phase 63: Docs-only/project-management pack
+Phase 64: Pack selection runbook wiring
+Phase 65: Pack dry-run simulation
+```
+
 Goal:
 
 ```text
@@ -71,6 +85,13 @@ HTTP API pack
 Static UI pack
 Fullstack local pack
 Docs-only/project-management pack
+```
+
+Track 2 plan:
+
+```text
+systems/agent-teams/v2/project-type-packs/plan.md
+systems/agent-teams/v2/project-type-packs/acceptance-criteria.md
 ```
 
 ## Track 3 — Security / Performance Evidence Gates

@@ -56,3 +56,14 @@ systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependenc
 ```
 
 Phase 56 completes Track 1 at docs/simulated level with a dry-run dependency approval simulation. Scope remains docs-only until explicit approval for any install/download.
+
+## Track 2 — Project Type Packs
+
+Phase 57 starts Track 2 with a project type packs plan.
+
+```text
+systems/agent-teams/v2/project-type-packs/plan.md
+systems/agent-teams/v2/project-type-packs/acceptance-criteria.md
+```
+
+Candidate packs: CLI/local-file, HTTP API, Static UI, Fullstack local, Docs-only/project-management.
