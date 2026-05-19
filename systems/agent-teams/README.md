@@ -53,6 +53,13 @@ Primary closure artifact:
 systems/agent-teams/examples/phase-47-v1-pilot-closure/v1-pilot-closure-summary.md
 ```
 
+Final v1 status and v2 roadmap:
+
+```text
+systems/agent-teams/examples/phase-50-v1-final-status-v2-roadmap/v1-final-status.md
+systems/agent-teams/examples/phase-50-v1-final-status-v2-roadmap/v2-roadmap.md
+```
+
 ## Primary v1 Runbooks
 
 - `runbooks/new-local-project-launch-runbook.md` — entrypoint for starting a new Agent-Teams v1 local project.
@@ -98,6 +105,8 @@ systems/agent-teams/
 19. Phase 42: new local project launch runbook
 20. Phase 43-46: `local-bookmarks-cli-v1` launch-runbook validation pilot
 21. Phase 47: v1 pilot closure — validated for controlled local pilots
+22. Phase 48-49: CLI/local-file starter and runbook hardening
+23. Phase 50: v1 final status and v2 roadmap
 
 ## Current Rule
 
