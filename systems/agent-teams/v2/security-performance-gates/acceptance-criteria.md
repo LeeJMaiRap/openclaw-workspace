@@ -37,3 +37,10 @@ security/performance claim boundaries are explicit
 Critical risks block acceptance
 High risks require explicit acceptance and cannot support production claim alone
 ```
+
+## Track Status
+
+```text
+Security / Performance Evidence Gates complete at docs/simulated level after Phase 73.
+Production/security/performance runtime claims still require matching real evidence and later Production / Deploy Gates where applicable.
+```
