@@ -6,7 +6,7 @@ Track 4 is accepted when:
 
 ```text
 browser readiness matrix exists (`browser-readiness-matrix.md`)
-browser install approval packet refresh exists
+browser install approval packet refresh exists (`browser-install-approval-packet-refresh.md`)
 executable discovery dry-run exists
 fallback browser-like boundary is documented
 real browser proof protocol exists
