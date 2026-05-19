@@ -8,7 +8,7 @@ Track 6 is accepted when:
 deploy approval packet template exists (`templates/deploy-approval-packet-template.md`)
 environment/secrets policy exists (`environment-secrets-policy.md`)
 rollback/backout template exists (`templates/rollback-backout-template.md`)
-release checklist exists
+release checklist exists (`templates/release-checklist-template.md`)
 post-deploy verification template exists
 production claim policy exists
 deploy gate dry-run exists

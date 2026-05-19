@@ -216,6 +216,7 @@ Phase 90: Track 6 Production / Deploy Gates plan — complete
 Phase 91: deploy approval packet template — complete
 Phase 92: environment/secrets policy — complete
 Phase 93: rollback/backout template — complete
+Phase 94: release checklist — complete
 ```
 
 Goal:
