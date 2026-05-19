@@ -177,6 +177,7 @@ Phase 82: Track 5 plan — complete
 Phase 83: cross-agent evidence index template — complete
 Phase 84: parallel wave readiness v2 checklist — complete
 Phase 85: ownership conflict escalation protocol — complete
+Phase 86: handoff quality rubric — complete
 ```
 
 Goal:

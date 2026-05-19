@@ -8,7 +8,7 @@ Track 5 is accepted when:
 cross-agent evidence index template exists (`templates/cross-agent-evidence-index-template.md`)
 parallel wave readiness v2 checklist exists (`templates/parallel-wave-readiness-v2-checklist.md`)
 ownership conflict escalation protocol exists (`ownership-conflict-escalation-protocol.md`)
-handoff quality rubric exists
+handoff quality rubric exists (`handoff-quality-rubric.md`)
 PM acceptance dashboard template exists
 multi-agent execution quality dry-run exists
 dry-run rejects missing evidence, ownership conflicts, and bad handoffs

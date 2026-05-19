@@ -63,7 +63,7 @@ Phase 82: Track 5 plan — complete
 Phase 83: cross-agent evidence index template — complete
 Phase 84: parallel wave readiness v2 checklist — complete
 Phase 85: ownership conflict escalation protocol — complete
-Phase 86: handoff quality rubric
+Phase 86: handoff quality rubric — complete
 Phase 87: PM acceptance dashboard template
 Phase 88: multi-agent execution quality dry-run
 Phase 89: Track 5 closure and v2 roadmap readiness review
@@ -156,4 +156,5 @@ no gate weakens Tracks 1-4 or deploy restrictions
 systems/agent-teams/v2/multi-agent-execution-quality/templates/cross-agent-evidence-index-template.md
 systems/agent-teams/v2/multi-agent-execution-quality/templates/parallel-wave-readiness-v2-checklist.md
 systems/agent-teams/v2/multi-agent-execution-quality/ownership-conflict-escalation-protocol.md
+systems/agent-teams/v2/multi-agent-execution-quality/handoff-quality-rubric.md
 ```
