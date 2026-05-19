@@ -27,7 +27,7 @@ Track 3 is complete when:
 
 ```text
 security evidence matrix exists (`security-minimum-evidence-matrix.md`)
-performance benchmark evidence matrix exists
+performance benchmark evidence matrix exists (`performance-benchmark-evidence-matrix.md`)
 risk severity rubric exists
 risk acceptance form exists
 security/performance task packet templates v2 exist
