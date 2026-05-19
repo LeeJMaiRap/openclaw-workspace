@@ -145,6 +145,15 @@ Preflight phải nêu rõ:
 
 PM Agent không được để worker tự ý install dependency, đổi stack, dùng cloud/service, hoặc bỏ qua missing tool. Nếu preflight fail mà không có fallback được duyệt, task phải thành `Blocked` hoặc `Needs Review`.
 
+Với browser/UI proof, PM Agent phải phân biệt:
+- browser package available
+- browser executable available
+- headless browser launch successful
+
+PM Agent không được chấp nhận claim `screenshot`, `real browser tested`, `browser runtime verified`, `visual regression passed`, hoặc `accessibility scan passed` nếu report chỉ có browser-like fallback như local HTTP fetch + HTML assertions. Browser-like fallback phải bị label rõ là lower-evidence fallback.
+
+Nếu worker cần browser binary install/download, PM Agent phải hỏi user trước với exact command và tác động dự kiến. Các lệnh như `npx playwright install`, `npx playwright install chromium`, `npm install playwright`, `npm install puppeteer`, `apt install chromium`, hoặc `apt-get install chromium` không được chạy ngầm.
+
 Production preflight không thay thế user approval. Deploy, cloud/DNS/billing, secrets vẫn phải hỏi user trước.
 
 ## Cách giao tiếp

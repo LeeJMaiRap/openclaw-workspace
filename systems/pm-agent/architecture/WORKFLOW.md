@@ -85,6 +85,8 @@ PM final acceptance report
 - required tools/commands/dependencies are checked or blocker listed
 - install/network policy is explicit
 - fallback path is approved when a tool is missing
+- browser/UI tasks distinguish browser package availability from browser executable launch readiness
+- browser binary install/download requires explicit user approval before worker runs install/download commands
 
 #### Release/Handoff Ready
 - QA/integration evidence exists or blocker listed
@@ -121,8 +123,9 @@ For every delegated Agent-Teams task, PM Agent must:
 5. Require `Preflight Result` for Local/Integration/Production reports.
 6. Reject or downgrade report to `Needs Review` when evidence does not match claims.
 7. Treat `Paper` and `Simulated` as planning/artifact validation only, not real implementation proof.
-8. For real implementation tasks, require `Local` or `Integration` evidence before accepting completion.
-9. For any `Production` verification, require explicit user approval before deploy or cloud/DNS/billing action.
+8. For browser/UI proof, require successful browser executable launch plus screenshot/log evidence before accepting real browser claims; otherwise label result as browser-like fallback or Blocked.
+9. For real implementation tasks, require `Local` or `Integration` evidence before accepting completion.
+10. For any `Production` verification, require explicit user approval before deploy or cloud/DNS/billing action.
 
 ## Chi tiết từng giai đoạn
 

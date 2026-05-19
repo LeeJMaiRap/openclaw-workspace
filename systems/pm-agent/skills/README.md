@@ -59,6 +59,9 @@ Local/Integration/Production tasks must include Preflight Required.
 Local/Integration/Production reports must include Preflight Result.
 Missing tools/dependencies must become an approved fallback, Blocked, or Needs Review.
 Workers must not silently install dependencies, change stack, use cloud services, or bypass missing tools.
+Browser/UI proof must check browser package availability and browser executable launch readiness separately.
+Browser-like fallback evidence must not be accepted as screenshot, real browser runtime, visual regression, or accessibility scan proof.
+Browser binary install/download requires explicit user approval before commands such as npx playwright install or apt install chromium run.
 ```
 
 Use these templates/protocols when delegating or reviewing specialist work:
