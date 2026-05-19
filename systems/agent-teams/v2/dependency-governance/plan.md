@@ -180,6 +180,12 @@ how to handle generated lockfiles
 how to reject unapproved package manager switches
 ```
 
+## Phase 54 Lockfile + Provenance Policy
+
+```text
+systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
+```
+
 ## Starter / Runbook Wiring Plan
 
 Future Phase 55 should wire governance into:
@@ -226,7 +232,7 @@ dependency approval request template — complete in Phase 52
 dependency risk review template — complete in Phase 52
 install provenance log template — complete in Phase 52
 toolchain preflight matrix — complete in Phase 53
-lockfile policy
+lockfile policy — complete in Phase 54
 starter/runbook wiring
 dry-run simulation report
 ```

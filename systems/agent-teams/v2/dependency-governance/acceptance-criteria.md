@@ -46,6 +46,19 @@ no PM Agent changes occur
 no deploy/cloud/DNS/billing/secrets changes occur
 ```
 
+## Phase 54 Acceptance
+
+Phase 54 is accepted if:
+
+```text
+lockfile + provenance policy exists
+policy covers package metadata, expected/unexpected lockfile changes, missing lockfiles, package-manager switches, provenance log fields, review requirements, rejection conditions, claim boundaries, and rollback requirements
+no install/download occurs
+no runtime/app/test changes occur
+no PM Agent changes occur
+no deploy/cloud/DNS/billing/secrets changes occur
+```
+
 ## Track 1 Acceptance
 
 Track 1 is complete when Agent-Teams can safely process dependency/toolchain needs using explicit approval and evidence.
