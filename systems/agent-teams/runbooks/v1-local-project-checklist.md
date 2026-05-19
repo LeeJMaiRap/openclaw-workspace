@@ -1,5 +1,12 @@
 # Agent-Teams v1 Local Project Checklist
 
+## Launch Runbook
+
+- [ ] Read `systems/agent-teams/runbooks/new-local-project-launch-runbook.md`.
+- [ ] Confirm project fits v1 local-only launch scope.
+- [ ] Confirm Wave 2 implementation will wait for user approval.
+- [ ] Record stop gates and approval needs.
+
 ## Starter Packet Setup
 
 - [ ] Copy `systems/agent-teams/templates/v1-local-project-starter/` into the new project folder.
@@ -47,6 +54,8 @@ reports/starter-dry-run-checklist.md
 - [ ] No app code created unless explicitly scoped.
 
 ## Wave 2 — Implementation
+
+Do not start Wave 2 until user explicitly approves after Wave 1 review.
 
 Starter files:
 

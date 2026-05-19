@@ -6,6 +6,16 @@ Run small real local projects with Agent-Teams using strict phase gates, explici
 
 This guide distills the accepted `mini-issue-tracker-v1` pilot from Phases 31-35 into a reusable operating flow.
 
+## Launch Entrypoint
+
+When starting from a raw user idea, use:
+
+```text
+systems/agent-teams/runbooks/new-local-project-launch-runbook.md
+```
+
+The launch runbook converts the idea into Wave 1 planning artifacts, then stops for user approval before Wave 2 implementation.
+
 ## Starter Packet
 
 For a new local project, copy this starter folder first:
@@ -123,6 +133,7 @@ Verification Level selected
 preflight needs identified
 starter dry-run checklist complete
 filled Wave 1 docs contain no generic starter placeholders
+user approval requested before Wave 2 implementation
 ```
 
 ### Wave 2 — Implementation Only

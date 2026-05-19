@@ -12,14 +12,16 @@ The PM Agent acts as **Orchestrator only**. Specialist agents own specialist wor
 
 Use this path when starting a new controlled local project:
 
-1. Read `runbooks/v1-local-project-operating-guide.md`.
-2. Copy `templates/v1-local-project-starter/` into the new project folder.
-3. Use `runbooks/v1-local-project-checklist.md` as the phase checklist.
-4. Fill starter placeholders for intake, requirements, acceptance criteria, architecture, contract, and ownership.
-5. Run Wave 1 first: requirements, acceptance criteria, UX/architecture, API/feature contract, ownership map.
-6. Run Wave 2 only after Wave 1 is accepted: implementation in owned paths only.
-7. Run Wave 3: local integration tests, QA, code review, challenge review, handoff.
-8. Run Wave 4: PM acceptance, traceability matrix, cutover decision, retrospective.
+1. Start with `runbooks/new-local-project-launch-runbook.md`.
+2. Read `runbooks/v1-local-project-operating-guide.md`.
+3. Copy `templates/v1-local-project-starter/` into the new project folder.
+4. Use `runbooks/v1-local-project-checklist.md` as the phase checklist.
+5. Fill starter placeholders for intake, requirements, acceptance criteria, architecture, contract, and ownership.
+6. Run Wave 1 first: requirements, acceptance criteria, UX/architecture, API/feature contract, ownership map.
+7. Stop and ask approval before Wave 2 implementation.
+8. Run Wave 2 only after Wave 1 is accepted: implementation in owned paths only.
+9. Run Wave 3: local integration tests, QA, code review, challenge review, handoff.
+10. Run Wave 4: PM acceptance, traceability matrix, cutover decision, retrospective.
 
 Default guardrails:
 
@@ -34,6 +36,7 @@ no real browser/screenshot/a11y/visual claim without executable launch evidence
 
 ## Primary v1 Runbooks
 
+- `runbooks/new-local-project-launch-runbook.md` — entrypoint for starting a new Agent-Teams v1 local project.
 - `runbooks/v1-local-project-operating-guide.md` — canonical v1 flow for controlled local projects.
 - `runbooks/v1-local-project-checklist.md` — checklist for intake, Waves 1-4, claim boundaries, and git hygiene.
 - `templates/v1-local-project-starter/` — copyable starter packet for new local projects.
@@ -71,6 +74,9 @@ systems/agent-teams/
 14. Phase 37: README/index quick-start wiring
 15. Phase 38: v1 local project starter packet
 16. Phase 39: starter packet usage links in README/runbook/checklist
+17. Phase 40: starter packet dry-run on fake project
+18. Phase 41: starter packet placeholder cleanup hardening
+19. Phase 42: new local project launch runbook
 
 ## Current Rule
 
