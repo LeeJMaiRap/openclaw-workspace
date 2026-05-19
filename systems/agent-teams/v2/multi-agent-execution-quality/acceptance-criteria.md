@@ -5,7 +5,7 @@
 Track 5 is accepted when:
 
 ```text
-cross-agent evidence index template exists
+cross-agent evidence index template exists (`templates/cross-agent-evidence-index-template.md`)
 parallel wave readiness v2 checklist exists
 ownership conflict escalation protocol exists
 handoff quality rubric exists

@@ -174,6 +174,7 @@ Status:
 
 ```text
 Phase 82: Track 5 plan — complete
+Phase 83: cross-agent evidence index template — complete
 ```
 
 Goal:
