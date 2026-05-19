@@ -82,7 +82,8 @@ systems/agent-teams/
 ├── runbooks/       # reusable operating guides and checklists
 ├── examples/       # demos, pilots, validation reports
 ├── references/     # source summaries from external repos/skills
-└── reports/        # final summaries and status reports
+├── reports/        # final summaries and status reports
+└── v2/             # v2 roadmap and governance tracks
 ```
 
 ## Build Order
@@ -110,7 +111,18 @@ systems/agent-teams/
 21. Phase 47: v1 pilot closure — validated for controlled local pilots
 22. Phase 48-49: CLI/local-file starter and runbook hardening
 23. Phase 50: v1 final status and v2 roadmap
+24. Phase 51: v2 dependency governance plan
+
+## v2 Planning
+
+Agent-Teams v2 starts with dependency/toolchain governance:
+
+```text
+systems/agent-teams/v2/README.md
+systems/agent-teams/v2/roadmap.md
+systems/agent-teams/v2/dependency-governance/plan.md
+```
 
 ## Current Rule
 
-For new real work, start from the v1 local project runbooks and keep PM Agent as orchestrator-only. Do not claim Production, real browser, screenshot, accessibility, visual regression, security, or performance proof unless matching evidence exists.
+For new real work, start from the v1 local project runbooks and keep PM Agent as orchestrator-only. Do not claim Production, real browser, screenshot, accessibility, visual regression, security, or performance proof unless matching evidence exists. For any dependency/toolchain install or download, use v2 dependency governance once approved and wired.
