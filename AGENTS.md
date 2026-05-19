@@ -57,6 +57,25 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## Work Discipline
+
+For non-trivial workspace changes:
+
+1. Restate the goal in one sentence.
+2. Identify scope: files/folders to touch.
+3. Identify rollback point: current commit, new baseline commit, or trash path.
+4. Ask before destructive, broad, or ambiguous actions.
+5. Make surgical edits only.
+6. Verify result with concrete evidence.
+7. Commit in small logical chunks when requested or when creating rollback points.
+
+Never interpret “commit workspace” narrowly if rollback is the goal. Confirm whether the user wants:
+
+- only current task files committed
+- all modified/untracked workspace files committed as baseline
+
+Use `BEHAVIOR.md` for detailed operating discipline.
+
 ## External vs Internal
 
 **Safe to do freely:**
