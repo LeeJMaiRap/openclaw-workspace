@@ -117,3 +117,13 @@ systems/agent-teams/v2/multi-agent-execution-quality/acceptance-criteria.md
 systems/agent-teams/v2/multi-agent-execution-quality/track-5-closure-readiness-review.md
 ```
 
+## Track 6 — Production / Deploy Gates
+
+Phase 90 starts Track 6 with production/deploy gate planning.
+
+Track 6 remains docs/approval-gated unless the user explicitly approves deploy/cloud/DNS/billing/secrets/runtime actions.
+
+```text
+systems/agent-teams/v2/production-deploy-gates/plan.md
+systems/agent-teams/v2/production-deploy-gates/acceptance-criteria.md
+```

@@ -209,6 +209,12 @@ systems/agent-teams/v2/multi-agent-execution-quality/track-5-closure-readiness-r
 
 ## Track 6 — Production / Deploy Gates
 
+Status:
+
+```text
+Phase 90: Track 6 Production / Deploy Gates plan — complete
+```
+
 Goal:
 
 ```text
@@ -224,6 +230,13 @@ rollback/backout template
 release checklist
 post-deploy verification template
 production claim policy
+```
+
+Track 6 plan:
+
+```text
+systems/agent-teams/v2/production-deploy-gates/plan.md
+systems/agent-teams/v2/production-deploy-gates/acceptance-criteria.md
 ```
 
 ## Non-Negotiables
