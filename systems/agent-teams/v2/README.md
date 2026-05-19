@@ -97,3 +97,11 @@ systems/agent-teams/v2/browser-ui-evidence-recovery/acceptance-criteria.md
 
 Track 4 preserves current browser blocker rules: no real browser, screenshot, a11y, or visual claim without executable launch evidence and required artifacts. Browser installs/downloads still require explicit approval through Track 1 governance.
 
+Track 4 is complete at docs/simulated level after Phase 81.
+
+```text
+systems/agent-teams/v2/browser-ui-evidence-recovery/track-4-closure-readiness-review.md
+```
+
+Real browser proof remains blocked until supported executable and launch/artifact evidence exist.
+
