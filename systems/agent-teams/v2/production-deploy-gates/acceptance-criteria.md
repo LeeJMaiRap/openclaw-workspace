@@ -9,7 +9,7 @@ deploy approval packet template exists (`templates/deploy-approval-packet-templa
 environment/secrets policy exists (`environment-secrets-policy.md`)
 rollback/backout template exists (`templates/rollback-backout-template.md`)
 release checklist exists (`templates/release-checklist-template.md`)
-post-deploy verification template exists
+post-deploy verification template exists (`templates/post-deploy-verification-template.md`)
 production claim policy exists
 deploy gate dry-run exists
 dry-run rejects deploy/production claims without approval/evidence

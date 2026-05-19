@@ -217,6 +217,7 @@ Phase 91: deploy approval packet template — complete
 Phase 92: environment/secrets policy — complete
 Phase 93: rollback/backout template — complete
 Phase 94: release checklist — complete
+Phase 95: post-deploy verification template — complete
 ```
 
 Goal:
