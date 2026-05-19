@@ -68,7 +68,7 @@ Phase 61: Static UI pack — complete
 Phase 62: Fullstack local pack — complete
 Phase 63: Docs-only/project-management pack — complete
 Phase 64: Pack selection runbook wiring — complete
-Phase 65: Pack dry-run simulation
+Phase 65: Pack dry-run simulation — complete
 ```
 
 Goal:

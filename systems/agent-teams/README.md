@@ -118,6 +118,7 @@ systems/agent-teams/
 28. Phase 55: v2 starter/runbook dependency governance wiring
 29. Phase 56: v2 dry-run dependency approval simulation
 30. Phase 57: v2 project type packs plan
+31. Phase 58-65: v2 project type packs templates, packs, wiring, dry-run
 
 ## v2 Planning
 
@@ -133,6 +134,8 @@ systems/agent-teams/v2/dependency-governance/lockfile-provenance-policy.md
 systems/agent-teams/v2/dependency-governance/starter-runbook-wiring.md
 systems/agent-teams/v2/dependency-governance/examples/phase-56-dry-run-dependency-approval/README.md
 systems/agent-teams/v2/project-type-packs/plan.md
+systems/agent-teams/v2/project-type-packs/pack-selection-runbook.md
+systems/agent-teams/v2/project-type-packs/examples/phase-65-pack-selection-dry-run/README.md
 ```
 
 ## Current Rule

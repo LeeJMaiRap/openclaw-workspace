@@ -67,3 +67,10 @@ systems/agent-teams/v2/project-type-packs/acceptance-criteria.md
 ```
 
 Candidate packs: CLI/local-file, HTTP API, Static UI, Fullstack local, Docs-only/project-management.
+
+
+Phase 65 completes Track 2 at docs/simulated level with a CLI/local-file pack selection dry run.
+
+```text
+systems/agent-teams/v2/project-type-packs/examples/phase-65-pack-selection-dry-run/README.md
+```
