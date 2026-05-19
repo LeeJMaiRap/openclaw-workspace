@@ -68,7 +68,7 @@ Track 6 closure/readiness review
 Phase 90: Track 6 Production / Deploy Gates plan — complete
 Phase 91: deploy approval packet template — complete
 Phase 92: environment/secrets policy — complete
-Phase 93: rollback/backout template
+Phase 93: rollback/backout template — complete
 Phase 94: release checklist
 Phase 95: post-deploy verification template
 Phase 96: production claim policy
@@ -169,4 +169,5 @@ no docs weaken explicit approval requirements
 ```text
 systems/agent-teams/v2/production-deploy-gates/templates/deploy-approval-packet-template.md
 systems/agent-teams/v2/production-deploy-gates/environment-secrets-policy.md
+systems/agent-teams/v2/production-deploy-gates/templates/rollback-backout-template.md
 ```
