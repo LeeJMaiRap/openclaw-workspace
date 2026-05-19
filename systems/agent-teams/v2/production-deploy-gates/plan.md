@@ -66,7 +66,7 @@ Track 6 closure/readiness review
 
 ```text
 Phase 90: Track 6 Production / Deploy Gates plan — complete
-Phase 91: deploy approval packet template
+Phase 91: deploy approval packet template — complete
 Phase 92: environment/secrets policy
 Phase 93: rollback/backout template
 Phase 94: release checklist
@@ -161,4 +161,11 @@ post-deploy verification template exists
 production claim policy exists
 dry-run proves PM rejects deploy/production claims without approval/evidence
 no docs weaken explicit approval requirements
+```
+
+
+## Track 6 Artifacts
+
+```text
+systems/agent-teams/v2/production-deploy-gates/templates/deploy-approval-packet-template.md
 ```

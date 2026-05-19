@@ -5,7 +5,7 @@
 Track 6 is accepted when:
 
 ```text
-deploy approval packet template exists
+deploy approval packet template exists (`templates/deploy-approval-packet-template.md`)
 environment/secrets policy exists
 rollback/backout template exists
 release checklist exists
