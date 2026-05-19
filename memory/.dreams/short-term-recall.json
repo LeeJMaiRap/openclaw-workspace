@@ -1,0 +1,262 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-19T08:08:11.326Z",
+  "entries": {
+    "memory:memory/2026-05-16.md:104:145": {
+      "key": "memory:memory/2026-05-16.md:104:145",
+      "path": "memory/2026-05-16.md",
+      "startLine": 104,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "### Context Anh muốn bắt đầu dự án thật: web bán acc game, vừa làm vừa test PM Agent sau update. ### What happened 1. **Project scope clarification:** - Bán acc nhiều loại game - Khách xem danh sách → chọn → liên hệ mua (không cần đăng nhập) - Thanh toán qua SĐT/Facebook - Admin CRUD acc - Làm đầy đủ từ đầu - **Deadline: 2 ngày** - Stack đơn giản 2. **PM Agent initiation phase:** - Tạo project structure: `projects/active/web-ban-acc-game/` - Charter created: scope, timeline, stakeholders, risks - Requirements documented: 10 functional requirements, 4 NFRs - Tech stack decided: Next.js 14 + SQLite + Prisma + Tailwind + Vercel - Task board created: 14 task",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:09:06.763Z",
+      "lastRecalledAt": "2026-05-19T08:08:11.326Z",
+      "queryHashes": [
+        "05612a1e0105",
+        "de43c8cfda67",
+        "760a2622df3a",
+        "74c8ee5e74b6"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "sđt/facebook",
+        "projects/active/web-ban-acc-game",
+        "next.js",
+        "context",
+        "anh",
+        "muốn",
+        "bắt",
+        "đầu"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:41": {
+      "key": "memory:memory/2026-05-16.md:1:41",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Daily Memory - 2026-05-16 ## Morning Session - Memory & Context Recovery ### Context Anh Doanh nhắn từ Telegram và Control UI. Em gặp vấn đề không nhận ra anh qua Telegram. ### What happened 1. **Voice message transcription setup:** - Anh gửi 3 voice messages qua Telegram (file .ogg và .mp3) - Em không có STT tool → không transcribe được - Em cài Whisper vào venv riêng: `/root/.openclaw/workspace/.venv-stt` - Cài đặt thành công (torch, CUDA libs, whisper) - Test transcribe: kết quả \"axial\" (không rõ ràng, có thể do model tiny + audio ngắn) 2. **Memory/identity issue discovered:** - Anh hỏi qua Telegram: \"em nhớ anh là ai không?\" - Em chạy `memory_search` → không th",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:09:06.763Z",
+      "lastRecalledAt": "2026-05-19T06:09:06.763Z",
+      "queryHashes": [
+        "05612a1e0105"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "openclaw/workspace",
+        "venv-stt",
+        "memory/identity",
+        "memory-search",
+        "morning",
+        "context",
+        "recovery",
+        "anh"
+      ]
+    },
+    "memory:memory/2026-05-16.md:63:113": {
+      "key": "memory:memory/2026-05-16.md:63:113",
+      "path": "memory/2026-05-16.md",
+      "startLine": 63,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "- Cần có USER.md từ đầu để cross-session identity work --- ## Afternoon Session - STT/TTS Skill Development ### Context Anh yêu cầu em hoàn thành STT + TTS trong 30 phút. ### What happened 1. **STT upgrade:** - Nâng từ model `tiny` lên `base` (tốt hơn nhiều) - Tạo script: `systems/voice/scripts/transcribe.py` - Test thành công: transcribe file mp3 của anh → \"Xin chào!\" 2. **TTS implementation:** - Cài `edge-tts` (free, không cần API key) - Tạo script: `systems/voice/scripts/synthesize.py` - Voice: `vi-VN-HoaiMyNeural` - Test thành công: tạo file mp3 từ text 3. **End-to-end test:** - Anh gửi voice: \"Tạo một đoạn văn 50 chữ về anh và chuyển thành voice sau đó gửi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:09:06.763Z",
+      "lastRecalledAt": "2026-05-19T07:55:14.270Z",
+      "queryHashes": [
+        "05612a1e0105",
+        "760a2622df3a"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "user.md",
+        "cross-session",
+        "stt/tts",
+        "edge-tts",
+        "vi-vn-hoaimyneural",
+        "end-to-end",
+        "cần",
+        "đầu"
+      ]
+    },
+    "memory:memory/2026-05-16.md:30:75": {
+      "key": "memory:memory/2026-05-16.md:30:75",
+      "path": "memory/2026-05-16.md",
+      "startLine": 30,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- Tìm thấy Telegram info trong conversation metadata: - Username: Doanh31 - ID: 5168072926 - Display name: Doanh 4. **USER.md created:** - Em tạo file `USER.md` với đầy đủ thông tin về anh: - Tên, pronouns, timezone (UTC+7) - Telegram contact info - GitHub - Role & working style - Current & past projects - Từ giờ em sẽ nhận ra anh qua cả Control UI và Telegram 5. **Daily memory 2026-05-15 reviewed:** - Em đọc lại memory hôm qua - Nhớ lại: hôm qua vừa hoàn tất update PM Agent (all phases done) - Anh có chia sẻ thông tin cuộc thi WCAG 2.2 (accessibility competition) - Kế hoạch tiếp theo: bắt đầu dự án test PM agent E2E với context",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:09:06.763Z",
+      "lastRecalledAt": "2026-05-19T06:09:06.763Z",
+      "queryHashes": [
+        "05612a1e0105"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "user.md",
+        "2.2",
+        "tìm",
+        "thấy",
+        "telegram",
+        "info",
+        "trong",
+        "conversation"
+      ]
+    },
+    "memory:memory/2026-05-16.md:136:169": {
+      "key": "memory:memory/2026-05-16.md:136:169",
+      "path": "memory/2026-05-16.md",
+      "startLine": 136,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "- **Image storage:** Start with local, upgrade to Cloudinary if time permits - **Auth:** Simple JWT or NextAuth - **Timeline:** Day 1 (backend + public frontend), Day 2 (admin + deploy) ### Next steps - [ ] Anh xác nhận charter + plan - [ ] Bắt đầu execution: TASK-001 (setup project) - [ ] Day 1 target: backend API + public listing + acc detail working ### Outputs created - `projects/active/web-ban-acc-game/project.yaml` - `projects/active/web-ban-acc-game/01-initiation/charter.md` - `projects/active/web-ban-acc-game/01-initiation/requirements.md` - `projects/active/web-ban-acc-game/02-planning/task-board.md` - `projects/active/web-ban-acc-game/02-planning/tech-stack.md` - `projects/active",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 4,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:09:06.763Z",
+      "lastRecalledAt": "2026-05-19T08:08:11.326Z",
+      "queryHashes": [
+        "05612a1e0105",
+        "de43c8cfda67",
+        "760a2622df3a",
+        "74c8ee5e74b6"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "task-001",
+        "projects/active",
+        "image",
+        "storage",
+        "start",
+        "local",
+        "upgrade",
+        "cloudinary"
+      ]
+    },
+    "memory:memory/2026-05-15.md:181:206": {
+      "key": "memory:memory/2026-05-15.md:181:206",
+      "path": "memory/2026-05-15.md",
+      "startLine": 181,
+      "endLine": 206,
+      "source": "memory",
+      "snippet": "- Updated policy: `systems/pm-agent/runtime/policies/stale-project-detection-policy.md` (bổ sung severity levels) - Updated script: `systems/pm-agent/skills/project-operations/daily-project-report-generator/scripts/generate_daily_report.py` - Updated skill: `systems/pm-agent/skills/project-operations/daily-project-report-generator/SKILL.md` - Updated runbook: `systems/pm-agent/runtime/runbooks/daily-report-cron.md` (bổ sung logging/monitoring + fallback) - New scenarios: - `systems/pm-agent/eval/scenarios/source-conflict.md` - `systems/pm-agent/eval/scenarios/on-hold-in-active-path.md` - `systems/pm-agent/eval/scenarios/no-change-day.md` - `systems/pm-agent/eval/scenarios/missing-act",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9349841597916921,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:23:36.037Z",
+      "lastRecalledAt": "2026-05-19T07:55:14.270Z",
+      "queryHashes": [
+        "de43c8cfda67",
+        "760a2622df3a"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "logging/monitoring",
+        "updated",
+        "policy",
+        "systems",
+        "runtime",
+        "policies",
+        "stale",
+        "project"
+      ]
+    },
+    "memory:memory/2026-05-15.md:161:183": {
+      "key": "memory:memory/2026-05-15.md:161:183",
+      "path": "memory/2026-05-15.md",
+      "startLine": 161,
+      "endLine": 183,
+      "source": "memory",
+      "snippet": "6. ✅ Phase 3.3 - Regression/eval pack v1 7. ✅ Phase 3.4 - Archived/portfolio dashboard foundation 8. **✅ Đợt update hoàn tất** ### Issues identified & resolved - ✅ Operational mismatch: `projects/active/web-ban-hang` + `status: on-hold` → đã migrate - ✅ Actor attribution yếu → đã hardening trong script - ✅ No-change detection thiếu → đã bổ sung - ✅ Conflict handling thiếu policy → đã bổ sung vào acceptance policy (làm sớm) - ✅ Cron logging/audit thiếu → đã bổ sung vào runbook - ✅ Stale severity levels thiếu → đã bổ sung vào stale policy - ✅ Regression/eval pack thiếu 4 scenarios mới → đã bổ sung - ✅ Portfolio/archived dashboard foundation thiếu → đã tạo - ✅ Conflict dữ liệu `web-ban-h",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T06:23:36.037Z",
+      "lastRecalledAt": "2026-05-19T06:23:36.037Z",
+      "queryHashes": [
+        "de43c8cfda67"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "3.3",
+        "regression/eval",
+        "3.4",
+        "archived/portfolio",
+        "projects/active/web-ban-hang",
+        "on-hold",
+        "no-change",
+        "logging/audit"
+      ]
+    },
+    "memory:memory/2026-05-15.md:101:141": {
+      "key": "memory:memory/2026-05-15.md:101:141",
+      "path": "memory/2026-05-15.md",
+      "startLine": 101,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "- Audit pack hiện có - Xác nhận đã có sẵn 6 scenarios nền: - vague requirement - scope change - worker failure - missing approval - stale project - false done - Bổ sung 4 scenarios còn thiếu theo plan: - `source-conflict.md` - `on-hold-in-active-path.md` - `no-change-day.md` - `missing-actor.md` - Cập nhật `regression-pack-checklist.md`: - thêm 4 scenario mới - thêm governance/reporting checks - thêm pass criteria rõ hơn - Tạo file tổng hợp pack: - `systems/pm-agent/eval/reports/regression-pack-v1-2026-05-15.md` - Đánh dấu Phase 3.3 hoàn tất trong plan 21. Anh yêu cầu làm Phase 3.4 -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T08:08:11.326Z",
+      "lastRecalledAt": "2026-05-19T08:08:11.326Z",
+      "queryHashes": [
+        "74c8ee5e74b6"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "source-conflict.md",
+        "on-hold-in-active-path.md",
+        "no-change-day.md",
+        "missing-actor.md",
+        "regression-pack-checklist.md",
+        "governance/reporting",
+        "3.3",
+        "3.4"
+      ]
+    }
+  }
+}
