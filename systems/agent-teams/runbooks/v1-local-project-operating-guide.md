@@ -6,6 +6,33 @@ Run small real local projects with Agent-Teams using strict phase gates, explici
 
 This guide distills the accepted `mini-issue-tracker-v1` pilot from Phases 31-35 into a reusable operating flow.
 
+## Starter Packet
+
+For a new local project, copy this starter folder first:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/
+```
+
+Starter packet contents:
+
+```text
+planning/intake-form.md
+planning/requirements.md
+planning/acceptance-criteria.md
+planning/architecture.md
+planning/ownership-map.md
+contracts/feature-contract.md
+task-packets/wave-1-planning-task.md
+task-packets/wave-2-implementation-task.md
+task-packets/wave-3-integration-task.md
+task-packets/wave-4-acceptance-task.md
+reports/* skeletons
+app/.gitkeep
+```
+
+Use the starter as scaffolding only. Replace placeholders, keep ownership boundaries, and do not treat template text as completed evidence.
+
 ## Accepted Use
 
 Agent-Teams v1 is accepted for:
@@ -67,9 +94,18 @@ planning/ux-flow.md when UI exists
 planning/architecture.md
 contracts/<feature>-contract.md
 planning/ownership-map.md
-task-packets/wave-1-task.md
+task-packets/wave-1-planning-task.md
 reports/wave-1-agent-reports.md
 reports/wave-1-verification-report.md
+```
+
+Starter packet mapping:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/planning/*
+systems/agent-teams/templates/v1-local-project-starter/contracts/feature-contract.md
+systems/agent-teams/templates/v1-local-project-starter/task-packets/wave-1-planning-task.md
+systems/agent-teams/templates/v1-local-project-starter/reports/wave-1-verification-report.md
 ```
 
 Gate to continue:
@@ -111,6 +147,14 @@ reports/build-or-syntax.log
 reports/implementation-report.md
 ```
 
+Starter packet mapping:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/task-packets/wave-2-implementation-task.md
+systems/agent-teams/templates/v1-local-project-starter/reports/implementation-report.md
+systems/agent-teams/templates/v1-local-project-starter/app/.gitkeep
+```
+
 Gate to continue:
 
 ```text
@@ -143,6 +187,13 @@ reports/handoff.md
 reports/wave-3-verification-report.md
 ```
 
+Starter packet mapping:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/task-packets/wave-3-integration-task.md
+systems/agent-teams/templates/v1-local-project-starter/reports/integration-report.md
+```
+
 Gate to continue:
 
 ```text
@@ -169,6 +220,17 @@ reports/requirements-traceability-matrix.md
 reports/cutover-decision.md
 reports/retrospective.md
 reports/final-verification-report.md
+```
+
+Starter packet mapping:
+
+```text
+systems/agent-teams/templates/v1-local-project-starter/task-packets/wave-4-acceptance-task.md
+systems/agent-teams/templates/v1-local-project-starter/reports/pm-acceptance-report.md
+systems/agent-teams/templates/v1-local-project-starter/reports/requirements-traceability-matrix.md
+systems/agent-teams/templates/v1-local-project-starter/reports/cutover-decision.md
+systems/agent-teams/templates/v1-local-project-starter/reports/retrospective.md
+systems/agent-teams/templates/v1-local-project-starter/reports/final-verification-report.md
 ```
 
 Allowed decisions:

@@ -1,5 +1,13 @@
 # Agent-Teams v1 Local Project Checklist
 
+## Starter Packet Setup
+
+- [ ] Copy `systems/agent-teams/templates/v1-local-project-starter/` into the new project folder.
+- [ ] Rename placeholders such as `<project-name>`, `<feature-name>`, `<date>`, and `<owner>`.
+- [ ] Keep `app/.gitkeep` as placeholder until implementation is approved.
+- [ ] Treat starter packet content as scaffolding, not completed evidence.
+- [ ] Read `systems/agent-teams/runbooks/v1-local-project-operating-guide.md` before Wave 1.
+
 ## Intake
 
 - [ ] Project name.
@@ -13,6 +21,18 @@
 
 ## Wave 1 — Planning
 
+Starter files:
+
+```text
+planning/intake-form.md
+planning/requirements.md
+planning/acceptance-criteria.md
+planning/architecture.md
+planning/ownership-map.md
+contracts/feature-contract.md
+task-packets/wave-1-planning-task.md
+```
+
 - [ ] Requirements written.
 - [ ] Acceptance criteria written.
 - [ ] UX flow/copy written if UI exists.
@@ -24,6 +44,14 @@
 
 ## Wave 2 — Implementation
 
+Starter files:
+
+```text
+task-packets/wave-2-implementation-task.md
+reports/implementation-report.md
+app/.gitkeep placeholder
+```
+
 - [ ] Preflight run and logged.
 - [ ] Implementation stays in owned paths.
 - [ ] Contract unchanged or approved change recorded.
@@ -33,6 +61,13 @@
 - [ ] No install/download/deploy unless approved.
 
 ## Wave 3 — Integration / QA
+
+Starter files:
+
+```text
+task-packets/wave-3-integration-task.md
+reports/integration-report.md
+```
 
 - [ ] Local integration tests written.
 - [ ] Happy path covered.
@@ -47,6 +82,17 @@
 - [ ] Handoff written.
 
 ## Wave 4 — Acceptance
+
+Starter files:
+
+```text
+task-packets/wave-4-acceptance-task.md
+reports/pm-acceptance-report.md
+reports/requirements-traceability-matrix.md
+reports/cutover-decision.md
+reports/retrospective.md
+reports/final-verification-report.md
+```
 
 - [ ] PM acceptance report written.
 - [ ] Requirements traceability matrix written.
