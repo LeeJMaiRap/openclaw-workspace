@@ -26,8 +26,8 @@ Make installs/downloads explicit, reviewable, repeatable, and evidence-backed.
 Planned phases:
 
 ```text
-Phase 51: v2 dependency governance plan
-Phase 52: dependency approval packet templates
+Phase 51: v2 dependency governance plan — complete
+Phase 52: dependency approval packet templates — complete
 Phase 53: toolchain preflight matrix
 Phase 54: lockfile + provenance policy
 Phase 55: starter/runbook wiring
@@ -40,6 +40,7 @@ Exit criteria:
 PM can approve/reject dependencies from a standardized packet.
 Workers cannot silently install dependencies.
 Install command, risk, lockfile impact, provenance, and fallback are documented.
+Templates exist for request, risk review, and install provenance logging.
 ```
 
 ## Track 2 — Project Type Packs

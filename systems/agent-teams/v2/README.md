@@ -38,8 +38,17 @@ systems/agent-teams/v2/dependency-governance/plan.md
 systems/agent-teams/v2/dependency-governance/acceptance-criteria.md
 ```
 
-## Phase 51 Scope
+## Track 1 — Dependency / Toolchain Governance
 
-Phase 51 starts Track 1: Dependency / Toolchain Governance.
+Phase 51 started Track 1 with a governance plan.
 
-Scope is docs-only. No installs, no app changes, no runtime changes, no PM Agent changes, no deploy.
+Phase 52 adds reusable dependency approval packet templates:
+
+```text
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-request-template.md
+systems/agent-teams/v2/dependency-governance/templates/dependency-risk-review-template.md
+systems/agent-teams/v2/dependency-governance/templates/install-provenance-log-template.md
+```
+
+Scope remains docs-only until explicit approval for any install/download.

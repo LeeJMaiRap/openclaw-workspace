@@ -216,11 +216,20 @@ any destructive migration tool
 ## Deliverables for Track 1
 
 ```text
-dependency approval request template
-dependency risk review template
+dependency approval request template — complete in Phase 52
+dependency risk review template — complete in Phase 52
+install provenance log template — complete in Phase 52
 toolchain preflight matrix
-install provenance log template
 lockfile policy
 starter/runbook wiring
 dry-run simulation report
+```
+
+## Phase 52 Packet Templates
+
+```text
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-request-template.md
+systems/agent-teams/v2/dependency-governance/templates/dependency-risk-review-template.md
+systems/agent-teams/v2/dependency-governance/templates/install-provenance-log-template.md
 ```

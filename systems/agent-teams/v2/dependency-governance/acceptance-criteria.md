@@ -16,6 +16,22 @@ no PM Agent changes occur
 no deploy/cloud/DNS/billing/secrets changes occur
 ```
 
+## Phase 52 Acceptance
+
+Phase 52 is accepted if:
+
+```text
+dependency approval packet index exists
+dependency approval request template exists
+dependency risk review template exists
+install provenance log template exists
+templates include exact command, reason, risk, lockfile impact, fallback, rollback, approval, execution evidence, provenance
+no install/download occurs
+no runtime/app/test changes occur
+no PM Agent changes occur
+no deploy/cloud/DNS/billing/secrets changes occur
+```
+
 ## Track 1 Acceptance
 
 Track 1 is complete when Agent-Teams can safely process dependency/toolchain needs using explicit approval and evidence.

@@ -112,6 +112,7 @@ systems/agent-teams/
 22. Phase 48-49: CLI/local-file starter and runbook hardening
 23. Phase 50: v1 final status and v2 roadmap
 24. Phase 51: v2 dependency governance plan
+25. Phase 52: v2 dependency approval packet templates
 
 ## v2 Planning
 
@@ -121,6 +122,7 @@ Agent-Teams v2 starts with dependency/toolchain governance:
 systems/agent-teams/v2/README.md
 systems/agent-teams/v2/roadmap.md
 systems/agent-teams/v2/dependency-governance/plan.md
+systems/agent-teams/v2/dependency-governance/templates/dependency-approval-packet-index.md
 ```
 
 ## Current Rule
