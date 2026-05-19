@@ -100,7 +100,7 @@ Status:
 
 ```text
 Phase 66: Security / Performance Evidence Gates plan — complete
-Phase 67: security minimum evidence matrix
+Phase 67: security minimum evidence matrix — complete
 Phase 68: performance benchmark evidence matrix
 Phase 69: risk severity rubric
 Phase 70: risk acceptance form

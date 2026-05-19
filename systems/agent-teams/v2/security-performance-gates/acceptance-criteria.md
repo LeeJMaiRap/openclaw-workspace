@@ -26,7 +26,7 @@ no deploy/cloud/DNS/billing/secrets changes occur
 Track 3 is complete when:
 
 ```text
-security evidence matrix exists
+security evidence matrix exists (`security-minimum-evidence-matrix.md`)
 performance benchmark evidence matrix exists
 risk severity rubric exists
 risk acceptance form exists
