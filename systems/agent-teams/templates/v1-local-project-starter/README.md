@@ -8,10 +8,11 @@ Copy this starter packet when beginning a new small local-only Agent-Teams proje
 
 1. Copy this folder into a new project example or project workspace.
 2. Rename placeholders like `<project-name>`, `<feature-name>`, `<date>`, and `<owner>`.
-3. Complete Wave 1 before implementation.
-4. Run Wave 2 only after contract and ownership map are accepted.
-5. Run Wave 3 for local integration evidence.
-6. Run Wave 4 for PM acceptance and retrospective.
+3. Use `reports/starter-dry-run-checklist.md` to confirm Wave 1 docs have no leftover template placeholders.
+4. Complete Wave 1 before implementation.
+5. Run Wave 2 only after contract and ownership map are accepted.
+6. Run Wave 3 for local integration evidence.
+7. Run Wave 4 for PM acceptance and retrospective.
 
 ## Guardrails
 
@@ -19,6 +20,7 @@ Copy this starter packet when beginning a new small local-only Agent-Teams proje
 local-only by default
 PM Agent orchestrator-only
 contract-first before FE/BE parallel work
+Wave 1 filled docs must not contain generic starter placeholders
 preflight required for Local/Integration/Production
 no silent dependency install
 no deploy/cloud/DNS/billing/secrets without explicit approval
@@ -31,7 +33,7 @@ no real browser/screenshot/a11y/visual claim without browser executable launch e
 planning/
 contracts/
 task-packets/
-reports/
+reports/            # includes dry-run, verification, acceptance skeletons
 app/                # placeholder for implementation when approved
 ```
 

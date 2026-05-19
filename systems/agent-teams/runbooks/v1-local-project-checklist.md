@@ -4,6 +4,8 @@
 
 - [ ] Copy `systems/agent-teams/templates/v1-local-project-starter/` into the new project folder.
 - [ ] Rename placeholders such as `<project-name>`, `<feature-name>`, `<date>`, and `<owner>`.
+- [ ] Complete `reports/starter-dry-run-checklist.md`.
+- [ ] Run placeholder cleanup check against filled Wave 1 docs.
 - [ ] Keep `app/.gitkeep` as placeholder until implementation is approved.
 - [ ] Treat starter packet content as scaffolding, not completed evidence.
 - [ ] Read `systems/agent-teams/runbooks/v1-local-project-operating-guide.md` before Wave 1.
@@ -31,6 +33,7 @@ planning/architecture.md
 planning/ownership-map.md
 contracts/feature-contract.md
 task-packets/wave-1-planning-task.md
+reports/starter-dry-run-checklist.md
 ```
 
 - [ ] Requirements written.
@@ -40,6 +43,7 @@ task-packets/wave-1-planning-task.md
 - [ ] API/feature contract written.
 - [ ] Ownership map written.
 - [ ] Preflight needs listed.
+- [ ] Filled Wave 1 docs have no generic starter placeholders.
 - [ ] No app code created unless explicitly scoped.
 
 ## Wave 2 — Implementation

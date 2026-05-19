@@ -28,10 +28,13 @@ task-packets/wave-2-implementation-task.md
 task-packets/wave-3-integration-task.md
 task-packets/wave-4-acceptance-task.md
 reports/* skeletons
+reports/starter-dry-run-checklist.md
 app/.gitkeep
 ```
 
 Use the starter as scaffolding only. Replace placeholders, keep ownership boundaries, and do not treat template text as completed evidence.
+
+Before Wave 1 passes, complete `reports/starter-dry-run-checklist.md` and confirm filled Wave 1 docs have no generic placeholders such as `<project-name>`, `<feature-name>`, `<goal>`, or `<requirement>`.
 
 ## Accepted Use
 
@@ -97,6 +100,7 @@ planning/ownership-map.md
 task-packets/wave-1-planning-task.md
 reports/wave-1-agent-reports.md
 reports/wave-1-verification-report.md
+reports/starter-dry-run-checklist.md
 ```
 
 Starter packet mapping:
@@ -117,6 +121,8 @@ contract exists before parallel Frontend/Backend work
 ownership map assigns paths and forbidden paths
 Verification Level selected
 preflight needs identified
+starter dry-run checklist complete
+filled Wave 1 docs contain no generic starter placeholders
 ```
 
 ### Wave 2 — Implementation Only
