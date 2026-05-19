@@ -162,6 +162,12 @@ fallback option
 claim boundary if missing
 ```
 
+## Phase 53 Toolchain Matrix
+
+```text
+systems/agent-teams/v2/dependency-governance/toolchain-preflight-matrix.md
+```
+
 ## Lockfile Policy Plan
 
 Future Phase 54 should define:
@@ -219,7 +225,7 @@ any destructive migration tool
 dependency approval request template — complete in Phase 52
 dependency risk review template — complete in Phase 52
 install provenance log template — complete in Phase 52
-toolchain preflight matrix
+toolchain preflight matrix — complete in Phase 53
 lockfile policy
 starter/runbook wiring
 dry-run simulation report

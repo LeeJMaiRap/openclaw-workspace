@@ -32,6 +32,20 @@ no PM Agent changes occur
 no deploy/cloud/DNS/billing/secrets changes occur
 ```
 
+## Phase 53 Acceptance
+
+Phase 53 is accepted if:
+
+```text
+toolchain preflight matrix exists
+matrix covers Node/npm/pnpm/yarn, TypeScript, Python/pip/venv, browser tools, lint/format tools, Docker/kubectl/cloud CLI, and system packages
+each row documents detect command, minimum evidence, install approval requirement, fallback, and claim boundary
+no install/download occurs
+no runtime/app/test changes occur
+no PM Agent changes occur
+no deploy/cloud/DNS/billing/secrets changes occur
+```
+
 ## Track 1 Acceptance
 
 Track 1 is complete when Agent-Teams can safely process dependency/toolchain needs using explicit approval and evidence.

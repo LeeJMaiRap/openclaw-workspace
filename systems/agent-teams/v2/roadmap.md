@@ -28,7 +28,7 @@ Planned phases:
 ```text
 Phase 51: v2 dependency governance plan — complete
 Phase 52: dependency approval packet templates — complete
-Phase 53: toolchain preflight matrix
+Phase 53: toolchain preflight matrix — complete
 Phase 54: lockfile + provenance policy
 Phase 55: starter/runbook wiring
 Phase 56: dry-run dependency approval simulation
@@ -41,6 +41,7 @@ PM can approve/reject dependencies from a standardized packet.
 Workers cannot silently install dependencies.
 Install command, risk, lockfile impact, provenance, and fallback are documented.
 Templates exist for request, risk review, and install provenance logging.
+Toolchain preflight matrix defines detect commands, approval requirements, fallbacks, and claim boundaries.
 ```
 
 ## Track 2 — Project Type Packs
