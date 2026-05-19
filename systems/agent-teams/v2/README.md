@@ -105,3 +105,12 @@ systems/agent-teams/v2/browser-ui-evidence-recovery/track-4-closure-readiness-re
 
 Real browser proof remains blocked until supported executable and launch/artifact evidence exist.
 
+## Track 5 — Multi-Agent Execution Quality
+
+Phase 82 starts Track 5 with planning for cross-agent evidence indexing, parallel wave readiness, ownership conflict escalation, handoff quality, and PM acceptance visibility.
+
+```text
+systems/agent-teams/v2/multi-agent-execution-quality/plan.md
+systems/agent-teams/v2/multi-agent-execution-quality/acceptance-criteria.md
+```
+

@@ -170,6 +170,12 @@ systems/agent-teams/v2/browser-ui-evidence-recovery/acceptance-criteria.md
 
 ## Track 5 — Multi-Agent Execution Quality
 
+Status:
+
+```text
+Phase 82: Track 5 plan — complete
+```
+
 Goal:
 
 ```text
@@ -184,6 +190,13 @@ parallel wave readiness v2
 ownership conflict escalation v2
 handoff quality rubric
 PM acceptance dashboard template
+```
+
+Track 5 plan:
+
+```text
+systems/agent-teams/v2/multi-agent-execution-quality/plan.md
+systems/agent-teams/v2/multi-agent-execution-quality/acceptance-criteria.md
 ```
 
 ## Track 6 — Production / Deploy Gates

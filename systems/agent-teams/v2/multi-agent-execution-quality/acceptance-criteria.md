@@ -1,0 +1,53 @@
+# Track 5 — Multi-Agent Execution Quality Acceptance Criteria
+
+## Track Acceptance
+
+Track 5 is accepted when:
+
+```text
+cross-agent evidence index template exists
+parallel wave readiness v2 checklist exists
+ownership conflict escalation protocol exists
+handoff quality rubric exists
+PM acceptance dashboard template exists
+multi-agent execution quality dry-run exists
+dry-run rejects missing evidence, ownership conflicts, and bad handoffs
+runbooks preserve PM Agent Orchestrator-only role
+```
+
+## Claim Acceptance Criteria
+
+```text
+wave completion claim requires all specialist reports
+parallel-ready claim requires conflict check
+handoff-ready claim requires next owner, blockers, evidence links
+PM-accepted claim requires dashboard/evidence index row
+review-approved claim requires evidence level match
+```
+
+## Rejection Criteria
+
+Reject or mark Needs Review when:
+
+```text
+owned paths overlap without sequence/escalation decision
+agent report missing
+evidence link missing
+verification level overclaimed
+claim boundary missing
+handoff target missing
+blocker hidden or dropped
+restricted install/deploy/browser/security/performance claim bypasses Tracks 1-4
+```
+
+## Stop Conditions
+
+Stop and ask before:
+
+```text
+expanding PM Agent from orchestrator into implementer
+adding runtime automation or external frameworks
+broadening owned paths to whole repo
+running install/download/deploy/cloud/browser actions
+weakening existing dependency/security/performance/browser gates
+```
