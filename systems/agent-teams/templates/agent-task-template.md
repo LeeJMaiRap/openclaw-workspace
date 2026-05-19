@@ -64,11 +64,13 @@ Required for `Local`, `Integration`, and `Production` verification levels.
 - `<dependency availability check>`
 - `<install/network policy>`
 - `<fallback or blocker rule if missing>`
+- For browser/UI proof: `<browser package check, browser executable/launch check, screenshot/output path, install/download approval rule, fallback vs Blocked rule>`
 
 ## Verification Required
 
 - `<command/check/report required>`
 - `<evidence required: log path, screenshot path, API output, test result, or blocker>`
+- For browser/UI proof: `<real browser screenshot/log, or explicitly labeled browser-like fallback evidence>`
 
 ## Constraints
 

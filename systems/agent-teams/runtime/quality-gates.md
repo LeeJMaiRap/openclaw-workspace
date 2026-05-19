@@ -64,6 +64,8 @@ Pass when:
 - required tools/dependencies/commands are checked for Local/Integration/Production tasks
 - dependency install and network policy are clear
 - missing tool fallback is approved or blocker is documented
+- browser/UI tasks distinguish package availability from executable launch readiness
+- browser install/download approval is captured before any external download or system/package install
 - preflight evidence is captured in the report
 
 ## 6. Implementation Gate
@@ -82,6 +84,7 @@ Pass when:
 - parts work together
 - env/config issues are resolved or documented
 - full-app verification ran where applicable
+- browser/UI integration claims are backed by matching evidence: real browser launch/screenshot for real browser claims, or clearly labeled browser-like fallback evidence
 
 ## 8. QA Gate
 

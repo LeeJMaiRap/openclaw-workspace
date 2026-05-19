@@ -95,10 +95,27 @@ run dry/syntax check if available
 For browser/UI tasks:
 
 ```text
-browser tool availability
-screenshot path policy
+browser package availability (Playwright/Puppeteer/etc.)
+browser executable availability (Chromium/Chrome/etc.)
+headless browser launch check when real browser proof is required
+screenshot/output path policy
 route to inspect
+fallback vs Blocked rule if browser executable is missing
+approval requirement for browser binary install/download
 ```
+
+For browser/UI tasks, browser package presence alone is not enough for real browser proof. A real browser claim requires a successful browser executable launch. If browser binary install/download is required, worker must ask for explicit approval before running commands such as:
+
+```text
+npx playwright install
+npx playwright install chromium
+npm install playwright
+npm install puppeteer
+apt install chromium
+apt-get install chromium
+```
+
+If approval is not granted, worker must either use an approved lower-evidence fallback or report Blocked / Needs Review. Fallback evidence such as local HTTP fetch + HTML assertions must not be described as screenshot, real browser runtime, visual regression, or accessibility scan proof.
 
 For API tasks:
 
@@ -118,6 +135,7 @@ Default policy:
 - no cloud/DNS/billing
 - no real secrets
 - if dependency missing, stop or use documented fallback
+- no browser binary install/download unless task explicitly allows it and user approval is recorded
 ```
 
 ## Preflight Gate
