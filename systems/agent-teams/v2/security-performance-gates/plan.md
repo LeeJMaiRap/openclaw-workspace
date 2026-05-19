@@ -209,7 +209,7 @@ Phase 66: Security / Performance Evidence Gates plan
 Phase 67: security minimum evidence matrix — complete
 Phase 68: performance benchmark evidence matrix — complete
 Phase 69: risk severity rubric — complete
-Phase 70: risk acceptance form
+Phase 70: risk acceptance form — complete
 Phase 71: security/performance task packet templates v2
 Phase 72: PM/runbook wiring for security/performance gates
 Phase 73: dry-run security/performance claim rejection simulation
