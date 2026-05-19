@@ -26,6 +26,13 @@ If none:
 None
 ```
 
+## Preflight Result
+
+```text
+<preflight command/check>
+<result or fallback/blocker decision>
+```
+
 ## Verification
 
 ```text

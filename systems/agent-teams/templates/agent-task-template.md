@@ -56,6 +56,15 @@ Integration — multiple implemented parts verified together.
 Production — deployed environment verified after approval.
 ```
 
+## Preflight Required
+
+Required for `Local`, `Integration`, and `Production` verification levels.
+
+- `<tool/command/version check>`
+- `<dependency availability check>`
+- `<install/network policy>`
+- `<fallback or blocker rule if missing>`
+
 ## Verification Required
 
 - `<command/check/report required>`

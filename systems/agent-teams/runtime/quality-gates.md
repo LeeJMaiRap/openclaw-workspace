@@ -11,11 +11,12 @@ Prevent low-quality or incomplete work from moving forward.
 2. Architecture Gate
 3. API Contract Gate
 4. Planning Gate
-5. Implementation Gate
-6. Integration Gate
-7. QA Gate
-8. Review Gate
-9. Handoff Gate
+5. Preflight Gate
+6. Implementation Gate
+7. Integration Gate
+8. QA Gate
+9. Review Gate
+10. Handoff Gate
 ```
 
 ## 1. Requirement Gate
@@ -55,15 +56,26 @@ Pass when:
 - verification exists for each task
 - parallel plan has no ownership conflicts
 
-## 5. Implementation Gate
+## 5. Preflight Gate
 
 Pass when:
 
+- task Verification Level is Paper/Simulated, or preflight is explicitly not needed
+- required tools/dependencies/commands are checked for Local/Integration/Production tasks
+- dependency install and network policy are clear
+- missing tool fallback is approved or blocker is documented
+- preflight evidence is captured in the report
+
+## 6. Implementation Gate
+
+Pass when:
+
+- preflight passed or blocker is accepted
 - agent reports include evidence
 - changed files stay inside owned paths
 - acceptance criteria are met or blockers documented
 
-## 6. Integration Gate
+## 7. Integration Gate
 
 Pass when:
 
@@ -71,7 +83,7 @@ Pass when:
 - env/config issues are resolved or documented
 - full-app verification ran where applicable
 
-## 7. QA Gate
+## 8. QA Gate
 
 Pass when:
 
@@ -79,13 +91,13 @@ Pass when:
 - tests/manual checks run
 - bugs are reported with reproduction steps
 
-## 8. Review Gate
+## 9. Review Gate
 
 Pass when:
 
 - security/performance/code review findings are handled or accepted as known risk
 
-## 9. Handoff Gate
+## 10. Handoff Gate
 
 Pass when:
 

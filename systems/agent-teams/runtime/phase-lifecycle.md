@@ -12,11 +12,12 @@ Define the default project flow for Agent-Teams.
 2. Architecture
 3. API Contract
 4. Planning
-5. Execution
-6. Integration
-7. QA / Review
-8. Ship / Handoff
-9. Retrospective
+5. Preflight
+6. Execution
+7. Integration
+8. QA / Review
+9. Ship / Handoff
+10. Retrospective
 ```
 
 ## 0. Intake
@@ -101,7 +102,22 @@ Gate:
 
 - every task has owner, inputs, acceptance criteria, verification, and owned paths
 
-## 5. Execution
+## 5. Preflight
+
+Owner: PM Orchestrator and assigned specialist agents.
+
+Required output:
+
+- tool/dependency check result
+- install/network policy confirmation
+- fallback/blocker decision for missing tools
+- evidence captured in agent report
+
+Gate:
+
+- real implementation tasks can start only when required tools exist, approved fallback exists, or blocker is escalated
+
+## 6. Execution
 
 Owners: specialist agents.
 
@@ -116,7 +132,7 @@ Gate:
 
 - PM Orchestrator accepts only evidence-backed reports
 
-## 6. Integration
+## 7. Integration
 
 Owner: Integration Agent.
 
@@ -131,7 +147,7 @@ Gate:
 
 - system runs as one whole, not just isolated parts
 
-## 7. QA / Review
+## 8. QA / Review
 
 Owners: QA/Test Agent and optional review agents.
 
@@ -146,7 +162,7 @@ Gate:
 
 - acceptance criteria verified or blockers documented
 
-## 8. Ship / Handoff
+## 9. Ship / Handoff
 
 Owners: PM Orchestrator, DevOps/Deployment Agent, Documentation Agent.
 
@@ -161,7 +177,7 @@ Gate:
 
 - user can review, deploy, or continue from documented state
 
-## 9. Retrospective
+## 10. Retrospective
 
 Owner: PM Orchestrator.
 

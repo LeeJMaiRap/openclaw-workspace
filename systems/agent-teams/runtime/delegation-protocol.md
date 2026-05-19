@@ -27,6 +27,10 @@ Every delegated task must include:
 
 ## Acceptance Criteria
 
+## Verification Level
+
+## Preflight Required
+
 ## Verification Required
 
 ## Constraints
@@ -105,7 +109,25 @@ Before sending a task, PM Orchestrator checks:
 [ ] Owned paths listed
 [ ] Forbidden paths listed
 [ ] Acceptance criteria testable
+[ ] Verification Level specified
+[ ] Preflight specified for Local/Integration/Production tasks
 [ ] Verification specified
 [ ] Parallel conflicts checked
 [ ] Return format specified
 ```
+
+
+## Preflight Rule
+
+For any task with Verification Level `Local`, `Integration`, or `Production`, PM Orchestrator must include a `Preflight Required` section.
+
+Minimum preflight content:
+
+```text
+- required commands/tools
+- dependency availability check
+- install/network policy
+- fallback or blocker rule if a tool is missing
+```
+
+Worker must run preflight before implementation edits when practical. If preflight fails, worker must not invent evidence or silently install dependencies. Worker returns `Blocked` / `Needs Review`, or uses an explicitly allowed fallback.
