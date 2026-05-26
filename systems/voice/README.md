@@ -21,7 +21,7 @@ Use edge-tts:
 /root/.openclaw/workspace/.venv-stt/bin/python \
   /root/.openclaw/workspace/systems/voice/scripts/synthesize.py \
   "Xin chào anh Doanh" \
-  /root/.openclaw/workspace/systems/voice/output/reply.mp3
+  /root/.openclaw/workspace/ops/exports/voice/reply.mp3
 ```
 
 Default voice:
@@ -30,4 +30,5 @@ Default voice:
 ## Current status
 - STT: working on local test file
 - TTS: working, outputs mp3
+- Runtime outputs belong in `ops/exports/voice/`; sample outputs belong in `ops/exports/voice/samples/`.
 - Next improvement: auto language detect, preprocessing, confidence/fallback flow

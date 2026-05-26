@@ -1,59 +1,49 @@
 # Projects
 
-Vùng này chứa các **dự án thực tế** được PM Agent quản lý.
+Vùng này là skeleton cho các project do PM Agent quản lý.
 
-## Cấu trúc
+Sau cleanup 2026-05-26, project code/artifact cũ đã được đưa khỏi cây chính. Hiện `projects/` chỉ giữ `_index/` để duy trì portfolio view và làm điểm bắt đầu cho project mới.
 
-```
+## Cấu trúc hiện tại
+
+```text
 projects/
-├── _index/              # Registry và dashboard
-├── active/              # Dự án đang vận hành
-└── archived/            # Dự án đã hoàn tất hoặc hủy
+├── _index/              # Registry và dashboard portfolio
+└── README.md
 ```
 
-## Active Projects
+## Khi tạo project mới
 
-Xem: `_index/active-projects.md`
+Dùng cấu trúc chuẩn:
 
-Hiện có:
-- **web-ban-hang** - Trang Web Bán Hàng (demo-ready)
-
-## Project Structure
-
-Mỗi project tuân theo cấu trúc PM chuẩn:
-
+```text
+projects/active/[project-name]/
+├── project.yaml
+├── 01-initiation/
+├── 02-planning/
+├── 03-execution/
+├── 04-monitoring/
+├── 05-closure/
+├── decisions/
+├── approvals/
+├── handoffs/
+└── evidence/
 ```
-[project-name]/
-├── project.yaml         # Metadata
-├── 01-initiation/       # Charter, requirements
-├── 02-planning/         # Spec, plan, wbs, schedule, risks
-├── 03-execution/        # Task board, issue log, change log
-├── 04-monitoring/       # Status dashboard
-├── 05-closure/          # Final report, lessons learned
-├── decisions/           # Decision log
-├── approvals/           # Approval records
-├── handoffs/            # Handoff notes
-└── evidence/            # Verification artifacts
-```
-
-## Registry
-
-- **projects-registry.md** - Danh sách toàn bộ project
-- **active-projects.md** - Dashboard project đang chạy
 
 ## Quy tắc
 
-1. **Mỗi project phải có `project.yaml`**
-2. **Source of truth nằm trong file, không phụ thuộc chat**
-3. **Approval phải được ghi lại**
-4. **Decision quan trọng phải log**
-5. **Closure phải có final report**
+1. Mỗi project phải có `project.yaml`.
+2. Status trong `project.yaml` phải khớp lifecycle path.
+3. Approval và decision quan trọng phải được ghi file.
+4. Output build/cache/dependency không commit vào project folder.
+5. Project đã dừng hoặc chỉ dùng tham chiếu thì không chạy daily report mặc định.
 
-## Vai trò trong workspace
+## Index files
 
-Projects là nơi chứa **output thực tế** của PM Agent.
+- `_index/projects-registry.md` — danh sách project/portfolio snapshot.
+- `_index/active-projects.md` — active dashboard.
+- `_index/archived-projects.md` — archived dashboard.
+- `_index/portfolio-dashboard.md` — portfolio summary.
+- `_index/cross-project-risk-view.md` — risk pattern view.
 
-Khác với:
-- `systems/pm-agent/` - Framework PM Agent
-- `knowledge/` - Tài liệu nghiên cứu
-- `agent-core/` - Memory agent
+Lưu ý: index hiện là snapshot lịch sử trước cleanup. Khi anh mở project mới, cần cập nhật index theo trạng thái mới.

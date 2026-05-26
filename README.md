@@ -1,113 +1,74 @@
 # OpenClaw Workspace
 
-Production-ready workspace cho AI agent development và project management.
+Workspace gọn sau cleanup lớn ngày 2026-05-26. Mục tiêu hiện tại: giữ khung sườn PM Agent hoạt động tốt, loại bỏ project/app/cache cũ khỏi cây chính.
 
-## Cấu trúc
+## Cấu trúc hiện tại
 
-```
+```text
 workspace/
-├── agent-core/          # Agent identity, memory, personal workspace
-├── systems/             # Agent systems (PM Agent, etc.)
-├── projects/            # Active and archived projects
-├── knowledge/           # Research, analysis, meetings, references
-├── ops/                 # Scripts, state, tmp, exports, logs
-└── shared/              # Templates, schemas, utilities, assets
+├── systems/             # Agent systems; hiện giữ PM Agent là core
+├── projects/            # Portfolio index/skeleton, chưa chứa project code active
+├── ops/                 # Scripts vận hành, exports, tmp, logs, state
+├── shared/              # Assets/templates/schemas/utilities dùng chung
+├── memory/              # Daily/operational memory notes
+├── state/               # Workspace-level runtime state nhỏ
+├── tmp/                 # Scratch tạm, có thể dọn định kỳ
+├── AGENTS.md            # Workspace operating guide
+├── SOUL.md              # Persona/tone
+├── USER.md              # Thông tin người dùng
+└── README.md            # File này
 ```
+
+`.git/` và `.trash/` không thuộc cây vận hành chính. `.trash/cleanup-20260526-013600` đang giữ dữ liệu đã dọn để rollback thủ công nếu cần.
 
 ## Quick Navigation
 
-### Agent Core
-**Path:** `agent-core/`  
-**Purpose:** Agent bản sắc, memory, workspace cá nhân  
-**Key files:** AGENTS.md, SOUL.md, MEMORY.md, memory/
-
-### Systems
-**Path:** `systems/`  
-**Purpose:** Hệ thống agent đang xây dựng  
-**Current:** PM Agent (~70% production-ready)
+### PM Agent
+- Path: `systems/pm-agent/`
+- Trạng thái: giữ nguyên, không xoá trong cleanup.
+- Bắt đầu đọc:
+  1. `systems/pm-agent/README.md`
+  2. `systems/pm-agent/STATUS.md`
+  3. `systems/pm-agent/architecture/WORKFLOW.md`
 
 ### Projects
-**Path:** `projects/`  
-**Purpose:** Dự án thực tế được quản lý  
-**Registry:** `projects/_index/projects-registry.md`
-
-### Knowledge
-**Path:** `knowledge/`  
-**Purpose:** Tài liệu, nghiên cứu, meeting notes  
-**Structure:** pm-agent/, meetings/, references/
+- Path: `projects/`
+- Hiện chỉ giữ `_index/` để làm portfolio skeleton.
+- Project folders cũ đã được dọn khỏi cây chính. Khi có project mới, tạo lại theo lifecycle PM Agent.
 
 ### Ops
-**Path:** `ops/`  
-**Purpose:** Scripts, state, tmp, exports  
-**Key:** scripts/voice/, tmp/, exports/
+- Path: `ops/`
+- Chứa scripts/tooling vận hành và output không thuộc source framework.
+- Document/PDF tooling nằm tại `ops/scripts/document/`.
+- Voice sample exports nằm tại `ops/exports/voice/samples/`.
 
-### Shared
-**Path:** `shared/`  
-**Purpose:** Templates, schemas, utilities dùng chung  
-**Structure:** templates/, schemas/, utilities/, assets/
+### Shared / Memory / State / Tmp
+- `shared/`: vùng dùng chung, hiện là skeleton.
+- `memory/`: ghi chú continuity.
+- `state/`: state nhỏ cấp workspace.
+- `tmp/`: scratch tạm; không dùng làm nơi lưu artifact dài hạn.
 
-## Key Principles
+## Quy tắc vận hành
 
-1. **Clear separation of concerns**
-   - Agent identity ≠ Systems ≠ Projects ≠ Knowledge
+1. **Không xoá PM Agent**: `systems/pm-agent/**` là core.
+2. **Source of truth theo folder**:
+   - PM Agent framework: `systems/pm-agent/`
+   - Project index/skeleton: `projects/`
+   - Runtime/export/tooling: `ops/`
+   - Scratch: `tmp/`
+3. **Không để output runtime trong `systems/`** trừ khi là artifact framework có chủ đích.
+4. **Không commit cache/dependency/build output** như `node_modules/`, `.venv*`, `.next/`, `dist/`, `build/`, `__pycache__/`.
+5. **Dọn bằng trash trước khi xoá vĩnh viễn** nếu còn khả năng cần rollback.
 
-2. **File-based source of truth**
-   - State nằm trong file, không phụ thuộc chat context
+## Git Hygiene
 
-3. **Scalable structure**
-   - Dễ thêm systems mới
-   - Dễ quản lý nhiều projects
-   - Dễ onboarding
+- Baseline trước update hệ thống: `300527a`
+- Cleanup PM Agent skeleton: `c33a17d`
+- Snapshot lớn trước cleanup: `1217b2d`
 
-4. **Production-ready mindset**
-   - Policies, runbooks, eval
-   - Approval workflow
-   - Decision tracking
-   - State management
+## Current Cleanup Notes
 
-## Getting Started
-
-### For Agent Development
-1. Read `agent-core/AGENTS.md`
-2. Read `agent-core/SOUL.md`
-3. Explore `systems/pm-agent/`
-
-### For PM Agent Usage
-1. Read `systems/pm-agent/README.md`
-2. Check `systems/pm-agent/STATUS.md`
-3. Review `projects/_index/active-projects.md`
-
-### For Project Management
-1. Check `projects/_index/projects-registry.md`
-2. Review project structure in `projects/README.md`
-3. Follow PM workflow in `systems/pm-agent/architecture/WORKFLOW.md`
-
-## Maintenance
-
-### Regular Tasks
-- Update `projects/_index/` registry
-- Clean `ops/tmp/` periodically
-- Review and archive completed projects
-- Update system STATUS.md
-
-### Git Hygiene
-- `node_modules/` ignored
-- `ops/tmp/` ignored
-- `ops/exports/*.zip` ignored
-- Only source files tracked
-
-## Version History
-
-- **2026-05-14** - Workspace restructure + PM Agent runtime standardization
-- **2026-04-24** - Initial PM Agent validation with web-ban-hang project
-
-## Links
-
-- **GitHub:** https://github.com/LeeJMaiRap/openclaw-workspace
-- **Rollback points:**
-  - `a8182dc` - Before restructure
-  - `f4f5cf1` - After restructure
-  - `c9c4199` - After path fixes
-  - `cc8f01d` - After runtime standardization
-  - `a9548b1` - After duplicate cleanup
-  - `da7621c` - After repo cleanup
+- Workspace chính đã giảm còn khung gọn.
+- File root PDF tooling đã chuyển vào `ops/scripts/document/`.
+- Voice output sample đã chuyển vào `ops/exports/voice/samples/`.
+- README files đang phản ánh cấu trúc sau dọn dẹp.

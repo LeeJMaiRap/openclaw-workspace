@@ -1,59 +1,22 @@
 # Shared
 
-Vùng này chứa **templates, schemas, utilities, và assets** dùng chung.
+Vùng tài nguyên dùng chung giữa systems/projects.
 
 ## Cấu trúc
 
-```
+```text
 shared/
-├── templates/           # Templates dùng chung
-├── schemas/             # Schemas dùng chung
-├── utilities/           # Utility scripts/functions
-└── assets/              # Assets (images, icons, etc.)
+├── assets/              # ảnh/icon/static assets dùng chung
+├── schemas/             # schema dùng chung
+├── templates/           # template dùng chung ngoài PM Agent core
+└── utilities/           # utility có thể tái sử dụng
 ```
 
-## Templates
+## Quy tắc
 
-Templates có thể dùng chung giữa nhiều systems/projects.
+- Chỉ đặt thứ dùng chung thật sự ở đây.
+- Template riêng của PM Agent nằm trong `systems/pm-agent/templates/`.
+- Script vận hành nằm trong `ops/scripts/`.
+- Artifact/runtime output nằm trong `ops/exports/` hoặc `ops/tmp/`.
 
-Ví dụ:
-- Document templates
-- Config templates
-- Boilerplate code
-
-## Schemas
-
-Schemas định nghĩa cấu trúc dữ liệu dùng chung.
-
-Ví dụ:
-- JSON schemas
-- YAML schemas
-- Data models
-
-## Utilities
-
-Utility scripts/functions có thể tái sử dụng.
-
-Ví dụ:
-- File processing utilities
-- Data transformation utilities
-- Common helpers
-
-## Assets
-
-Assets tĩnh dùng chung.
-
-Ví dụ:
-- Icons
-- Images
-- Fonts
-- Static resources
-
-## Vai trò trong workspace
-
-Shared là **thư viện dùng chung**, tránh duplicate code/config.
-
-Khác với:
-- `systems/` - System-specific code
-- `ops/scripts/` - Operational scripts
-- `knowledge/` - Documentation
+Hiện folder này là skeleton, sẵn sàng cho phần dùng chung sau này.

@@ -1,100 +1,32 @@
 # Cross-Project Risk View
 
-Góc nhìn rủi ro xuyên nhiều project để tìm pattern lặp lại trong cách PM Agent vận hành.
+Sau cleanup 2026-05-26, workspace chính chưa có nhiều project để phân tích risk xuyên project.
 
----
+## Current Observation
 
-## Current Cross-Project Observation
-Vì danh mục project hiện còn nhỏ, view này hiện thiên về **pattern/risk hypotheses** hơn là thống kê lớn.
+- Không có project folder active trong cây chính.
+- PM Agent framework vẫn còn đầy đủ tại `systems/pm-agent/`.
+- Risk view hiện chỉ là placeholder cho các project mới sau này.
 
----
-
-## Repeating Risk Patterns
+## Risk Patterns Cần Theo Dõi Khi Có Project Mới
 
 ### 1. Source-of-truth drift
-**Mô tả:** Các artifact khác nhau có thể lệch nhau về progress/status.
-
-**Đã thấy ở đâu:**
-- `web-ban-hang`: `project.yaml` và `task-board.md` conflict về completed/completion
-
-**Rủi ro:**
-- daily report sai
-- dashboard sai
-- PM Agent kết luận sai về trạng thái dự án
-
-**Mitigation direction:**
-- conflict detection trong reporting
-- acceptance verification
-- stale/source audit định kỳ
-
----
+Artifact khác nhau lệch nhau về status/progress.
 
 ### 2. Done giả / verification yếu
-**Mô tả:** Task có thể bị coi là done quá sớm nếu thiếu evidence hoặc verify.
-
-**Đã thấy ở đâu:**
-- pattern đã được xác định là risk trong PM Agent hardening
-
-**Rủi ro:**
-- task board đẹp nhưng trạng thái thật không chắc chắn
-- final status dễ bị tô hồng
-
-**Mitigation direction:**
-- acceptance verification policy
-- regression scenario `false-done`
-
----
+Task bị đánh dấu done khi chưa có evidence hoặc acceptance rõ.
 
 ### 3. Active nhưng thực tế đã dừng
-**Mô tả:** Project vẫn ghi `active` trong metadata dù không còn active work.
-
-**Đã thấy ở đâu:**
-- `web-ban-hang` trước khi được đổi sang `on-hold`
-
-**Rủi ro:**
-- cron/report chạy sai target
-- portfolio view sai
-- owner hiểu nhầm tình trạng thực
-
-**Mitigation direction:**
-- stale-project detection
-- status sync discipline
-
----
+Metadata/path/status không còn phản ánh công việc thật.
 
 ### 4. Actor attribution yếu
-**Mô tả:** Khó truy chính xác ai làm gì nếu artifact không có actor fields.
-
-**Rủi ro:**
-- audit yếu
-- lessons learned khó tin cậy
-- report khó phân biệt human / main agent / subagent
-
-**Mitigation direction:**
-- actor tracking policy
-- actor fields trong approvals/decisions/change/issues/handoffs
-
----
-
-## Current Cross-Project Risk Status
-- **High:** source-of-truth drift
-- **High:** false done / weak verification
-- **Medium:** stale active status
-- **Medium:** weak actor attribution
-
----
-
-## Current Limitation
-View này hiện còn dựa trên ít project, nên nên coi là:
-- **operational learning view**
-- chưa phải thống kê lớn đủ mạnh
-
----
+Không rõ human/main agent/subagent nào làm gì.
 
 ## Next Step
-Khi có thêm project active mới, cần cập nhật view này để:
-- xem risk nào lặp lại nhiều nhất
-- risk nào đã giảm sau hardening
-- hardening nào thực sự hiệu quả
 
-Last updated: 2026-05-14T10:05:00Z
+Khi có project active mới:
+1. Cập nhật registry.
+2. Chạy PM Agent reporting theo project lifecycle.
+3. Ghi risk pattern thực tế vào file này.
+
+Last updated: 2026-05-26T02:25:00Z

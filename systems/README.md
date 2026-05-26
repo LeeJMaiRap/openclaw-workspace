@@ -1,50 +1,57 @@
 # Systems
 
-Vùng này chứa các **hệ thống agent** đang được xây dựng và vận hành.
+Vùng chứa các hệ thống agent/framework đang được xây dựng và vận hành.
 
 ## Hiện có
 
 ### PM Agent
-**Location:** `systems/pm-agent/`
 
-PM Agent (Lệ) là một agent AI quản lý dự án, có khả năng:
-- Tiếp nhận và phân tích yêu cầu dự án
-- Tạo bộ tài liệu PM chuẩn
-- Chia task và điều phối thực thi
-- Theo dõi tiến độ, rủi ro, thay đổi
-- Tạo báo cáo tổng kết
+Path: `systems/pm-agent/`
 
-**Cấu trúc:**
+PM Agent là core của workspace hiện tại. Tuyệt đối không xoá folder này trong các đợt cleanup/tái cấu trúc.
+
+PM Agent có khả năng:
+- Tiếp nhận và phân tích yêu cầu dự án.
+- Tạo bộ tài liệu PM chuẩn.
+- Chia task và điều phối thực thi.
+- Theo dõi tiến độ, rủi ro, thay đổi.
+- Tạo báo cáo và checklist vận hành.
+
+Cấu trúc chính:
+
+```text
+systems/pm-agent/
+├── README.md
+├── STATUS.md
+├── architecture/
+├── prompts/
+├── templates/
+├── skills/
+├── runtime/
+├── eval/
+├── reports/
+├── scripts/
+└── changelog/
 ```
-pm-agent/
-├── README.md              # Hướng dẫn sử dụng
-├── STATUS.md              # Trạng thái PM Agent framework
-├── architecture/          # Thiết kế hệ thống
-├── prompts/               # Prompt theo phase
-├── templates/             # Template tài liệu
-├── skills/                # Skill modules
-├── runtime/               # Policies, runbooks, config
-├── eval/                  # Scenarios, checklists
-├── scripts/               # Automation scripts
-└── changelog/             # Lịch sử phát triển
-```
 
-**Production-readiness:** ~70%
+### Voice IO
 
-## Quy ước
+Path: `systems/voice/`
+
+Voice IO giữ script STT/TTS nhỏ và README. Runtime output không để trong `systems/voice/output/`; output/sample nên nằm ở `ops/exports/voice/`.
+
+## Quy ước system
 
 Mỗi system nên có:
-- `README.md` - Giới thiệu và hướng dẫn
-- `STATUS.md` - Trạng thái hiện tại
-- `architecture/` - Thiết kế
-- `runtime/` - Vận hành thực tế
-- `eval/` - Kiểm chứng chất lượng
+- `README.md` — giới thiệu và hướng dẫn.
+- `STATUS.md` — trạng thái nếu system đủ lớn.
+- `architecture/` — thiết kế.
+- `runtime/` — vận hành thực tế.
+- `eval/` — kiểm chứng chất lượng.
 
-## Vai trò trong workspace
+## Ranh giới
 
-Systems là nơi chứa **sản phẩm agent** đang phát triển.
-
-Khác với:
-- `agent-core/` - Bản sắc agent cá nhân
-- `projects/` - Dự án do agent quản lý
-- `knowledge/` - Tri thức và tài liệu
+- `systems/` chứa framework/source của hệ thống.
+- `ops/` chứa tooling vận hành, tmp, exports, logs.
+- `projects/` chứa project data do PM Agent quản lý.
+- `shared/` chứa tài nguyên dùng chung.

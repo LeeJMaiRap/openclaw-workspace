@@ -1,8 +1,16 @@
 # memory
 
-Daily and operational memory notes for continuity across sessions.
+Ghi chú continuity cho workspace/session.
 
-- `YYYY-MM-DD.md` files: raw daily notes and work logs.
-- Long-term curated memory remains in workspace root `MEMORY.md` when present.
+## Dùng cho
 
-Do not place secrets here unless explicitly requested.
+- Daily notes: `YYYY-MM-DD.md` nếu cần ghi log làm việc.
+- Operational notes nhỏ cần nhớ giữa các session.
+
+## Không dùng cho
+
+- Secret/token/password.
+- Project source of truth dài hạn.
+- File output/cache/build.
+
+Long-term curated memory, nếu có, nằm ở root `MEMORY.md` trong main session.

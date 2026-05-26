@@ -1,74 +1,46 @@
 # Ops
 
-Vùng này chứa **scripts, state, tmp, exports, và logs** phục vụ vận hành.
+Vùng vận hành: scripts, state, tmp, exports, logs. Không phải source framework chính.
 
 ## Cấu trúc
 
-```
+```text
 ops/
-├── scripts/             # Scripts automation
-│   ├── image/           # Image processing
-│   ├── voice/           # Voice processing
-│   └── maintenance/     # Maintenance scripts
-├── state/               # Runtime state
-│   ├── pm-agent/        # PM Agent state
-│   ├── sessions/        # Session state
-│   └── cache/           # Cache
-├── tmp/                 # Temporary files
-│   ├── image/           # Image artifacts
-│   ├── voice/           # Voice artifacts
-│   └── pm-agent/        # PM Agent tmp
-├── exports/             # Exported artifacts
-│   ├── pm-agent/        # PM Agent exports
-│   └── projects/        # Project exports
-└── logs/                # Logs
+├── scripts/
+│   ├── document/        # PDF/document utility scripts
+│   ├── image/           # Image processing scripts
+│   ├── maintenance/     # Cleanup/maintenance scripts
+│   └── voice/           # Voice processing scripts nếu cần tách khỏi systems/voice
+├── state/
+│   ├── cache/
+│   ├── pm-agent/
+│   └── sessions/
+├── tmp/
+│   ├── image/
+│   ├── pm-agent/
+│   └── voice/
+├── exports/
+│   ├── pm-agent/
+│   ├── projects/
+│   └── voice/
+│       └── samples/
+└── logs/
 ```
 
-## Scripts
+## Hiện có
 
-### Voice
-- `voice_to_text.py` - STT (Whisper)
-- `text_to_voice.py` - TTS (Edge TTS)
-- `telegram_voice_ingest.py` - Semi-auto voice ingest
-- `reply_as_voice.py` - Generate voice reply
+### Document tooling
+- `ops/scripts/document/md_to_pdf.js` — Node PDF fallback/tool.
+- `ops/scripts/document/md_to_pdf_root_legacy.py` — legacy root Python PDF script được di chuyển khỏi root.
+- `ops/scripts/document/package.json` / `package-lock.json` — dependency manifest cho document tooling.
 
-### Image
-Image processing scripts.
+### Voice exports
+- `ops/exports/voice/samples/` — audio sample đã tạo trước cleanup.
 
-### Maintenance
-Maintenance và cleanup scripts.
+## Quy tắc
 
-## State
-
-Runtime state cho các hệ thống.
-
-**Lưu ý:** State không phải source of truth. Source of truth nằm trong:
-- `projects/` cho project data
-- `systems/` cho system config
-- `agent-core/memory/` cho agent memory
-
-## Tmp
-
-Temporary artifacts, runtime outputs.
-
-**Quy tắc:**
-- Không commit vào git (đã ignore)
-- Có thể xóa bất kỳ lúc nào
-- Chỉ giữ `.gitkeep` để preserve structure
-
-## Exports
-
-Exported artifacts (zip, tar.gz, etc.)
-
-**Quy tắc:**
-- Không commit binary lớn vào git
-- Giữ structure, ignore content
-
-## Vai trò trong workspace
-
-Ops là **vùng vận hành**, chứa artifact tạm và scripts.
-
-Khác với:
-- `systems/` - Framework code
-- `projects/` - Project data
-- `knowledge/` - Documentation
+1. `ops/scripts/` chứa tooling vận hành, không phải PM Agent source of truth.
+2. `ops/tmp/` có thể xoá định kỳ.
+3. `ops/exports/` chứa artifact xuất ra; tránh commit binary lớn trừ khi là sample có chủ đích.
+4. `ops/state/` chỉ dùng cho state nhỏ; source of truth vẫn nằm ở `systems/` hoặc `projects/`.
+5. Nếu script trở thành phần chính thức của PM Agent, chuyển vào `systems/pm-agent/scripts/` hoặc skill tương ứng.

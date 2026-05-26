@@ -1,36 +1,37 @@
 # Projects Registry
 
-Danh sách toàn bộ project được PM Agent quản lý.
+Registry sau cleanup workspace ngày 2026-05-26.
 
-## Active Projects
+## Current Projects In Main Tree
+
+Không có project folder active/on-hold/archived trong cây chính.
 
 | ID | Name | Owner | PM | Status | Priority | Created | Updated |
 |----|------|-------|----|--------|----------|---------|---------|
-| web-ban-acc-game | Web Bán Acc Game | Doanh | Lệ | active | high | 2026-05-16 | 2026-05-16 |
-| web-ban-hang | Trang Web Bán Hàng | Doanh | Lệ | on-hold | medium | 2026-04-24 | 2026-05-14 |
+| _none_ | _none_ | _none_ | _none_ | _none_ | _none_ | _none_ | _none_ |
 
-## Archived Projects
+## Historical / Restorable Data
 
-| ID | Name | Owner | PM | Status | Archived Date | Reason |
-|----|------|-------|----|--------|---------------|--------|
-| pm-agent-e2e-demo-v2 | PM Agent E2E Demo V2 | Doanh | Lệ | archived | 2026-05-14 | Validation completed, replaced by improved version |
+Project data cũ đã được đưa khỏi cây chính trong cleanup. Nếu cần phục hồi, dùng Git rollback hoặc `.trash/cleanup-20260526-013600`.
 
 ## Project Status Legend
-- **active** - Đang vận hành
-- **on-hold** - Tạm dừng / giữ làm reference
-- **archived** - Đã hoàn tất hoặc hủy
+
+- **active** — đang vận hành.
+- **on-hold** — tạm dừng / giữ làm reference.
+- **archived** — đã hoàn tất hoặc hủy.
 
 ## Priority Legend
-- **critical** - Ưu tiên cao nhất
-- **high** - Ưu tiên cao
-- **medium** - Ưu tiên trung bình
-- **low** - Ưu tiên thấp
+
+- **critical** — ưu tiên cao nhất.
+- **high** — ưu tiên cao.
+- **medium** — ưu tiên trung bình.
+- **low** — ưu tiên thấp.
 
 ## Quick Stats
-- Total projects: 3
-- Active: 2
-- On-hold: 1
-- Archived: 1
-- Success rate: 100%
 
-Last updated: 2026-05-16T06:47:00Z
+- Total projects in main tree: 0
+- Active: 0
+- On-hold: 0
+- Archived: 0
+
+Last updated: 2026-05-26T02:25:00Z
