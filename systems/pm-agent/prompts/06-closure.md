@@ -51,12 +51,14 @@ Tạo file `projects/[project-name]/05-closure/lessons-learned.md` với:
 - Tất cả issue/risk/change log
 - Tất cả báo cáo
 
-### Bước 6: Cập nhật memory
-Cập nhật `agent-core/memory/observations/pm-projects.md`:
+### Bước 6: Cập nhật memory / observations
+Cập nhật `memory/pm-agent-observations.md` nếu kết quả đáng ghi nhớ dài hạn:
 - Tên dự án
 - Kết quả
 - Bài học
 - Liên kết đến final report
+
+Nếu cần runtime snapshot nhỏ, ghi vào `ops/state/pm-agent/`. Project source of truth vẫn nằm trong project folder.
 
 ### Bước 7: Đánh dấu đóng
 - Task board status = Closed
