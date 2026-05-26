@@ -1,0 +1,130 @@
+/root/.openclaw/workspace/
+├── .claude/
+│   └── settings.local.json
+├── .openclaw/
+│   └── workspace-state.json
+├── memory/
+│   └── README.md
+├── ops/
+│   ├── exports/
+│   │   ├── pm-agent/
+│   │   └── projects/
+│   ├── logs/
+│   ├── scripts/
+│   │   ├── image/
+│   │   ├── maintenance/
+│   │   └── voice/
+│   ├── state/
+│   │   ├── cache/
+│   │   ├── pm-agent/
+│   │   └── sessions/
+│   ├── tmp/
+│   │   ├── image/
+│   │   │   ├── generated/
+│   │   │   ├── incoming/
+│   │   │   └── metadata/
+│   │   ├── pm-agent/
+│   │   └── voice/
+│   │       ├── generated/
+│   │       ├── incoming/
+│   │       └── transcripts/
+│   └── README.md
+├── projects/
+│   ├── _index/
+│   │   ├── active-projects.md
+│   │   ├── archived-projects.md
+│   │   ├── cross-project-risk-view.md
+│   │   ├── portfolio-dashboard.md
+│   │   └── projects-registry.md
+│   └── README.md
+├── shared/
+│   ├── assets/
+│   ├── schemas/
+│   ├── templates/
+│   ├── utilities/
+│   └── README.md
+├── state/
+│   └── README.md
+├── systems/
+│   ├── pm-agent/
+│   │   ├── architecture/
+│   │   │   ├── STATE-SCHEMA.md
+│   │   │   ├── STORAGE-RULES.md
+│   │   │   ├── SYSTEM-PROMPT.md
+│   │   │   └── WORKFLOW.md
+│   │   ├── changelog/
+│   │   ├── eval/
+│   │   │   ├── checklists/
+│   │   │   ├── goldens/
+│   │   │   ├── reports/
+│   │   │   └── scenarios/
+│   │   ├── prompts/
+│   │   │   ├── 01-initiate.md
+│   │   │   ├── 02-planning.md
+│   │   │   ├── 03-task-board.md
+│   │   │   ├── 04-execute.md
+│   │   │   ├── 05-monitor.md
+│   │   │   └── 06-closure.md
+│   │   ├── reports/
+│   │   │   ├── daily/
+│   │   │   ├── plans/
+│   │   │   └── portfolio/
+│   │   ├── runtime/
+│   │   │   ├── adapters/
+│   │   │   ├── config/
+│   │   │   ├── policies/
+│   │   │   ├── registries/
+│   │   │   └── runbooks/
+│   │   ├── scripts/
+│   │   │   └── backup-and-recreate-docker.ps1
+│   │   ├── skills/
+│   │   │   ├── document-generation/
+│   │   │   ├── infrastructure/
+│   │   │   ├── input-normalization/
+│   │   │   ├── project-operations/
+│   │   │   ├── voice/
+│   │   │   └── README.md
+│   │   ├── templates/
+│   │   │   ├── change-log-template.md
+│   │   │   ├── charter-template.md
+│   │   │   ├── final-report-template.md
+│   │   │   ├── issue-log-template.md
+│   │   │   ├── lessons-learned-template.md
+│   │   │   ├── plan-template.md
+│   │   │   ├── requirements-template.md
+│   │   │   ├── risk-register-template.md
+│   │   │   ├── rules-template.md
+│   │   │   ├── schedule-template.md
+│   │   │   ├── spec-template.md
+│   │   │   ├── status-dashboard-template.md
+│   │   │   ├── task-board-template.md
+│   │   │   └── wbs-template.md
+│   │   ├── README.md
+│   │   └── STATUS.md
+│   ├── voice/
+│   │   ├── output/
+│   │   │   ├── doanh-50-chu.mp3
+│   │   │   └── test-voice.mp3
+│   │   ├── scripts/
+│   │   │   ├── synthesize.py
+│   │   │   └── transcribe.py
+│   │   └── README.md
+│   └── README.md
+├── tmp/
+│   ├── voice/
+│   │   └── .gitkeep
+│   ├── README.md
+│   └── workspace-tree.txt
+├── .gitignore
+├── AGENTS.md
+├── BEHAVIOR.md
+├── HEARTBEAT.md
+├── IDENTITY.md
+├── md_to_pdf.js
+├── md_to_pdf.py
+├── package-lock.json
+├── package.json
+├── README.md
+├── SOUL.md
+├── TOOLS.md
+└── USER.md

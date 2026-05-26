@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <style>
+    .bg{fill:#f8fafc}.box{fill:#fff;stroke:#334155;stroke-width:1.5;rx:12}.root{fill:#0f172a;stroke:#0f172a}.pm{fill:#e0f2fe;stroke:#0369a1}.support{fill:#f1f5f9;stroke:#64748b}.ops{fill:#ecfdf5;stroke:#047857}.warn{fill:#fff7ed;stroke:#c2410c}text{font-family:Arial,sans-serif;font-size:14px;fill:#0f172a}.rootText{fill:white;font-weight:bold;font-size:16px}.title{font-weight:bold;font-size:15px}.small{font-size:12px;fill:#475569}path{stroke:#94a3b8;stroke-width:1.5;fill:none}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" stroke="none"/></marker></defs>
+  <rect width="1200" height="820" class="bg"/>
+  <text x="40" y="38" style="font-size:24px;font-weight:bold">Workspace Structure</text>
+  <text x="40" y="62" class="small">Sau cleanup: giữ khung sườn PM Agent + workspace skeleton. Bỏ qua .git và .trash.</text>
+  <rect x="430" y="90" width="340" height="56" class="box root" rx="12"/><text x="600" y="124" text-anchor="middle" class="rootText">/root/.openclaw/workspace</text>
+  <path d="M600 146 V175" marker-end="url(#arrow)"/>
+  <rect x="40" y="185" width="220" height="100" class="box support" rx="12"/><text x="60" y="213" class="title">Core files</text><text x="60" y="237">AGENTS, SOUL, USER</text><text x="60" y="259">README, TOOLS, BEHAVIOR</text>
+  <rect x="300" y="185" width="250" height="100" class="box support" rx="12"/><text x="320" y="213" class="title">projects/_index</text><text x="320" y="237">Portfolio dashboard</text><text x="320" y="259">Project registry</text>
+  <rect x="590" y="185" width="250" height="100" class="box ops" rx="12"/><text x="610" y="213" class="title">ops + tmp + shared</text><text x="610" y="237">scripts/state/cache skeleton</text><text x="610" y="259">voice/image temp dirs</text>
+  <rect x="880" y="185" width="260" height="100" class="box pm" rx="12"/><text x="900" y="213" class="title">systems/pm-agent</text><text x="900" y="237">Main PM Agent framework</text><text x="900" y="259">173 files retained</text>
+  <path d="M600 165 C210 165 150 175 150 185" marker-end="url(#arrow)"/><path d="M600 165 C450 165 425 175 425 185" marker-end="url(#arrow)"/><path d="M600 165 C690 165 715 175 715 185" marker-end="url(#arrow)"/><path d="M600 165 C920 165 1010 175 1010 185" marker-end="url(#arrow)"/>
+  <rect x="70" y="335" width="250" height="90" class="box pm" rx="12"/><text x="90" y="363" class="title">architecture</text><text x="90" y="387">SYSTEM-PROMPT, WORKFLOW</text><text x="90" y="409">STATE-SCHEMA, STORAGE-RULES</text>
+  <rect x="355" y="335" width="250" height="90" class="box pm" rx="12"/><text x="375" y="363" class="title">runtime</text><text x="375" y="387">config, policies</text><text x="375" y="409">registries, runbooks</text>
+  <rect x="640" y="335" width="250" height="90" class="box pm" rx="12"/><text x="660" y="363" class="title">prompts</text><text x="660" y="387">01 initiate → 06 closure</text><text x="660" y="409">PM lifecycle prompts</text>
+  <rect x="925" y="335" width="220" height="90" class="box pm" rx="12"/><text x="945" y="363" class="title">templates</text><text x="945" y="387">charter, plan, spec</text><text x="945" y="409">risk, schedule, WBS...</text>
+  <path d="M1010 285 C500 300 195 315 195 335" marker-end="url(#arrow)"/><path d="M1010 285 C700 300 480 315 480 335" marker-end="url(#arrow)"/><path d="M1010 285 C820 300 765 315 765 335" marker-end="url(#arrow)"/><path d="M1010 285 C1040 300 1035 315 1035 335" marker-end="url(#arrow)"/>
+  <rect x="70" y="475" width="250" height="110" class="box pm" rx="12"/><text x="90" y="503" class="title">skills/document-generation</text><text x="90" y="527">charter, plan, spec</text><text x="90" y="549">requirements, risk, rules</text><text x="90" y="571">schedule, WBS</text>
+  <rect x="355" y="475" width="250" height="110" class="box pm" rx="12"/><text x="375" y="503" class="title">skills/project-operations</text><text x="375" y="527">daily report, dashboard</text><text x="375" y="549">task board, issue log</text><text x="375" y="571">change log, lessons learned</text>
+  <rect x="640" y="475" width="250" height="110" class="box pm" rx="12"/><text x="660" y="503" class="title">skills/input + infra + voice</text><text x="660" y="527">clarifier, normalizer</text><text x="660" y="549">markdown-to-pdf</text><text x="660" y="571">text/voice helpers</text>
+  <rect x="925" y="475" width="220" height="110" class="box pm" rx="12"/><text x="945" y="503" class="title">eval + reports</text><text x="945" y="527">checklists/scenarios</text><text x="945" y="549">daily reports</text><text x="945" y="571">portfolio reports</text>
+  <path d="M1010 285 C450 335 195 435 195 475" marker-end="url(#arrow)"/><path d="M1010 285 C640 350 480 435 480 475" marker-end="url(#arrow)"/><path d="M1010 285 C800 350 765 435 765 475" marker-end="url(#arrow)"/><path d="M1010 285 C1035 350 1035 435 1035 475" marker-end="url(#arrow)"/>
+  <rect x="70" y="650" width="1075" height="90" class="box warn" rx="12"/><text x="90" y="680" class="title">Trash / rollback</text><text x="90" y="706">.trash/cleanup-20260526-013600 giữ 6.6G dữ liệu đã dọn, không hiển thị trong cây chính.</text><text x="90" y="728">Workspace chính sau cleanup ~1.7M, commit c33a17d đã push.</text>
+  <text x="40" y="790" class="small">Generated: 2026-05-26 UTC • Diagram excludes .git and .trash</text>
+</svg>
