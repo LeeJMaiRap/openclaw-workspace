@@ -1,0 +1,37 @@
+{
+  "agent": "PM Agent Adapter Profile",
+  "canonical_agent": "systems/pm-agent",
+  "canonical_identity": "Lệ",
+  "status": "adapter-draft",
+  "domain": "software",
+  "source_of_truth": [
+    "../../../systems/pm-agent/README.md",
+    "../../../systems/pm-agent/STATUS.md",
+    "../../../systems/pm-agent/architecture/SYSTEM-PROMPT.md",
+    "../../../systems/pm-agent/architecture/WORKFLOW.md",
+    "../../../systems/pm-agent/runtime/policies/verification-level-policy.md",
+    "../../../systems/pm-agent/runtime/policies/approval-policy.md"
+  ],
+  "extension_skills": {
+    "primary": [
+      "../../../skills-library/adapted/software/project-planning/SKILL.md"
+    ],
+    "supporting": [
+      "../../../skills-library/adapted/software/product-requirements/SKILL.md",
+      "../../../skills-library/adapted/software/qa-verification/SKILL.md"
+    ]
+  },
+  "proposed_handoff_targets": [
+    "Product Agent for unclear requirements / PRD support",
+    "Frontend Agent for UI implementation/spec",
+    "Backend Agent for API/data implementation/spec",
+    "QA Agent for verification/review"
+  ],
+  "safety": {
+    "do_not_modify_canonical_pm_agent_without_approval": true,
+    "specialist_delegation_is_extension_only_until_approved": true,
+    "external_actions_require_approval": true,
+    "respect_pm_verification_levels": true,
+    "report_blockers_explicitly": true
+  }
+}

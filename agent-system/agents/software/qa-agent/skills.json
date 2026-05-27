@@ -1,0 +1,33 @@
+{
+  "agent": "QA Agent",
+  "slug": "qa-agent",
+  "status": "draft",
+  "domain": "software",
+  "primary_skills": [
+    "../../../skills-library/adapted/software/qa-verification/SKILL.md"
+  ],
+  "supporting_skills": [
+    "../../../skills-library/adapted/software/product-requirements/SKILL.md",
+    "../../../skills-library/adapted/software/project-planning/SKILL.md"
+  ],
+  "handoff_targets": [
+    "PM Agent for acceptance/blocker decisions",
+    "Frontend/Backend Agents for fixes",
+    "Product Agent for unclear requirements"
+  ],
+  "safety": {
+    "external_actions_require_approval": true,
+    "respect_role_boundaries": true,
+    "report_blockers_explicitly": true
+  },
+  "handoff_protocol": {
+    "protocol": "../../../docs/specialist-handoff-protocol.md",
+    "task_packet_template": "../../../templates/specialist-task-packet.md",
+    "task_report_template": "../../../templates/specialist-task-report.md",
+    "canonical_pm_agent": "../../../systems/pm-agent",
+    "requires_task_packet": true,
+    "requires_task_report": true,
+    "respect_verification_levels": true,
+    "respect_role_boundaries": true
+  }
+}

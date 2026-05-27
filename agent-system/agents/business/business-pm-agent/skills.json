@@ -1,0 +1,34 @@
+{
+  "agent": "Business PM Agent",
+  "slug": "business-pm-agent",
+  "status": "draft",
+  "domain": "business",
+  "primary_skills": [
+    "../../../skills-library/adapted/affiliate/affiliate-strategy/SKILL.md"
+  ],
+  "supporting_skills": [
+    "../../../skills-library/adapted/affiliate/content-copywriting/SKILL.md",
+    "../../../skills-library/adapted/affiliate/performance-analysis/SKILL.md",
+    "../../../skills-library/adapted/affiliate/market-research/SKILL.md",
+    "../../../skills-library/adapted/affiliate/product-hunting/SKILL.md"
+  ],
+  "handoff_protocol": {
+    "protocol": "../../../docs/specialist-handoff-protocol.md",
+    "task_packet_template": "../../../templates/specialist-task-packet.md",
+    "task_report_template": "../../../templates/specialist-task-report.md",
+    "canonical_pm_agent": "../../../systems/pm-agent",
+    "requires_task_packet": true,
+    "requires_task_report": true,
+    "respect_verification_levels": true,
+    "respect_role_boundaries": true
+  },
+  "safety": {
+    "draft_only": true,
+    "external_actions_require_approval": true,
+    "no_posting": true,
+    "no_messaging": true,
+    "no_ads": true,
+    "no_payment_or_api_keys": true,
+    "no_fake_claims": true
+  }
+}
