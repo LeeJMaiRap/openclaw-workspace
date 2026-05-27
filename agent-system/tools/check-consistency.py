@@ -28,9 +28,13 @@ TESTS_DIR = ROOT / "tests"
 
 REQUIRED_ROOT_FILES = [
     ROOT / "INDEX.md",
+    ROOT / "STATUS.md",
     ROOT / "README.md",
+    ROOT / "docs" / "activation-guide.md",
     ROOT / "docs" / "agent-role-matrix.md",
+    ROOT / "docs" / "skills-json-schema.md",
     ROOT / "docs" / "specialist-handoff-protocol.md",
+    ROOT / "schemas" / "agent-skills.schema.json",
     ROOT / "templates" / "specialist-task-packet.md",
     ROOT / "templates" / "specialist-task-report.md",
 ]
@@ -109,6 +113,36 @@ def check_required_root(findings: list[Finding]) -> None:
             add(findings, "FAIL", p, "required root doc/template missing")
 
 
+def check_schema_file(findings: list[Finding]) -> None:
+    schema_path = ROOT / "schemas" / "agent-skills.schema.json"
+    if not schema_path.exists():
+        add(findings, "FAIL", schema_path, "schema file missing")
+        return
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        add(findings, "FAIL", schema_path, f"invalid schema JSON: {exc}")
+        return
+    for key in ["$schema", "title", "type", "properties", "oneOf"]:
+        if key not in schema:
+            add(findings, "FAIL", schema_path, f"schema missing key: {key}")
+    if schema.get("type") != "object":
+        add(findings, "FAIL", schema_path, "schema type must be object")
+
+
+def check_profile_shape(findings: list[Finding], skills_path: Path, data: dict) -> None:
+    has_primary = "primary_skills" in data
+    has_extension = "extension_skills" in data
+    if has_primary == has_extension:
+        add(findings, "FAIL", skills_path, "must contain exactly one of primary_skills or extension_skills")
+    if has_primary and "slug" not in data:
+        add(findings, "FAIL", skills_path, "normal specialist profile missing slug")
+    if has_primary and "handoff_protocol" not in data:
+        add(findings, "WARN", skills_path, "normal specialist profile missing handoff_protocol")
+    if has_extension and "canonical_agent" not in data:
+        add(findings, "WARN", skills_path, "adapter-style profile missing canonical_agent")
+
+
 def check_agents(findings: list[Finding]) -> None:
     for agent_dir in iter_agent_dirs():
         for name in REQUIRED_AGENT_FILES:
@@ -129,6 +163,7 @@ def check_agents(findings: list[Finding]) -> None:
         for key in REQUIRED_SKILLS_JSON_KEYS:
             if key not in data:
                 add(findings, "FAIL", skills_path, f"missing required key: {key}")
+        check_profile_shape(findings, skills_path, data)
 
         # Normal specialist profiles use primary_skills/supporting_skills.
         # PM adapter profile preserves canonical PM as source_of_truth and stores optional extension skills under extension_skills.
@@ -234,6 +269,7 @@ def check_paper_overclaims(findings: list[Finding]) -> None:
 def main() -> int:
     findings: list[Finding] = []
     check_required_root(findings)
+    check_schema_file(findings)
     check_agents(findings)
     check_tests(findings)
     check_stale_markers(findings)

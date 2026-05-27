@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent-skills.schema.json",
+  "title": "Agent Skills Mapping",
+  "type": "object",
+  "required": ["agent", "status", "domain"],
+  "properties": {
+    "agent": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "minLength": 1 },
+    "domain": { "type": "string", "minLength": 1 },
+    "canonical_agent": { "type": "string", "minLength": 1 },
+    "canonical_identity": { "type": "string", "minLength": 1 },
+    "source_of_truth": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "primary_skills": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1
+    },
+    "supporting_skills": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "extension_skills": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "supporting": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      },
+      "required": ["primary"]
+    },
+    "handoff_targets": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "proposed_handoff_targets": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": { "type": ["boolean", "string", "number", "array", "object", "null"] }
+    },
+    "handoff_protocol": {
+      "type": "object",
+      "properties": {
+        "protocol": { "type": "string", "minLength": 1 },
+        "task_packet_template": { "type": "string", "minLength": 1 },
+        "task_report_template": { "type": "string", "minLength": 1 },
+        "canonical_pm_agent": { "type": "string", "minLength": 1 },
+        "requires_task_packet": { "type": "boolean" },
+        "requires_task_report": { "type": "boolean" },
+        "respect_verification_levels": { "type": "boolean" },
+        "respect_role_boundaries": { "type": "boolean" }
+      },
+      "required": ["protocol", "task_packet_template", "task_report_template"]
+    }
+  },
+  "oneOf": [
+    { "required": ["primary_skills"] },
+    { "required": ["extension_skills"] }
+  ],
+  "additionalProperties": true
+}
