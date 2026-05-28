@@ -1,0 +1,547 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-28T06:50:00.580Z",
+  "entries": {
+    "memory:memory/2026-05-19.md:89:110": {
+      "key": "memory:memory/2026-05-19.md:89:110",
+      "path": "memory/2026-05-19.md",
+      "startLine": 89,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "- templates should distinguish `Paper verification` vs `Real verification` - Next suggested Phase 12 options: - Option A: harden templates before real pilot (`Verification Level`, real-pilot checklist, stop gate if “tested” lacks evidence) - Option B: tiny real implementation pilot, strict owned paths, no deploy - User then sent OpenClaw runtime event continuation twice. Respond normally with `NO_REPLY` after memory append. ## 2026-05-19 12:20 UTC — Memory flush: Agent-Teams Phases 15-16 - User approved and requested Phase 15 Option A: add preflight protocol/check tools-deps before real implementation task. Completed in prior turn. - Phase 15 outcome: - Added `systems/agent-teams/",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:41:41.302Z",
+      "lastRecalledAt": "2026-05-26T06:41:41.302Z",
+      "queryHashes": [
+        "9dbf9ea2cd48"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "real-pilot",
+        "no-reply",
+        "agent-teams",
+        "15-16",
+        "protocol/check",
+        "tools-deps",
+        "systems/agent-teams",
+        "templates"
+      ]
+    },
+    "memory:memory/2026-05-15.md:134:168": {
+      "key": "memory:memory/2026-05-15.md:134:168",
+      "path": "memory/2026-05-15.md",
+      "startLine": 134,
+      "endLine": 168,
+      "source": "memory",
+      "snippet": "- `stopped-projects-dashboard.md` (0 projects) - `archived-projects-dashboard.md` (1 project: pm-agent-e2e-demo-v2) - `portfolio-summary.md` (tổng hợp 2 projects) - Đánh dấu Phase 3.4 hoàn tất trong plan - **Cập nhật tiêu chí hoàn thành đợt update: tất cả đã đạt** 23. Anh yêu cầu commit lên GitHub - Commit: `ffed355` - Message: `Harden PM Agent production readiness and reconcile web-ban-hang` - Push thành công lên `origin/master` 24. Anh cung cấp thông tin cuộc thi đã đăng ký tham gia: - Cuộc thi thiết kế website/ứng dụng số đảm bảo tiếp cận số theo tiêu chuẩn WCAG 2.2 - Tổ chức bởi Khoa CNTT Trường ĐH Khoa học - ĐH Huế phối hợp HI - Hạn đă",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:41:41.302Z",
+      "lastRecalledAt": "2026-05-26T06:41:41.302Z",
+      "queryHashes": [
+        "9dbf9ea2cd48"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "stopped-projects-dashboard.md",
+        "archived-projects-dashboard.md",
+        "pm-agent-e2e-demo-v2",
+        "portfolio-summary.md",
+        "3.4",
+        "web-ban-hang",
+        "origin/master",
+        "website/ứng"
+      ]
+    },
+    "memory:memory/2026-05-16.md:30:75": {
+      "key": "memory:memory/2026-05-16.md:30:75",
+      "path": "memory/2026-05-16.md",
+      "startLine": 30,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "- Tìm thấy Telegram info trong conversation metadata: - Username: Doanh31 - ID: 5168072926 - Display name: Doanh 4. **USER.md created:** - Em tạo file `USER.md` với đầy đủ thông tin về anh: - Tên, pronouns, timezone (UTC+7) - Telegram contact info - GitHub - Role & working style - Current & past projects - Từ giờ em sẽ nhận ra anh qua cả Control UI và Telegram 5. **Daily memory 2026-05-15 reviewed:** - Em đọc lại memory hôm qua - Nhớ lại: hôm qua vừa hoàn tất update PM Agent (all phases done) - Anh có chia sẻ thông tin cuộc thi WCAG 2.2 (accessibility competition) - Kế hoạch tiếp theo: bắt đầu dự án test PM agent E2E với context",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:41:41.302Z",
+      "lastRecalledAt": "2026-05-26T06:41:41.302Z",
+      "queryHashes": [
+        "9dbf9ea2cd48"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "user.md",
+        "2.2",
+        "tìm",
+        "thấy",
+        "telegram",
+        "info",
+        "trong",
+        "conversation"
+      ]
+    },
+    "memory:memory/2026-05-15.md:1:48": {
+      "key": "memory:memory/2026-05-15.md:1:48",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# Daily Memory - 2026-05-15 ## Morning Session - PM Agent Update Plan Review & Execution ### Context Anh Doanh hỏi về tiến độ update PM Agent và yêu cầu file báo cáo tiến độ. ### What happened 1. Em tìm và đọc các file báo cáo: - `update-pma-plan-2026-05-14.md` (plan gốc) - `2026-05-14.md` (daily report ngày 14) - `2026-05-15.md` (daily report ngày 15) 2. Em tổng hợp trạng thái: - Phase 1: ✅ hoàn thành - Phase 2: 🟡 đang làm, cron đã chạy production 2 lần thành công - Phase 3: ⏸️ chưa bắt đầu theo plan cũ 3. Em đề xuất hướng đi tiếp theo: - Không mở rộng feature nữa - Chuyển sang hardening có chọn lọc - Đề xuất 2 options: - Option A: giữ đúng plan cũ (Pha",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:41:41.302Z",
+      "lastRecalledAt": "2026-05-26T06:41:41.302Z",
+      "queryHashes": [
+        "9dbf9ea2cd48"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "update-pma-plan-2026-05-14.md",
+        "morning",
+        "update",
+        "plan",
+        "review",
+        "execution",
+        "context",
+        "anh"
+      ]
+    },
+    "memory:memory/2026-05-20-0947.md:1:14": {
+      "key": "memory:memory/2026-05-20-0947.md:1:14",
+      "path": "memory/2026-05-20-0947.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "# Session: 2026-05-20 09:47:17 UTC - **Session Key**: agent:main:main - **Session ID**: 8c3a8fe7-40ec-4020-b0ee-01579e20be67 - **Source**: webchat ## Conversation Summary user: [Wed 2026-05-20 09:41 UTC] chạy heartbeat assistant: [assistant turn failed before producing content] user: [Wed 2026-05-20 09:42 UTC] chạy heartbeat assistant: [assistant turn failed before producing content] user: [OpenClaw heartbeat poll]",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T06:41:41.302Z",
+      "lastRecalledAt": "2026-05-26T06:41:41.302Z",
+      "queryHashes": [
+        "9dbf9ea2cd48"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "2026-05-20-0947.md",
+        "utc",
+        "key",
+        "agent:main:main",
+        "8c3a8fe7",
+        "40ec",
+        "b0ee",
+        "01579e20be67"
+      ]
+    },
+    "memory:memory/2026-05-26.md:1:7": {
+      "key": "memory:memory/2026-05-26.md:1:7",
+      "path": "memory/2026-05-26.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 08:35 UTC] Doanh approved direction 2 for agent-system: audit awesome-llm-apps first, adapt 6 foundation skills before agent profiles. [Tue 2026-05-26 08:44 UTC] Doanh approved next step: test reviewed skills. If temp files needed, create a dedicated folder to keep test artifacts for later comparison or easy cleanup. [Tue 2026-05-26 09:00 UTC] Doanh approved next step: create 7 first agent profiles plus skills.json mapping. Keep any test/temp artifacts in dedicated folders for comparison/cleanup.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6336378540921574,
+      "maxScore": 0.6336378540921574,
+      "firstRecalledAt": "2026-05-26T09:17:29.160Z",
+      "lastRecalledAt": "2026-05-26T09:17:29.160Z",
+      "queryHashes": [
+        "bb250ed48ce2"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "agent-system",
+        "awesome-llm-apps",
+        "skills.json",
+        "test/temp",
+        "comparison/cleanup",
+        "tue",
+        "utc",
+        "doanh"
+      ]
+    },
+    "memory:memory/2026-05-26.md:1:17": {
+      "key": "memory:memory/2026-05-26.md:1:17",
+      "path": "memory/2026-05-26.md",
+      "startLine": 1,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 08:35 UTC] Doanh approved direction 2 for agent-system: audit awesome-llm-apps first, adapt 6 foundation skills before agent profiles. [Tue 2026-05-26 08:44 UTC] Doanh approved next step: test reviewed skills. If temp files needed, create a dedicated folder to keep test artifacts for later comparison or easy cleanup. [Tue 2026-05-26 09:00 UTC] Doanh approved next step: create 7 first agent profiles plus skills.json mapping. Keep any test/temp artifacts in dedicated folders for comparison/cleanup. [Tue 2026-05-26 09:17 UTC] Doanh noted there is already a fairly complete PM Agent in `workspace/systems`. Do not treat `agent-system/agents/software/pm-agent/` as canonical unti",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.8423399878204068,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-26T09:53:26.925Z",
+      "lastRecalledAt": "2026-05-27T07:54:23.112Z",
+      "queryHashes": [
+        "2be3d35838f8",
+        "7e9fea4fa7ef",
+        "5c1df9569e8c",
+        "906430ab8ef6",
+        "2d8301c44d45"
+      ],
+      "recallDays": [
+        "2026-05-26",
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "agent-system",
+        "awesome-llm-apps",
+        "skills.json",
+        "test/temp",
+        "comparison/cleanup",
+        "workspace/systems",
+        "tue",
+        "utc"
+      ]
+    },
+    "memory:memory/2026-05-26.md:14:25": {
+      "key": "memory:memory/2026-05-26.md:14:25",
+      "path": "memory/2026-05-26.md",
+      "startLine": 14,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 09:29 UTC] Doanh asked to proceed with next step: agent handoff simulation using PM Agent Adapter + existing PM Agent rules. [Tue 2026-05-26 09:32 UTC] Doanh approved next step: create controlled specialist handoff protocol and adapter-side task packet/report templates, preserving systems/pm-agent unchanged. [Tue 2026-05-26 09:39 UTC] Doanh approved next step: update agent profiles to reference specialist handoff protocol and specialist task packet/report templates. [Tue 2026-05-26 09:43 UTC] Doanh approved next step: update agent role matrix to reflect existing PM Agent source of truth, PM Adapter bridge, and specialist handoff protocol. [Tue 2026-05-26 09:46 UTC] Doanh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6332277123380401,
+      "maxScore": 0.6332277123380401,
+      "firstRecalledAt": "2026-05-26T09:53:26.925Z",
+      "lastRecalledAt": "2026-05-26T09:53:26.925Z",
+      "queryHashes": [
+        "2be3d35838f8"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "adapter-side",
+        "packet/report",
+        "systems/pm-agent",
+        "tue",
+        "utc",
+        "doanh",
+        "asked",
+        "proceed"
+      ]
+    },
+    "memory:memory/2026-05-26.md:14:33": {
+      "key": "memory:memory/2026-05-26.md:14:33",
+      "path": "memory/2026-05-26.md",
+      "startLine": 14,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 09:29 UTC] Doanh asked to proceed with next step: agent handoff simulation using PM Agent Adapter + existing PM Agent rules. [Tue 2026-05-26 09:32 UTC] Doanh approved next step: create controlled specialist handoff protocol and adapter-side task packet/report templates, preserving systems/pm-agent unchanged. [Tue 2026-05-26 09:39 UTC] Doanh approved next step: update agent profiles to reference specialist handoff protocol and specialist task packet/report templates. [Tue 2026-05-26 09:43 UTC] Doanh approved next step: update agent role matrix to reflect existing PM Agent source of truth, PM Adapter bridge, and specialist handoff protocol. [Tue 2026-05-26 09:46 UTC] Doanh",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.014618279437663,
+      "maxScore": 0.9142943948854994,
+      "firstRecalledAt": "2026-05-27T06:55:58.775Z",
+      "lastRecalledAt": "2026-05-27T07:54:23.112Z",
+      "queryHashes": [
+        "7e9fea4fa7ef",
+        "5c1df9569e8c",
+        "906430ab8ef6",
+        "2d8301c44d45"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "adapter-side",
+        "packet/report",
+        "systems/pm-agent",
+        "tue",
+        "utc",
+        "doanh",
+        "asked",
+        "proceed"
+      ]
+    },
+    "memory:memory/2026-05-26.md:28:35": {
+      "key": "memory:memory/2026-05-26.md:28:35",
+      "path": "memory/2026-05-26.md",
+      "startLine": 28,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 09:58 UTC] Doanh approved next step: create Architect Agent profile after software-architecture skill passed Paper validation. [Tue 2026-05-26 10:02 UTC] Doanh approved next step: run architect handoff simulation with PM Adapter -> Product -> Architect -> Frontend/Backend -> QA. [Tue 2026-05-26 10:05 UTC] Doanh approved direction A: continue Phase 4 business side by reviewing/adapting affiliate-strategy and creating Business PM Agent. [Tue 2026-05-26 10:08 UTC] Doanh requested next step: run business handoff simulation for Business PM Agent -> Content Copy Agent -> Performance Analyst Agent -> Human approval gate.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6334501351656676,
+      "maxScore": 0.6334501351656676,
+      "firstRecalledAt": "2026-05-27T06:55:58.775Z",
+      "lastRecalledAt": "2026-05-27T06:55:58.775Z",
+      "queryHashes": [
+        "7e9fea4fa7ef"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "software-architecture",
+        "frontend/backend",
+        "reviewing/adapting",
+        "affiliate-strategy",
+        "tue",
+        "utc",
+        "doanh",
+        "approved"
+      ]
+    },
+    "memory:memory/2026-05-26.md:28:37": {
+      "key": "memory:memory/2026-05-26.md:28:37",
+      "path": "memory/2026-05-26.md",
+      "startLine": 28,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "[Tue 2026-05-26 09:58 UTC] Doanh approved next step: create Architect Agent profile after software-architecture skill passed Paper validation. [Tue 2026-05-26 10:02 UTC] Doanh approved next step: run architect handoff simulation with PM Adapter -> Product -> Architect -> Frontend/Backend -> QA. [Tue 2026-05-26 10:05 UTC] Doanh approved direction A: continue Phase 4 business side by reviewing/adapting affiliate-strategy and creating Business PM Agent. [Tue 2026-05-26 10:08 UTC] Doanh requested next step: run business handoff simulation for Business PM Agent -> Content Copy Agent -> Performance Analyst Agent -> Human approval gate. [Wed 2026-05-27 06:55 UTC] Continued approved next step af",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-27T07:12:56.031Z",
+      "lastRecalledAt": "2026-05-27T07:12:56.031Z",
+      "queryHashes": [
+        "5c1df9569e8c"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "software-architecture",
+        "frontend/backend",
+        "reviewing/adapting",
+        "affiliate-strategy",
+        "tue",
+        "utc",
+        "doanh",
+        "approved"
+      ]
+    },
+    "memory:memory/2026-05-26.md:52:57": {
+      "key": "memory:memory/2026-05-26.md:52:57",
+      "path": "memory/2026-05-26.md",
+      "startLine": 52,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:43 UTC] Completed Phase 4C full affiliate team Paper simulation. Created `agent-system/tests/2026-05-27-full-affiliate-team-simulation/` with input, specialist task packets, full transcript, content copy pack, performance analysis, specialist task reports, and test report. Result PASS; limitations remain Paper-level only, no live market/product validation, synthetic candidate data, external actions blocked. Next recommended step: Phase 5 hardening or define live read-only validation scope with Doanh approval. [Wed 2026-05-27 07:31 UTC] Doanh requested next recommended step: Phase 5 hardening. [Wed 2026-05-27 07:50 UTC] Completed Phase 5 hardening checks. Created `agent-s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-27T07:39:17.529Z",
+      "lastRecalledAt": "2026-05-27T07:39:17.529Z",
+      "queryHashes": [
+        "906430ab8ef6"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "paper-level",
+        "market/product",
+        "read-only",
+        "agent-s",
+        "wed",
+        "utc",
+        "completed",
+        "phase"
+      ]
+    },
+    "memory:memory/2026-05-26.md:48:55": {
+      "key": "memory:memory/2026-05-26.md:48:55",
+      "path": "memory/2026-05-26.md",
+      "startLine": 48,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:36 UTC] Completed Product Hunter Agent Paper validation. Created `agent-system/tests/2026-05-27-product-hunter-validation/` with input, Specialist Task Packet, product hunting report, Specialist Task Report, and test report. Result PASS with limitations: synthetic candidate data only, no live marketplace validation, no product testing/purchase, external actions blocked. Next recommended step: Phase 4C full affiliate team Paper simulation. [Wed 2026-05-27 07:24 UTC] Doanh instructed: làm bước tiếp theo Phase 4C full affiliate team Paper simulation. [Wed 2026-05-27 07:43 UTC] Completed Phase 4C full affiliate team Paper simulation. Created `agent-system/tests/2026-05-27-fu",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.979486389481869,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-27T07:39:17.529Z",
+      "lastRecalledAt": "2026-05-28T06:50:00.580Z",
+      "queryHashes": [
+        "906430ab8ef6",
+        "2d8301c44d45",
+        "f6d016b8628c"
+      ],
+      "recallDays": [
+        "2026-05-27",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "testing/purchase",
+        "agent-system/tests/2026-05-27-fu",
+        "wed",
+        "utc",
+        "completed",
+        "product",
+        "hunter",
+        "paper"
+      ]
+    },
+    "memory:memory/2026-05-26.md:40:51": {
+      "key": "memory:memory/2026-05-26.md:40:51",
+      "path": "memory/2026-05-26.md",
+      "startLine": 40,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:20 UTC] Completed Phase 4A Market Research Agent Paper validation. Created `agent-system/tests/2026-05-27-market-research-validation/` with input, Specialist Task Packet, market research report, Specialist Task Report, and test report. Result PASS with limitations: live web unavailable, Product Hunter Agent missing, no actual SKU scoring, findings remain hypotheses. [Wed 2026-05-27 07:17 UTC] Doanh requested Phase 4B. [Wed 2026-05-27 07:29 UTC] Completed Phase 4B initial build: adapted `affiliate/product-hunting` to reviewed Paper-level skill, created `agent-system/agents/business/product-hunter-agent/`, updated role matrix and specialist handoff protocol. Verification:",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.8676330255621574,
+      "maxScore": 0.9949317799967188,
+      "firstRecalledAt": "2026-05-27T07:39:17.529Z",
+      "lastRecalledAt": "2026-05-28T06:50:00.580Z",
+      "queryHashes": [
+        "906430ab8ef6",
+        "2d8301c44d45",
+        "f6d016b8628c"
+      ],
+      "recallDays": [
+        "2026-05-27",
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "affiliate/product-hunting",
+        "paper-level",
+        "wed",
+        "utc",
+        "completed",
+        "phase",
+        "market",
+        "research"
+      ]
+    },
+    "memory:memory/2026-05-26.md:52:61": {
+      "key": "memory:memory/2026-05-26.md:52:61",
+      "path": "memory/2026-05-26.md",
+      "startLine": 52,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:43 UTC] Completed Phase 4C full affiliate team Paper simulation. Created `agent-system/tests/2026-05-27-full-affiliate-team-simulation/` with input, specialist task packets, full transcript, content copy pack, performance analysis, specialist task reports, and test report. Result PASS; limitations remain Paper-level only, no live market/product validation, synthetic candidate data, external actions blocked. Next recommended step: Phase 5 hardening or define live read-only validation scope with Doanh approval. [Wed 2026-05-27 07:31 UTC] Doanh requested next recommended step: Phase 5 hardening. [Wed 2026-05-27 07:50 UTC] Completed Phase 5 hardening checks. Created `agent-s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-27T07:54:23.112Z",
+      "lastRecalledAt": "2026-05-27T07:54:23.112Z",
+      "queryHashes": [
+        "2d8301c44d45"
+      ],
+      "recallDays": [
+        "2026-05-27"
+      ],
+      "conceptTags": [
+        "paper-level",
+        "market/product",
+        "read-only",
+        "agent-s",
+        "wed",
+        "utc",
+        "completed",
+        "phase"
+      ]
+    },
+    "memory:memory/2026-05-26.md:52:63": {
+      "key": "memory:memory/2026-05-26.md:52:63",
+      "path": "memory/2026-05-26.md",
+      "startLine": 52,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:43 UTC] Completed Phase 4C full affiliate team Paper simulation. Created `agent-system/tests/2026-05-27-full-affiliate-team-simulation/` with input, specialist task packets, full transcript, content copy pack, performance analysis, specialist task reports, and test report. Result PASS; limitations remain Paper-level only, no live market/product validation, synthetic candidate data, external actions blocked. Next recommended step: Phase 5 hardening or define live read-only validation scope with Doanh approval. [Wed 2026-05-27 07:31 UTC] Doanh requested next recommended step: Phase 5 hardening. [Wed 2026-05-27 07:50 UTC] Completed Phase 5 hardening checks. Created `agent-s",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-28T06:50:00.580Z",
+      "lastRecalledAt": "2026-05-28T06:50:00.580Z",
+      "queryHashes": [
+        "f6d016b8628c"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "paper-level",
+        "market/product",
+        "read-only",
+        "agent-s",
+        "wed",
+        "utc",
+        "completed",
+        "phase"
+      ]
+    },
+    "memory:memory/2026-05-26.md:60:71": {
+      "key": "memory:memory/2026-05-26.md:60:71",
+      "path": "memory/2026-05-26.md",
+      "startLine": 60,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "[Wed 2026-05-27 07:52 UTC] Created commit `58e662c Add agent-system specialist teams and validation flows`. Remaining untracked files are outside approved commit scope: `memory/.dreams/` and `systems/pm-agent/reports/daily/2026-05-27*`. [Wed 2026-05-27 07:57 UTC] Doanh approved creating `agent-system/tools/check-consistency.py`, running it, and creating a report. [Wed 2026-05-27 08:06 UTC] Created `agent-system/tools/check-consistency.py` and `agent-system/reports/2026-05-27-consistency-check-report.md`. Initial run found script tuning issues around PM Adapter schema, stale marker examples in historical report, and negative overclaim wording. Adjusted script. Final run: agents=11, tests=9,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-28T06:50:00.580Z",
+      "lastRecalledAt": "2026-05-28T06:50:00.580Z",
+      "queryHashes": [
+        "f6d016b8628c"
+      ],
+      "recallDays": [
+        "2026-05-28"
+      ],
+      "conceptTags": [
+        "agent-system",
+        "wed",
+        "utc",
+        "created",
+        "commit",
+        "58e662c",
+        "add",
+        "specialist"
+      ]
+    }
+  }
+}
