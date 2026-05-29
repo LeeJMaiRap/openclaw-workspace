@@ -1,13 +1,14 @@
 # Agent System Status
 
-Last updated: 2026-05-27 UTC
+Last updated: 2026-05-29 UTC
 Baseline commit: `d2fb0de Add agent-system specialist teams and validation flows`
+Latest committed workspace snapshot: `7538f39 Commit workspace snapshot`
 
 ## Overall Status
 
-Paper-level specialist layer ready for internal planning and simulations.
+Specialist layer ready for internal planning, Paper simulations, and controlled read-only validation.
 
-Not production-ready. No live/external validation or campaign execution approved.
+Not production-ready. Live read-only validation has passed with limitations, but external campaign execution remains unapproved.
 
 ## Source-of-Truth Rule
 
@@ -26,11 +27,11 @@ systems/pm-agent/
 | Agent profiles | PASS | 11 agents have `AGENT.md`, `README.md`, `skills.json` |
 | Skills mappings | PASS | `check-consistency.py` validates skill paths |
 | Handoff protocol | PASS | shared packet/report templates exist |
-| Validation artifacts | PASS | 9 test folders with reports |
+| Validation artifacts | PASS | 10 test folders with reports |
 | Consistency check | PASS | failures=0, warnings=0 |
-| Rollback point | PASS | baseline commit `d2fb0de` |
-| Live validation | NOT STARTED | no live read-only scope approved |
-| External execution | BLOCKED | requires Doanh approval |
+| Rollback point | PASS | baseline commit `d2fb0de`, latest snapshot `7538f39` |
+| Live validation | PASS WITH LIMITATIONS | controlled live read-only validation complete; Shopee case closed as validation case |
+| External execution | BLOCKED | requires explicit Doanh/Business PM approval for specific publish/buy/message action |
 
 ## Agents
 
@@ -92,6 +93,7 @@ systems/pm-agent/
 | Market Research validation | `tests/2026-05-27-market-research-validation/` | PASS Paper-level with limitations |
 | Product Hunter validation | `tests/2026-05-27-product-hunter-validation/` | PASS Paper-level with limitations |
 | Full affiliate team simulation | `tests/2026-05-27-full-affiliate-team-simulation/` | PASS Paper-level with limitations |
+| Live read-only validation plan + Shopee case | `tests/2026-05-27-live-readonly-validation-plan/` | PASS WITH LIMITATIONS |
 
 ## Tooling
 
@@ -123,36 +125,35 @@ RESULT: PASS
 | `docs/specialist-handoff-protocol.md` | controlled handoff protocol |
 | `docs/agent-role-matrix.md` | ownership and boundaries |
 | `docs/safety-policy.md` | safety constraints |
+| `docs/live-validation-lessons.md` | lessons and stop gates for live validation vs campaign execution |
 
 ## Known Limitations
 
-- Paper-level only.
-- No live web/marketplace validation.
-- No real SKU/product source proof.
-- Product Hunter validation used synthetic candidate data.
-- No price/voucher/stock/seller reliability/authenticity proof.
+- Not production-ready.
+- Live read-only validation completed, but marketplace access remains limited by bot walls/dynamic pages.
+- Shopee evidence in the final case depended on Doanh-provided screenshots/manual facts, not direct agent fetch.
+- Marketplace facts such as price/voucher/stock/shipping/rating/review count remain time-sensitive and require same-day recheck before public use.
 - No product testing or purchase.
 - No campaign posting/messaging/ads/payment/API/affiliate-link change approved.
-- No formal JSON schema file yet.
-- No live read-only validation plan yet.
+- External publish mode remains off by default.
+- Future tests should use tighter artifact structure to avoid drifting from validation into campaign preparation.
 
 ## Current Blockers
 
 | Blocker | Owner | Needed Decision |
 |---|---|---|
-| Live validation not scoped | Doanh / Business PM | approve allowed read-only sources and constraints |
-| External campaign actions blocked | Doanh | approve specific action before any external write |
-| Formal schema missing | Agent-system maintainer | create `schemas/agent-skills.schema.json` if needed |
-| Current tooling docs uncommitted | Doanh / maintainer | commit current hardening docs/tools when ready |
+| External campaign actions blocked | Doanh / Business PM | approve exact channel, copy, link, timing, and action before any external write |
+| Shopee direct fetch limited | Doanh / Agent-system maintainer | use manual-evidence mode or improve tooling before relying on marketplace facts |
+| Publish boundary control | Agent-system maintainer | keep validation/campaign-prep/publish modes explicit in future workflows |
+| Current validation artifacts uncommitted | Doanh / maintainer | decide whether to commit new live-validation outputs and docs |
 
 ## Recommended Next Steps
 
-1. Commit current hardening additions:
-   - `agent-system/tools/check-consistency.py`
-   - `agent-system/reports/2026-05-27-consistency-check-report.md`
-   - `agent-system/docs/activation-guide.md`
-   - `agent-system/STATUS.md`
-   - `memory/2026-05-26.md`
-2. Create formal `skills.json` schema.
-3. Create live read-only validation plan.
-4. If Doanh approves, run live read-only validation without platform writes.
+1. Review and commit current live-validation artifacts and docs when Doanh approves.
+2. Keep Shopee/tripod case closed as a validation case unless Business PM explicitly switches to campaign preparation.
+3. Apply `docs/live-validation-lessons.md` to future validation runs:
+   - declare mode: Validation / Campaign Preparation / Publish;
+   - label manual evidence;
+   - use stop gates;
+   - explain next steps in Vietnamese with purpose, reason, impact, and expected result.
+4. If continuing system hardening, update templates/checklists so future tests follow the shorter artifact structure.
